@@ -11,3 +11,6 @@ target_link_libraries(eve_benchmark_character_creator PRIVATE eve::human)
 
 eve_add_benchmark(eve_benchmark_inspection_camera benchmark_inspection_camera.cpp)
 target_link_libraries(eve_benchmark_inspection_camera PRIVATE eve::render)
+
+eve_add_benchmark(eve_benchmark_save_load benchmark_save_load.cpp)
+target_link_libraries(eve_benchmark_save_load PRIVATE eve::platform)
