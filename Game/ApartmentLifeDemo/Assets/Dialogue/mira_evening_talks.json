@@ -1,0 +1,12 @@
+{
+  "id": "mira_evening_talks",
+  "name": "Evening Chat",
+  "nodes": [
+    {
+      "id": "mira_evening_talks_start",
+      "speaker": "mira",
+      "line": "Want to sit together for a while?",
+      "expression": "soft_smile"
+    }
+  ]
+}

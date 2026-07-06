@@ -1,0 +1,13 @@
+{
+  "id": "office_chair",
+  "name": "Office Chair",
+  "physics": "static",
+  "blocks_nav": false,
+  "interactions": [
+    {
+      "id": "use",
+      "label": "Interact",
+      "animation": "interact_generic"
+    }
+  ]
+}

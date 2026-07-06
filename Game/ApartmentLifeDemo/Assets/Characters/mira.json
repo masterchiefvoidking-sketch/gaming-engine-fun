@@ -1,0 +1,24 @@
+{
+  "id": "mira",
+  "name": "Mira",
+  "biography": "A thoughtful illustrator who moved into the city apartment seeking quiet inspiration.",
+  "voice_profile": "warm_soft",
+  "conversation_style": "gentle",
+  "schedule": "mira_daily",
+  "idle_behavior": "sketch_idle",
+  "personality": {
+    "openness": 0.8,
+    "extraversion": 0.45,
+    "agreeableness": 0.75
+  },
+  "appearance": {
+    "face": "mira_face",
+    "eyes": "mira_eyes",
+    "hair": "mira_hair_bun",
+    "body": "mira_body"
+  },
+  "dialogue_packages": [
+    "mira_greetings",
+    "mira_evening_talks"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "mira_movie",
+  "name": "Movie Night",
+  "nodes": [
+    {
+      "id": "mira_movie_start",
+      "speaker": "mira",
+      "line": "We could watch something cozy.",
+      "expression": "soft_smile"
+    }
+  ]
+}

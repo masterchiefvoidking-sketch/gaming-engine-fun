@@ -1,0 +1,18 @@
+{
+  "id": "aiko",
+  "display_name": "Aiko",
+  "default_outfit": "cozy_sweater",
+  "shyness": 0.55,
+  "confidence": 0.45,
+  "personality": {
+    "openness": 0.7,
+    "extraversion": 0.45,
+    "agreeableness": 0.8,
+    "humor": 0.6
+  },
+  "preferences": {
+    "favorite_rooms": ["living_room", "bedroom", "wardrobe"],
+    "favorite_foods": ["curry", "pasta", "green_tea"],
+    "favorite_activities": ["reading", "watching_rain", "cooking"]
+  }
+}

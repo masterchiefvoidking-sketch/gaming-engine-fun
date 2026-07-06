@@ -1,0 +1,12 @@
+{
+  "id": "mira_food",
+  "name": "Favorite Food",
+  "nodes": [
+    {
+      "id": "mira_food_start",
+      "speaker": "mira",
+      "line": "Homemade pasta is my comfort food.",
+      "expression": "soft_smile"
+    }
+  ]
+}

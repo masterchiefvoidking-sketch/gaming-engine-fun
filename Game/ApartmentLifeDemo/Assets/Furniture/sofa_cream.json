@@ -1,0 +1,13 @@
+{
+  "id": "sofa_cream",
+  "name": "Sofa Cream",
+  "physics": "static",
+  "blocks_nav": true,
+  "interactions": [
+    {
+      "id": "use",
+      "label": "Interact",
+      "animation": "interact_generic"
+    }
+  ]
+}

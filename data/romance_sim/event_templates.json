@@ -1,0 +1,72 @@
+[
+  {
+    "id": "first_compliment",
+    "label": "First compliment",
+    "dialogue_id": "compliment_first",
+    "memory_template": "compliment_received",
+    "room": "living_room",
+    "trust_reward": 0.04,
+    "affection_reward": 0.06
+  },
+  {
+    "id": "first_shared_meal",
+    "label": "First shared meal",
+    "dialogue_id": "invite_dinner_yes",
+    "memory_template": "first_shared_meal",
+    "room": "dining_room"
+  },
+  {
+    "id": "first_movie_night",
+    "label": "First movie night",
+    "dialogue_id": "invite_movie",
+    "memory_template": "first_movie_night",
+    "room": "living_room"
+  },
+  {
+    "id": "first_gift",
+    "label": "First gift",
+    "dialogue_id": "gift_happy",
+    "memory_template": "gift_received"
+  },
+  {
+    "id": "first_date_planning",
+    "label": "First date planning",
+    "dialogue_id": "plan_weekend",
+    "memory_template": "first_date_plan"
+  },
+  {
+    "id": "rainy_day_conversation",
+    "label": "Rainy day talk",
+    "dialogue_id": "rainy_evening_start",
+    "memory_template": "rainy_evening_talk",
+    "room": "living_room"
+  },
+  {
+    "id": "late_night_talk",
+    "label": "Late night talk",
+    "dialogue_id": "routine_sleepy",
+    "memory_template": "late_night_talk",
+    "room": "living_room"
+  },
+  {
+    "id": "morning_coffee",
+    "label": "Morning coffee",
+    "dialogue_id": "greet_morning",
+    "memory_template": "morning_coffee",
+    "room": "kitchen"
+  },
+  {
+    "id": "outfit_reveal_event",
+    "label": "Outfit reveal",
+    "dialogue_id": "outfit_dress",
+    "memory_template": "outfit_reveal",
+    "room": "wardrobe"
+  },
+  {
+    "id": "comfort_scene",
+    "label": "Comfort scene",
+    "dialogue_id": "apology_soft",
+    "memory_template": "comfort_moment",
+    "room": "living_room"
+  }
+]

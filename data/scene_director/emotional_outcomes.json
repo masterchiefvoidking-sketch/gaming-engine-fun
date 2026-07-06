@@ -1,0 +1,116 @@
+[
+  {
+    "id": "morning_warmth",
+    "label": "Morning warmth",
+    "trust_delta": 0.03,
+    "affection_delta": 0.02,
+    "comfort_delta": 0.05,
+    "memory_template": "morning_coffee"
+  },
+  {
+    "id": "coffee_bond",
+    "label": "Coffee bond",
+    "trust_delta": 0.04,
+    "affection_delta": 0.03,
+    "comfort_delta": 0.06,
+    "memory_template": "morning_coffee"
+  },
+  {
+    "id": "style_confidence",
+    "label": "Style confidence",
+    "confidence_delta": 0.08,
+    "affection_delta": 0.02,
+    "memory_template": "outfit_reveal"
+  },
+  {
+    "id": "shared_meal_bond",
+    "label": "Shared meal bond",
+    "trust_delta": 0.05,
+    "affection_delta": 0.04,
+    "comfort_delta": 0.08,
+    "memory_template": "first_shared_meal"
+  },
+  {
+    "id": "dinner_warmth",
+    "label": "Dinner warmth",
+    "trust_delta": 0.06,
+    "affection_delta": 0.05,
+    "comfort_delta": 0.1,
+    "memory_template": "first_shared_meal"
+  },
+  {
+    "id": "gift_joy",
+    "label": "Gift joy",
+    "affection_delta": 0.08,
+    "trust_delta": 0.04,
+    "memory_template": "gift_received"
+  },
+  {
+    "id": "movie_night_memory",
+    "label": "Movie night memory",
+    "trust_delta": 0.06,
+    "affection_delta": 0.08,
+    "comfort_delta": 0.12,
+    "stress_delta": -0.1,
+    "memory_template": "first_movie_night",
+    "unlock_dialogue": "movie_memory_callback",
+    "cooldown_hours": 24
+  },
+  {
+    "id": "movie_night_beat",
+    "label": "Movie night beat",
+    "affection_delta": 0.04,
+    "comfort_delta": 0.06,
+    "confidence_delta": 0.03
+  },
+  {
+    "id": "apology_healing",
+    "label": "Apology healing",
+    "trust_delta": 0.05,
+    "comfort_delta": 0.1,
+    "stress_delta": -0.15,
+    "memory_template": "apology_accepted"
+  },
+  {
+    "id": "comfort_moment",
+    "label": "Comfort moment",
+    "comfort_delta": 0.15,
+    "stress_delta": -0.2,
+    "memory_template": "comfort_moment"
+  },
+  {
+    "id": "celebration_joy",
+    "label": "Celebration joy",
+    "affection_delta": 0.1,
+    "trust_delta": 0.05,
+    "memory_template": "celebration"
+  },
+  {
+    "id": "photo_memory",
+    "label": "Photo memory",
+    "confidence_delta": 0.06,
+    "affection_delta": 0.03,
+    "memory_template": "photo_session"
+  },
+  {
+    "id": "late_night_trust",
+    "label": "Late night trust",
+    "trust_delta": 0.07,
+    "affection_delta": 0.05,
+    "memory_template": "late_night_talk"
+  },
+  {
+    "id": "balcony_bond",
+    "label": "Balcony bond",
+    "affection_delta": 0.06,
+    "trust_delta": 0.04,
+    "memory_template": "balcony_talk"
+  },
+  {
+    "id": "goodnight_warmth",
+    "label": "Goodnight warmth",
+    "comfort_delta": 0.08,
+    "affection_delta": 0.03,
+    "stress_delta": -0.08
+  }
+]

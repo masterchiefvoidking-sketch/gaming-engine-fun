@@ -1,0 +1,98 @@
+[
+  {
+    "id": "silk_blouse",
+    "display_name": "Silk Blouse",
+    "category": "tops",
+    "layer": "main_clothing",
+    "mesh": "meshes/wardrobe/silk_blouse.glb",
+    "material": "materials/cloth/silk",
+    "coverage_tags": ["torso", "arms"],
+    "compatibility_tags": ["formal", "casual"],
+    "color_variants": ["ivory", "blush", "midnight"]
+  },
+  {
+    "id": "denim_jeans",
+    "display_name": "Denim Jeans",
+    "category": "bottoms",
+    "layer": "main_clothing",
+    "mesh": "meshes/wardrobe/denim_jeans.glb",
+    "material": "materials/cloth/denim",
+    "coverage_tags": ["legs", "hips"],
+    "compatibility_tags": ["casual"]
+  },
+  {
+    "id": "evening_dress",
+    "display_name": "Evening Dress",
+    "category": "dresses",
+    "layer": "main_clothing",
+    "mesh": "meshes/wardrobe/evening_dress.glb",
+    "material": "materials/cloth/satin",
+    "coverage_tags": ["full_body"],
+    "incompatible_items": ["silk_blouse", "denim_jeans"],
+    "color_variants": ["ruby", "emerald", "sapphire"]
+  },
+  {
+    "id": "wool_coat",
+    "display_name": "Wool Coat",
+    "category": "outerwear",
+    "layer": "outerwear",
+    "mesh": "meshes/wardrobe/wool_coat.glb",
+    "material": "materials/cloth/wool",
+    "coverage_tags": ["torso", "arms"],
+    "compatibility_tags": ["formal", "winter"]
+  },
+  {
+    "id": "silk_nightgown",
+    "display_name": "Silk Nightgown",
+    "category": "sleepwear",
+    "layer": "main_clothing",
+    "mesh": "meshes/wardrobe/silk_nightgown.glb",
+    "material": "materials/cloth/silk_soft",
+    "coverage_tags": ["torso", "legs"]
+  },
+  {
+    "id": "yoga_set",
+    "display_name": "Yoga Set",
+    "category": "athleticwear",
+    "layer": "main_clothing",
+    "mesh": "meshes/wardrobe/yoga_set.glb",
+    "material": "materials/cloth/athletic",
+    "coverage_tags": ["torso", "legs"]
+  },
+  {
+    "id": "stiletto_heels",
+    "display_name": "Stiletto Heels",
+    "category": "shoes",
+    "layer": "accessory",
+    "mesh": "meshes/wardrobe/stiletto_heels.glb",
+    "material": "materials/leather/patent",
+    "coverage_tags": ["feet"]
+  },
+  {
+    "id": "sheer_socks",
+    "display_name": "Sheer Socks",
+    "category": "socks",
+    "layer": "undergarment",
+    "mesh": "meshes/wardrobe/sheer_socks.glb",
+    "material": "materials/cloth/sheer",
+    "coverage_tags": ["feet", "legs"]
+  },
+  {
+    "id": "pearl_necklace",
+    "display_name": "Pearl Necklace",
+    "category": "jewelry",
+    "layer": "jewelry",
+    "mesh": "meshes/wardrobe/pearl_necklace.glb",
+    "material": "materials/jewelry/pearl",
+    "coverage_tags": ["neck"]
+  },
+  {
+    "id": "silk_scarf",
+    "display_name": "Silk Scarf",
+    "category": "accessories",
+    "layer": "accessory",
+    "mesh": "meshes/wardrobe/silk_scarf.glb",
+    "material": "materials/cloth/silk",
+    "coverage_tags": ["neck", "shoulders"]
+  }
+]

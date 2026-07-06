@@ -1,0 +1,44 @@
+{
+  "id": "balcony_sunset",
+  "name": "Balcony Sunset",
+  "nodes": [
+    {
+      "id": "n0",
+      "type": "start",
+      "target": "",
+      "outputs": [
+        "n1"
+      ]
+    },
+    {
+      "id": "n1",
+      "type": "lighting",
+      "target": "",
+      "outputs": [
+        "n2"
+      ]
+    },
+    {
+      "id": "n2",
+      "type": "dialogue",
+      "target": "balcony_sunset",
+      "outputs": [
+        "n3"
+      ]
+    },
+    {
+      "id": "n3",
+      "type": "relationship",
+      "target": "",
+      "outputs": [
+        "n4"
+      ]
+    },
+    {
+      "id": "n4",
+      "type": "end",
+      "target": "",
+      "outputs": []
+    }
+  ]
+}

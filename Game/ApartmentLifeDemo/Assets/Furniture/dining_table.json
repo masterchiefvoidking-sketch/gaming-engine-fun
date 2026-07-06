@@ -1,0 +1,13 @@
+{
+  "id": "dining_table",
+  "name": "Dining Table",
+  "physics": "static",
+  "blocks_nav": true,
+  "interactions": [
+    {
+      "id": "use",
+      "label": "Interact",
+      "animation": "interact_generic"
+    }
+  ]
+}

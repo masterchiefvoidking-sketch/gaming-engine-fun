@@ -1,0 +1,47 @@
+[
+  {
+    "id": "compliment_outfit",
+    "dialogue": "You look absolutely stunning in that outfit.",
+    "trust_delta": 0.05,
+    "affection_delta": 0.08,
+    "mood_shift": 0.1,
+    "min_trust": 0.2,
+    "memory_tag": "outfit_compliment"
+  },
+  {
+    "id": "flirt_compliment",
+    "dialogue": "I can't take my eyes off you right now.",
+    "trust_delta": 0.03,
+    "affection_delta": 0.12,
+    "mood_shift": 0.15,
+    "min_trust": 0.5,
+    "memory_tag": "flirt_moment"
+  },
+  {
+    "id": "gift_reaction",
+    "dialogue": "This is so thoughtful — thank you.",
+    "trust_delta": 0.1,
+    "affection_delta": 0.15,
+    "mood_shift": 0.2,
+    "min_trust": 0.3,
+    "memory_tag": "gift_received"
+  },
+  {
+    "id": "comfort_reaction",
+    "dialogue": "I feel safe with you. That means a lot.",
+    "trust_delta": 0.12,
+    "affection_delta": 0.06,
+    "mood_shift": 0.1,
+    "min_trust": 0.4,
+    "memory_tag": "comfort_moment"
+  },
+  {
+    "id": "boundary_respect",
+    "dialogue": "I appreciate you respecting my boundaries.",
+    "trust_delta": 0.15,
+    "affection_delta": 0.05,
+    "mood_shift": 0.05,
+    "min_trust": 0.0,
+    "memory_tag": "boundary_respected"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "id": "mira_rain",
+  "name": "Rainy Day",
+  "nodes": [
+    {
+      "id": "mira_rain_start",
+      "speaker": "mira",
+      "line": "I love how the rain sounds against the windows.",
+      "expression": "soft_smile"
+    }
+  ]
+}

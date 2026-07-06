@@ -1,0 +1,72 @@
+[
+  {
+    "id": "torso_interactions",
+    "display_name": "Torso Interactions",
+    "region": "torso",
+    "actions": [
+      {
+        "id": "compliment_outfit",
+        "label": "Compliment Outfit",
+        "region": "torso",
+        "dialogue": "romance_outfit_compliment",
+        "requirements": {"min_trust": 0.3, "allowed_rooms": ["wardrobe", "living_room"]}
+      },
+      {
+        "id": "pose_preview",
+        "label": "Preview Pose",
+        "region": "torso",
+        "pose_preview": "wardrobe_standing",
+        "requirements": {"allowed_rooms": ["wardrobe"]}
+      }
+    ]
+  },
+  {
+    "id": "face_interactions",
+    "display_name": "Face Interactions",
+    "region": "face",
+    "actions": [
+      {
+        "id": "compliment_smile",
+        "label": "Compliment Smile",
+        "region": "face",
+        "dialogue": "romance_smile_compliment",
+        "requirements": {"min_trust": 0.4, "min_affection": 0.3}
+      },
+      {
+        "id": "apply_makeup",
+        "label": "Apply Makeup",
+        "region": "face",
+        "animation": "makeup_apply",
+        "requirements": {"allowed_rooms": ["wardrobe", "bathroom"]}
+      }
+    ]
+  },
+  {
+    "id": "hair_interactions",
+    "display_name": "Hair Interactions",
+    "region": "hair",
+    "actions": [
+      {
+        "id": "style_hair",
+        "label": "Style Hair",
+        "region": "hair",
+        "animation": "hair_styling",
+        "requirements": {"allowed_rooms": ["wardrobe", "bathroom"]}
+      }
+    ]
+  },
+  {
+    "id": "hands_interactions",
+    "display_name": "Hand Interactions",
+    "region": "hands",
+    "actions": [
+      {
+        "id": "hold_hand",
+        "label": "Hold Hand",
+        "region": "hands",
+        "dialogue": "romance_hold_hand",
+        "requirements": {"min_trust": 0.6, "min_relationship": 0.5}
+      }
+    ]
+  }
+]

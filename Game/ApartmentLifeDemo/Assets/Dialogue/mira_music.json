@@ -1,0 +1,12 @@
+{
+  "id": "mira_music",
+  "name": "Music",
+  "nodes": [
+    {
+      "id": "mira_music_start",
+      "speaker": "mira",
+      "line": "This playlist helps me relax.",
+      "expression": "soft_smile"
+    }
+  ]
+}

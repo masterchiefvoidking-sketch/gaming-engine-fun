@@ -1,0 +1,98 @@
+{
+  "id": "sunset_apartment",
+  "name": "Sunset Apartment",
+  "rooms": [
+    "living_room",
+    "kitchen",
+    "bedroom",
+    "bathroom",
+    "dining_room",
+    "wardrobe"
+  ],
+  "furniture": [
+    {
+      "id": "sofa_cream",
+      "room": "living_room",
+      "x": 0.0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "id": "coffee_table",
+      "room": "dining_room",
+      "x": 0.5,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "id": "floor_lamp",
+      "room": "bedroom",
+      "x": 1.0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "id": "bookshelf",
+      "room": "kitchen",
+      "x": 1.5,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "id": "tv_stand",
+      "room": "bathroom",
+      "x": 2.0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "id": "dining_table",
+      "room": "living_room",
+      "x": 2.5,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "id": "dining_chair",
+      "room": "dining_room",
+      "x": 3.0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "id": "kitchen_counter",
+      "room": "bedroom",
+      "x": 3.5,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "id": "refrigerator",
+      "room": "kitchen",
+      "x": 4.0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "id": "plant_monstera",
+      "room": "bathroom",
+      "x": 4.5,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "id": "bed_frame",
+      "room": "living_room",
+      "x": 5.0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "id": "nightstand",
+      "room": "dining_room",
+      "x": 5.5,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

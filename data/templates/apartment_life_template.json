@@ -1,0 +1,14 @@
+{
+  "id": "apartment_life",
+  "name": "Apartment Life",
+  "description": "Anime-inspired relationship simulator in a cozy apartment setting.",
+  "source": "Game/ApartmentLifeDemo",
+  "includes": [
+    "Assets/Characters",
+    "Assets/Dialogue",
+    "Assets/Apartments",
+    "Assets/Furniture",
+    "Assets/Events",
+    "project.json"
+  ]
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "id": "morning_greeting",
+    "label": "Morning greeting",
+    "type": "morning_greeting",
+    "room": "living_room",
+    "condition": "morning_friend",
+    "interaction": "greet",
+    "outcome": "morning_warmth",
+    "memory": "morning_coffee",
+    "beats": [
+      {
+        "time": 0,
+        "dialogue": "greet_morning",
+        "shot": "wide_living_room",
+        "lighting": "morning_soft",
+        "animation": "wave"
+      }
+    ]
+  },
+  {
+    "id": "coffee_together",
+    "label": "Coffee together",
+    "type": "coffee_together",
+    "room": "kitchen",
+    "condition": "morning_acquaintance",
+    "interaction": "coffee",
+    "outcome": "coffee_bond",
+    "beats": [
+      {
+        "time": 0,
+        "dialogue": "greet_morning",
+        "shot": "medium_conversation",
+        "animation": "drink"
+      }
+    ]
+  },
+  {
+    "id": "getting_ready",
+    "label": "Getting ready",
+    "type": "getting_ready",
+    "room": "bathroom",
+    "condition": "morning_privacy",
+    "interaction": "groom",
+    "beats": [
+      {
+        "time": 0,
+        "shot": "mirror_shot",
+        "animation": "mirror_pose",
+        "lighting": "bathroom_bright"
+      }
+    ]
+  },
+  {
+    "id": "wardrobe_preview",
+    "label": "Wardrobe preview",
+    "type": "wardrobe_preview",
+    "room": "wardrobe",
+    "condition": "friend_wardrobe",
+    "interaction": "outfit_preview",
+    "outcome": "style_confidence",
+    "beats": [
+      {
+        "time": 0,
+        "dialogue": "outfit_cozy",
+        "shot": "wardrobe_orbit",
+        "animation": "outfit_preview_walk"
+      }
+    ]
+  },
+  {
+    "id": "cooking_together",
+    "label": "Cooking together",
+    "type": "cooking_together",
+    "room": "kitchen",
+    "condition": "friend_kitchen",
+    "interaction": "cook",
+    "outcome": "shared_meal_bond",
+    "beats": [
+      {
+        "time": 0,
+        "dialogue": "invite_dinner_yes",
+        "animation": "hold_object"
+      }
+    ]
+  },
+  {
+    "id": "shared_dinner",
+    "label": "Shared dinner",
+    "type": "shared_dinner",
+    "room": "dining_room",
+    "condition": "dinner_friend",
+    "interaction": "dinner",
+    "outcome": "dinner_warmth",
+    "beats": [
+      {
+        "time": 0,
+        "dialogue": "invite_dinner_yes",
+        "shot": "dining_two_shot",
+        "lighting": "dining_warm"
+      }
+    ]
+  },
+  {
+    "id": "living_room_relax",
+    "label": "Living room relaxation",
+    "type": "living_room_relaxation",
+    "room": "living_room",
+    "condition": "evening_relaxed",
+    "interaction": "relax",
+    "beats": [
+      {
+        "time": 0,
+        "dialogue": "rainy_evening_start",
+        "shot": "sofa_medium",
+        "animation": "sit",
+        "lighting": "cozy_lamp"
+      }
+    ]
+  },
+  {
+    "id": "balcony_talk",
+    "label": "Balcony conversation",
+    "type": "balcony_conversation",
+    "room": "balcony",
+    "condition": "evening_friend",
+    "interaction": "balcony",
+    "beats": [
+      {
+        "time": 0,
+        "shot": "window_sunset",
+        "lighting": "sunset_glow"
+      }
+    ]
+  },
+  {
+    "id": "bedroom_goodnight",
+    "label": "Bedroom goodnight",
+    "type": "bedroom_goodnight",
+    "room": "bedroom",
+    "condition": "night_close_friend",
+    "interaction": "goodnight",
+    "beats": [
+      {
+        "time": 0,
+        "dialogue": "routine_sleepy",
+        "shot": "bedside",
+        "animation": "sit",
+        "lighting": "night_soft"
+      }
+    ]
+  },
+  {
+    "id": "gift_reaction",
+    "label": "Gift reaction",
+    "type": "gift_reaction",
+    "room": "living_room",
+    "condition": "gift_friend",
+    "interaction": "gift",
+    "outcome": "gift_joy",
+    "beats": [
+      {
+        "time": 0,
+        "dialogue": "gift_happy",
+        "animation": "smile",
+        "expression": "soft_smile"
+      }
+    ]
+  }
+]

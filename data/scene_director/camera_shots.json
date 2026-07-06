@@ -1,0 +1,178 @@
+[
+  {
+    "id": "wide_living_room",
+    "label": "Wide room shot",
+    "fov": 45,
+    "duration": 3,
+    "position": {
+      "x": 0,
+      "y": 1.6,
+      "z": 4.5
+    },
+    "target": {
+      "x": 0,
+      "y": 1.2,
+      "z": 0
+    },
+    "focus": {
+      "x": 0,
+      "y": 1.2,
+      "z": 0
+    },
+    "dof": 0.1,
+    "ease": "ease_in_out",
+    "lighting": "cozy_lamp_rain"
+  },
+  {
+    "id": "sofa_medium",
+    "label": "Medium conversation",
+    "fov": 35,
+    "duration": 2.5,
+    "position": {
+      "x": 1.2,
+      "y": 1.4,
+      "z": 2.0
+    },
+    "target": {
+      "x": 0,
+      "y": 1.2,
+      "z": 0
+    },
+    "dof": 0.3,
+    "ease": "ease_in_out"
+  },
+  {
+    "id": "face_closeup",
+    "label": "Face close-up",
+    "fov": 28,
+    "duration": 2,
+    "position": {
+      "x": 0.3,
+      "y": 1.5,
+      "z": 1.2
+    },
+    "target": {
+      "x": 0,
+      "y": 1.45,
+      "z": 0
+    },
+    "dof": 0.7,
+    "focal_length": 85
+  },
+  {
+    "id": "eye_closeup",
+    "label": "Eye close-up",
+    "fov": 20,
+    "duration": 1.5,
+    "position": {
+      "x": 0.1,
+      "y": 1.52,
+      "z": 0.6
+    },
+    "target": {
+      "x": 0,
+      "y": 1.5,
+      "z": 0
+    },
+    "dof": 0.9
+  },
+  {
+    "id": "full_body_outfit",
+    "label": "Full-body outfit",
+    "fov": 40,
+    "duration": 3,
+    "position": {
+      "x": 0,
+      "y": 1.0,
+      "z": 3.5
+    },
+    "target": {
+      "x": 0,
+      "y": 1.0,
+      "z": 0
+    }
+  },
+  {
+    "id": "over_shoulder",
+    "label": "Over-the-shoulder",
+    "fov": 32,
+    "duration": 2,
+    "position": {
+      "x": -0.8,
+      "y": 1.4,
+      "z": 1.5
+    },
+    "target": {
+      "x": 0.2,
+      "y": 1.3,
+      "z": 0
+    }
+  },
+  {
+    "id": "mirror_shot",
+    "label": "Mirror shot",
+    "fov": 30,
+    "duration": 2.5,
+    "position": {
+      "x": 1.5,
+      "y": 1.5,
+      "z": 1.0
+    },
+    "target": {
+      "x": 0,
+      "y": 1.4,
+      "z": -0.5
+    },
+    "lighting": "bathroom_bright"
+  },
+  {
+    "id": "rainy_window",
+    "label": "Rainy window shot",
+    "fov": 38,
+    "duration": 3,
+    "position": {
+      "x": -2.0,
+      "y": 1.5,
+      "z": 1.0
+    },
+    "target": {
+      "x": -3.0,
+      "y": 1.4,
+      "z": 0
+    },
+    "lighting": "cozy_lamp_rain"
+  },
+  {
+    "id": "dining_two_shot",
+    "label": "Dining table two-shot",
+    "fov": 36,
+    "duration": 2.5,
+    "position": {
+      "x": 0,
+      "y": 1.5,
+      "z": 2.8
+    },
+    "target": {
+      "x": 0,
+      "y": 1.2,
+      "z": 0
+    },
+    "lighting": "dining_warm"
+  },
+  {
+    "id": "wardrobe_orbit",
+    "label": "Wardrobe orbit",
+    "fov": 34,
+    "duration": 4,
+    "position": {
+      "x": 1.8,
+      "y": 1.3,
+      "z": 1.5
+    },
+    "target": {
+      "x": 0,
+      "y": 1.2,
+      "z": 0
+    }
+  }
+]
