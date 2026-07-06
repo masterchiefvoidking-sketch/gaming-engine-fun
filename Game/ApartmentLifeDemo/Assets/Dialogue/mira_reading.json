@@ -1,0 +1,12 @@
+{
+  "id": "mira_reading",
+  "name": "Reading Time",
+  "nodes": [
+    {
+      "id": "mira_reading_start",
+      "speaker": "mira",
+      "line": "I found a book I think you'd enjoy.",
+      "expression": "soft_smile"
+    }
+  ]
+}

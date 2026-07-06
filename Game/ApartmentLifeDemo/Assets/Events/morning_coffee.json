@@ -1,0 +1,36 @@
+{
+  "id": "morning_coffee",
+  "name": "Morning Coffee",
+  "nodes": [
+    {
+      "id": "n0",
+      "type": "start",
+      "target": "",
+      "outputs": [
+        "n1"
+      ]
+    },
+    {
+      "id": "n1",
+      "type": "dialogue",
+      "target": "morning_coffee",
+      "outputs": [
+        "n2"
+      ]
+    },
+    {
+      "id": "n2",
+      "type": "reward",
+      "target": "",
+      "outputs": [
+        "n3"
+      ]
+    },
+    {
+      "id": "n3",
+      "type": "end",
+      "target": "",
+      "outputs": []
+    }
+  ]
+}

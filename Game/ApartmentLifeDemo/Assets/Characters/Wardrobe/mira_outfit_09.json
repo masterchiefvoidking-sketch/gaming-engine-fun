@@ -1,0 +1,20 @@
+{
+  "id": "mira_outfit_09",
+  "name": "Mira Outfit 9",
+  "category": "sleepwear",
+  "thumbnail": "thumbs/mira_outfit_09.png",
+  "mesh": "meshes/mira_outfit_09.gltf",
+  "material": "mat_anime_cotton",
+  "physics": "soft_cloth",
+  "tags": [
+    "mira",
+    "original",
+    "casual"
+  ],
+  "color_variants": [
+    "default",
+    "cream",
+    "navy"
+  ],
+  "collection": "mira_wardrobe"
+}

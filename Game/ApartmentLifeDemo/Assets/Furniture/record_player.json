@@ -1,0 +1,13 @@
+{
+  "id": "record_player",
+  "name": "Record Player",
+  "physics": "static",
+  "blocks_nav": false,
+  "interactions": [
+    {
+      "id": "use",
+      "label": "Interact",
+      "animation": "interact_generic"
+    }
+  ]
+}

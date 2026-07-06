@@ -1,0 +1,13 @@
+{
+  "id": "dining_chair",
+  "name": "Dining Chair",
+  "physics": "static",
+  "blocks_nav": false,
+  "interactions": [
+    {
+      "id": "use",
+      "label": "Interact",
+      "animation": "interact_generic"
+    }
+  ]
+}

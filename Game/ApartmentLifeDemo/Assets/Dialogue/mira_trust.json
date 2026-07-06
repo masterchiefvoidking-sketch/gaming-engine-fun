@@ -1,0 +1,12 @@
+{
+  "id": "mira_trust",
+  "name": "Trust Building",
+  "nodes": [
+    {
+      "id": "mira_trust_start",
+      "speaker": "mira",
+      "line": "I feel like I can talk to you about anything.",
+      "expression": "soft_smile"
+    }
+  ]
+}

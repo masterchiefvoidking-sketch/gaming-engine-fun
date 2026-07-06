@@ -1,0 +1,12 @@
+{
+  "id": "mira_compliment",
+  "name": "Compliment Response",
+  "nodes": [
+    {
+      "id": "mira_compliment_start",
+      "speaker": "mira",
+      "line": "That's kind of you to say.",
+      "expression": "soft_smile"
+    }
+  ]
+}

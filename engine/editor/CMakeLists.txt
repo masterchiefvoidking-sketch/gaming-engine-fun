@@ -8,6 +8,7 @@ add_library(eve_editor_lib STATIC
     src/anime_visual_tools.cpp
     src/romance_sim_tools.cpp
     src/scene_director_tools.cpp
+    src/creator_studio.cpp
 )
 
 add_library(eve::editor ALIAS eve_editor_lib)
@@ -26,6 +27,7 @@ target_link_libraries(eve_editor_lib
         eve::world
         eve::ai
         eve::scene
+        eve::content
         eve::scripting
         eve::human
         eve::animation

@@ -1,0 +1,44 @@
+{
+  "id": "cozy_evening",
+  "name": "Cozy Evening",
+  "nodes": [
+    {
+      "id": "n0",
+      "type": "start",
+      "target": "",
+      "outputs": [
+        "n1"
+      ]
+    },
+    {
+      "id": "n1",
+      "type": "lighting",
+      "target": "",
+      "outputs": [
+        "n2"
+      ]
+    },
+    {
+      "id": "n2",
+      "type": "dialogue",
+      "target": "cozy_evening",
+      "outputs": [
+        "n3"
+      ]
+    },
+    {
+      "id": "n3",
+      "type": "camera",
+      "target": "",
+      "outputs": [
+        "n4"
+      ]
+    },
+    {
+      "id": "n4",
+      "type": "end",
+      "target": "",
+      "outputs": []
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "mira_coffee",
+  "name": "Coffee Offer",
+  "nodes": [
+    {
+      "id": "mira_coffee_start",
+      "speaker": "mira",
+      "line": "I made extra coffee if you'd like some.",
+      "expression": "soft_smile"
+    }
+  ]
+}

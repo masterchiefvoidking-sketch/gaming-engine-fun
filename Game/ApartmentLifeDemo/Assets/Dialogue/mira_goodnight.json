@@ -1,0 +1,12 @@
+{
+  "id": "mira_goodnight",
+  "name": "Goodnight",
+  "nodes": [
+    {
+      "id": "mira_goodnight_start",
+      "speaker": "mira",
+      "line": "Sleep well. I'll be here tomorrow.",
+      "expression": "soft_smile"
+    }
+  ]
+}

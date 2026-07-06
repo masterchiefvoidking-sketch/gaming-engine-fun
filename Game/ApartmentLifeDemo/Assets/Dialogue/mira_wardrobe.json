@@ -1,0 +1,12 @@
+{
+  "id": "mira_wardrobe",
+  "name": "Outfit Comment",
+  "nodes": [
+    {
+      "id": "mira_wardrobe_start",
+      "speaker": "mira",
+      "line": "Do you think this color suits me?",
+      "expression": "soft_smile"
+    }
+  ]
+}

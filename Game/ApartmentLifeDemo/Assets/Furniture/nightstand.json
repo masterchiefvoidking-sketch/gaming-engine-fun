@@ -1,0 +1,13 @@
+{
+  "id": "nightstand",
+  "name": "Nightstand",
+  "physics": "static",
+  "blocks_nav": false,
+  "interactions": [
+    {
+      "id": "use",
+      "label": "Interact",
+      "animation": "interact_generic"
+    }
+  ]
+}

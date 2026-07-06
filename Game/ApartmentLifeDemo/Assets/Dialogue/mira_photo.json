@@ -1,0 +1,12 @@
+{
+  "id": "mira_photo",
+  "name": "Photo Mode",
+  "nodes": [
+    {
+      "id": "mira_photo_start",
+      "speaker": "mira",
+      "line": "Should we take a picture together?",
+      "expression": "soft_smile"
+    }
+  ]
+}

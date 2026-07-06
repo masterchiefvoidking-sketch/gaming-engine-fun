@@ -1,0 +1,12 @@
+{
+  "id": "mira_memory",
+  "name": "Memory Callback",
+  "nodes": [
+    {
+      "id": "mira_memory_start",
+      "speaker": "mira",
+      "line": "I still remember our first evening here.",
+      "expression": "soft_smile"
+    }
+  ]
+}
