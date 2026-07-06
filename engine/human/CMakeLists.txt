@@ -9,6 +9,9 @@ add_library(eve_human STATIC
     src/body_interaction_system.cpp
     src/wardrobe_system.cpp
     src/dressing_room.cpp
+    src/anime_character_style.cpp
+    src/anime_expression_system.cpp
+    src/anime_visual_pipeline.cpp
 )
 
 add_library(eve::human ALIAS eve_human)
@@ -25,6 +28,7 @@ target_link_libraries(eve_human
         eve::ecs
         eve::render
         eve::animation
+        eve::world
         nlohmann_json::nlohmann_json
 )
 

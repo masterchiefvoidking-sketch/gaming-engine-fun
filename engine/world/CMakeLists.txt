@@ -4,6 +4,7 @@ add_library(eve_world STATIC
     src/apartment.cpp
     src/simulation.cpp
     src/persistence.cpp
+    src/anime_room_lighting.cpp
 )
 
 add_library(eve::world ALIAS eve_world)

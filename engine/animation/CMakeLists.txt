@@ -4,6 +4,7 @@ add_library(eve_animation STATIC
     src/ik_solver.cpp
     src/facial_animation.cpp
     src/layer_stack.cpp
+    src/anime_motion.cpp
 )
 
 add_library(eve::animation ALIAS eve_animation)

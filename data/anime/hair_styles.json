@@ -1,0 +1,10 @@
+[
+  {"id": "long_straight", "style": "long_straight", "chunk_count": 28, "physics_sway": 0.3,
+   "root_color": {"r": 0.22, "g": 0.14, "b": 0.28}, "tip_color": {"r": 0.48, "g": 0.30, "b": 0.40}},
+  {"id": "twin_tails", "style": "twin_tails", "chunk_count": 32, "physics_sway": 0.45},
+  {"id": "short_bob", "style": "short_bob", "chunk_count": 18, "physics_sway": 0.2},
+  {"id": "ponytail", "style": "ponytail", "chunk_count": 22, "physics_sway": 0.5},
+  {"id": "wavy", "style": "wavy", "chunk_count": 30, "physics_sway": 0.38},
+  {"id": "braids", "style": "braids", "chunk_count": 26, "physics_sway": 0.25},
+  {"id": "bangs_side", "style": "bangs_side", "chunk_count": 20, "physics_sway": 0.22}
+]

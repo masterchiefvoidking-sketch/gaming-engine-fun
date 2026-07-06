@@ -1,0 +1,60 @@
+[
+  {
+    "id": "cozy_sweater",
+    "display_name": "Cozy Knit Sweater",
+    "category": "casualwear",
+    "layer": "main_clothing",
+    "coverage_tags": ["torso", "arms"],
+    "compatibility_tags": ["apartment", "casual"]
+  },
+  {
+    "id": "plaid_skirt",
+    "display_name": "Plaid Skirt",
+    "category": "bottoms",
+    "layer": "main_clothing",
+    "coverage_tags": ["hips", "legs"]
+  },
+  {
+    "id": "silk_pajama_set",
+    "display_name": "Silk Pajama Set",
+    "category": "sleepwear",
+    "layer": "main_clothing",
+    "coverage_tags": ["torso", "legs"]
+  },
+  {
+    "id": "date_dress",
+    "display_name": "Rose Date Dress",
+    "category": "dresses",
+    "layer": "main_clothing",
+    "coverage_tags": ["full_body"],
+    "incompatible_items": ["plaid_skirt", "cozy_sweater"]
+  },
+  {
+    "id": "academy_blazer",
+    "display_name": "Academy Blazer",
+    "category": "formalwear",
+    "layer": "outerwear",
+    "coverage_tags": ["torso", "shoulders"]
+  },
+  {
+    "id": "mary_janes",
+    "display_name": "Mary Jane Shoes",
+    "category": "shoes",
+    "layer": "accessory",
+    "coverage_tags": ["feet"]
+  },
+  {
+    "id": "ribbon_choker",
+    "display_name": "Ribbon Choker",
+    "category": "jewelry",
+    "layer": "jewelry",
+    "coverage_tags": ["neck"]
+  },
+  {
+    "id": "hair_ribbon",
+    "display_name": "Hair Ribbon",
+    "category": "accessories",
+    "layer": "accessory",
+    "coverage_tags": ["hair"]
+  }
+]

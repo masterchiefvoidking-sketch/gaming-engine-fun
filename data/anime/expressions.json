@@ -1,0 +1,82 @@
+[
+  {
+    "id": "neutral",
+    "expression": "neutral",
+    "channels": {"eye_open": 1.0, "mouth_smile": 0.0, "blush": 0.0}
+  },
+  {
+    "id": "smile",
+    "expression": "smile",
+    "channels": {"mouth_smile": 0.7, "cheek_raise": 0.3, "blush": 0.1, "voice_hook": "giggle_soft"}
+  },
+  {
+    "id": "soft_smile",
+    "expression": "soft_smile",
+    "channels": {"mouth_smile": 0.45, "eye_squint": 0.15, "blush": 0.15, "voice_hook": "sigh_happy"}
+  },
+  {
+    "id": "laugh",
+    "expression": "laugh",
+    "channels": {"mouth_smile": 0.9, "mouth_open": 0.4, "eye_squint": 0.35, "voice_hook": "laugh_light"}
+  },
+  {
+    "id": "embarrassed",
+    "expression": "embarrassed",
+    "channels": {"brow_raise": 0.2, "blush": 0.75, "head_tilt": -0.1, "voice_hook": "gasp_soft"}
+  },
+  {
+    "id": "blushing",
+    "expression": "blushing",
+    "channels": {"blush": 0.85, "mouth_smile": 0.25, "eye_squint": 0.1, "voice_hook": "murmur_shy"}
+  },
+  {
+    "id": "shy",
+    "expression": "shy",
+    "channels": {"blush": 0.55, "head_tilt": -0.12, "eye_open": 0.85, "voice_hook": "whisper"}
+  },
+  {
+    "id": "annoyed",
+    "expression": "annoyed",
+    "channels": {"brow_lower": 0.5, "mouth_smile": -0.2, "voice_hook": "hmph"}
+  },
+  {
+    "id": "sad",
+    "expression": "sad",
+    "channels": {"brow_raise": 0.3, "mouth_smile": -0.3, "eye_open": 0.9, "voice_hook": "sigh"}
+  },
+  {
+    "id": "surprised",
+    "expression": "surprised",
+    "channels": {"brow_raise": 0.7, "eye_open": 1.2, "mouth_open": 0.35, "voice_hook": "gasp"}
+  },
+  {
+    "id": "flirty",
+    "expression": "flirty",
+    "channels": {"mouth_smile": 0.55, "eye_squint": 0.25, "blush": 0.35, "head_tilt": 0.08, "voice_hook": "tease"}
+  },
+  {
+    "id": "sleepy",
+    "expression": "sleepy",
+    "channels": {"eye_open": 0.6, "mouth_smile": 0.1, "head_tilt": 0.05, "voice_hook": "yawn"}
+  },
+  {
+    "id": "curious",
+    "expression": "curious",
+    "channels": {"brow_raise": 0.35, "head_tilt": 0.1, "voice_hook": "hmm"}
+  },
+  {
+    "id": "pouting",
+    "expression": "pouting",
+    "channels": {"brow_lower": 0.3, "mouth_smile": -0.15, "cheek_raise": 0.2, "voice_hook": "pout"}
+  },
+  {
+    "id": "confident",
+    "expression": "confident",
+    "channels": {"mouth_smile": 0.5, "shoulder_pose": -0.05, "voice_hook": "chuckle"}
+  },
+  {
+    "id": "romantic_gaze",
+    "expression": "romantic_gaze",
+    "channels": {"mouth_smile": 0.35, "blush": 0.4, "eye_open": 0.95, "head_tilt": 0.06, "voice_hook": "breath_soft"}
+  }
+]

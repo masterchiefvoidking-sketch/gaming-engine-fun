@@ -34,6 +34,10 @@ if(EVE_BUILD_WARDROBE_SLICE OR EVE_BUILD_TESTS)
     add_subdirectory(apps/wardrobe_slice)
 endif()
 
+if(EVE_BUILD_ANIME_DEMO OR EVE_BUILD_TESTS)
+    add_subdirectory(apps/anime_wardrobe_demo)
+endif()
+
 if(EVE_ENABLE_BENCHMARKS)
     add_subdirectory(benchmarks)
 endif()
