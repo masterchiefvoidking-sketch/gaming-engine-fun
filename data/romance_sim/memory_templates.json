@@ -1,0 +1,162 @@
+[
+  {
+    "id": "first_meeting",
+    "description": "We met for the first time in the apartment.",
+    "emotional_weight": 0.6,
+    "callbacks": [
+      "I remember when we first met."
+    ]
+  },
+  {
+    "id": "compliment_received",
+    "description": "You gave me a heartfelt compliment.",
+    "emotional_weight": 0.5,
+    "callbacks": [
+      "That compliment still makes me smile."
+    ]
+  },
+  {
+    "id": "first_shared_meal",
+    "description": "We shared our first meal together.",
+    "emotional_weight": 0.7,
+    "callbacks": [
+      "Our first dinner together was special."
+    ]
+  },
+  {
+    "id": "first_movie_night",
+    "description": "We watched a movie together.",
+    "emotional_weight": 0.65,
+    "callbacks": [
+      "Remember that movie night?"
+    ]
+  },
+  {
+    "id": "gift_received",
+    "description": "You gave me a thoughtful gift.",
+    "emotional_weight": 0.75,
+    "callbacks": [
+      "I still have the gift you gave me."
+    ]
+  },
+  {
+    "id": "first_date_plan",
+    "description": "We planned our first date.",
+    "emotional_weight": 0.7,
+    "callbacks": [
+      "Planning that date was exciting."
+    ]
+  },
+  {
+    "id": "rainy_evening_talk",
+    "description": "We talked through a rainy evening.",
+    "emotional_weight": 0.6,
+    "callbacks": [
+      "Rainy nights like that one..."
+    ]
+  },
+  {
+    "id": "late_night_talk",
+    "description": "We had a deep late-night conversation.",
+    "emotional_weight": 0.8,
+    "callbacks": [
+      "That late-night talk meant everything."
+    ]
+  },
+  {
+    "id": "morning_coffee",
+    "description": "We shared morning coffee.",
+    "emotional_weight": 0.55,
+    "callbacks": [
+      "Morning coffee with you is my favorite."
+    ]
+  },
+  {
+    "id": "outfit_reveal",
+    "description": "You reacted to my new outfit.",
+    "emotional_weight": 0.5,
+    "callbacks": [
+      "You noticed my outfit that day."
+    ]
+  },
+  {
+    "id": "birthday_celebration",
+    "description": "You remembered my birthday.",
+    "emotional_weight": 0.85,
+    "callbacks": [
+      "My birthday with you was wonderful."
+    ]
+  },
+  {
+    "id": "apology_accepted",
+    "description": "We worked through a misunderstanding.",
+    "emotional_weight": 0.6,
+    "callbacks": [
+      "I'm glad we talked things through."
+    ]
+  },
+  {
+    "id": "comfort_moment",
+    "description": "You comforted me when I was down.",
+    "emotional_weight": 0.8,
+    "callbacks": [
+      "When you comforted me... I felt safe."
+    ]
+  },
+  {
+    "id": "anniversary",
+    "description": "We celebrated an anniversary together.",
+    "emotional_weight": 0.9,
+    "callbacks": [
+      "Our anniversary was perfect."
+    ]
+  },
+  {
+    "id": "rejected_interaction",
+    "description": "I had to set a boundary.",
+    "emotional_weight": 0.4,
+    "callbacks": [
+      "I appreciated that you respected my boundary."
+    ]
+  },
+  {
+    "id": "favorite_food_shared",
+    "description": "We discovered a shared favorite food.",
+    "emotional_weight": 0.45,
+    "callbacks": [
+      "We both love that dish."
+    ]
+  },
+  {
+    "id": "promise_made",
+    "description": "You made me a promise.",
+    "emotional_weight": 0.7,
+    "callbacks": [
+      "You kept your promise."
+    ]
+  },
+  {
+    "id": "habit_morning_tea",
+    "description": "Our morning tea routine became a habit.",
+    "emotional_weight": 0.5,
+    "callbacks": [
+      "Our tea mornings are precious."
+    ]
+  },
+  {
+    "id": "outfit_disliked",
+    "description": "I tried an outfit you didn't prefer.",
+    "emotional_weight": 0.3,
+    "callbacks": [
+      "I changed after your honest feedback."
+    ]
+  },
+  {
+    "id": "important_promise",
+    "description": "An important promise between us.",
+    "emotional_weight": 0.85,
+    "callbacks": [
+      "I haven't forgotten what you promised."
+    ]
+  }
+]

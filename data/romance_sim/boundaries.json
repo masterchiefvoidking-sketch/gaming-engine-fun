@@ -1,0 +1,15 @@
+{
+  "character_id": "aiko",
+  "boundaries": [
+    {
+      "id": "no_late_night_push",
+      "description": "No pushing for intimacy late at night",
+      "blocked_actions": ["intimate_scene", "bedroom_invite"]
+    },
+    {
+      "id": "no_unwanted_touch",
+      "description": "No physical contact without trust",
+      "blocked_actions": ["hold_hand", "hug"]
+    }
+  ]
+}

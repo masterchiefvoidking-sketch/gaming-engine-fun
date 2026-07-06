@@ -1,0 +1,570 @@
+[
+  {
+    "id": "greet_evening",
+    "speaker": "aiko",
+    "line": "Oh, you're here. I was just listening to the rain.",
+    "category": "greeting",
+    "conditions": {
+      "rooms": [
+        "living_room"
+      ],
+      "time_of_day": [
+        "evening"
+      ]
+    }
+  },
+  {
+    "id": "greet_morning",
+    "speaker": "aiko",
+    "line": "Good morning. I made tea if you'd like some.",
+    "category": "greeting",
+    "conditions": {
+      "time_of_day": [
+        "morning"
+      ]
+    }
+  },
+  {
+    "id": "greet_return",
+    "speaker": "aiko",
+    "line": "Welcome back. I saved your spot on the sofa.",
+    "category": "greeting",
+    "conditions": {
+      "min_stage": "friend"
+    }
+  },
+  {
+    "id": "greet_shy",
+    "speaker": "aiko",
+    "line": "H-hi... I wasn't expecting you this soon.",
+    "category": "greeting",
+    "conditions": {
+      "min_stage": "acquaintance"
+    }
+  },
+  {
+    "id": "greet_warm",
+    "speaker": "aiko",
+    "line": "I'm glad you came over tonight.",
+    "category": "greeting",
+    "conditions": {
+      "min_stage": "close_friend"
+    }
+  },
+  {
+    "id": "compliment_smile",
+    "speaker": "aiko",
+    "line": "You always know how to make me smile.",
+    "category": "compliment",
+    "conditions": {
+      "min_stage": "acquaintance"
+    }
+  },
+  {
+    "id": "compliment_kind",
+    "speaker": "aiko",
+    "line": "That's really kind of you to say.",
+    "category": "compliment"
+  },
+  {
+    "id": "compliment_blush",
+    "speaker": "aiko",
+    "line": "S-stop... my face is getting warm.",
+    "category": "compliment",
+    "conditions": {
+      "min_stage": "friend"
+    }
+  },
+  {
+    "id": "compliment_confidence",
+    "speaker": "aiko",
+    "line": "Hearing that from you means a lot.",
+    "category": "compliment",
+    "conditions": {
+      "min_stage": "friend"
+    }
+  },
+  {
+    "id": "compliment_romantic",
+    "speaker": "aiko",
+    "line": "You say the sweetest things...",
+    "category": "compliment",
+    "conditions": {
+      "min_stage": "romantic_interest"
+    }
+  },
+  {
+    "id": "compliment_hair",
+    "speaker": "aiko",
+    "line": "I spent extra time on my hair today, actually.",
+    "category": "compliment",
+    "conditions": {
+      "min_stage": "acquaintance"
+    }
+  },
+  {
+    "id": "compliment_voice",
+    "speaker": "aiko",
+    "line": "Your voice is calming when it rains like this.",
+    "category": "compliment",
+    "conditions": {
+      "min_stage": "close_friend"
+    }
+  },
+  {
+    "id": "compliment_first",
+    "speaker": "aiko",
+    "line": "No one's complimented me like that before.",
+    "category": "compliment",
+    "conditions": {
+      "min_stage": "stranger",
+      "memories": []
+    }
+  },
+  {
+    "id": "invite_dinner_yes",
+    "speaker": "aiko",
+    "line": "Dinner together sounds wonderful.",
+    "category": "date",
+    "conditions": {
+      "rooms": [
+        "living_room"
+      ],
+      "min_stage": "friend"
+    }
+  },
+  {
+    "id": "invite_dinner_shy",
+    "speaker": "aiko",
+    "line": "I... I'd like that. Let me set the table.",
+    "category": "date",
+    "conditions": {
+      "min_stage": "acquaintance"
+    }
+  },
+  {
+    "id": "invite_movie",
+    "speaker": "aiko",
+    "line": "A movie night? I'll pick something cozy.",
+    "category": "date",
+    "conditions": {
+      "min_stage": "friend"
+    }
+  },
+  {
+    "id": "plan_weekend",
+    "speaker": "aiko",
+    "line": "We could visit the balcony if the rain stops.",
+    "category": "date",
+    "conditions": {
+      "min_stage": "close_friend"
+    }
+  },
+  {
+    "id": "date_romantic",
+    "speaker": "aiko",
+    "line": "Every moment with you feels like a scene from a story.",
+    "category": "date",
+    "conditions": {
+      "min_stage": "romantic_interest"
+    }
+  },
+  {
+    "id": "cook_together",
+    "speaker": "aiko",
+    "line": "Want to help me in the kitchen?",
+    "category": "date",
+    "conditions": {
+      "rooms": [
+        "kitchen"
+      ],
+      "min_stage": "friend"
+    }
+  },
+  {
+    "id": "gift_happy",
+    "speaker": "aiko",
+    "line": "You remembered what I like. Thank you so much.",
+    "category": "gift",
+    "conditions": {
+      "min_stage": "friend"
+    }
+  },
+  {
+    "id": "gift_surprised",
+    "speaker": "aiko",
+    "line": "For me? You didn't have to...",
+    "category": "gift",
+    "conditions": {
+      "min_stage": "acquaintance"
+    }
+  },
+  {
+    "id": "gift_touched",
+    "speaker": "aiko",
+    "line": "I'll treasure this.",
+    "category": "gift",
+    "conditions": {
+      "min_stage": "close_friend"
+    }
+  },
+  {
+    "id": "gift_tease",
+    "speaker": "aiko",
+    "line": "Are you trying to win me over?",
+    "category": "gift",
+    "conditions": {
+      "min_stage": "romantic_interest"
+    }
+  },
+  {
+    "id": "apology_accept",
+    "speaker": "aiko",
+    "line": "Thank you for apologizing. That means a lot.",
+    "category": "apology"
+  },
+  {
+    "id": "apology_soft",
+    "speaker": "aiko",
+    "line": "It's okay. I understand.",
+    "category": "apology",
+    "conditions": {
+      "min_stage": "friend"
+    }
+  },
+  {
+    "id": "apology_boundary",
+    "speaker": "aiko",
+    "line": "I appreciate you respecting how I feel.",
+    "category": "apology"
+  },
+  {
+    "id": "apology_moved_on",
+    "speaker": "aiko",
+    "line": "Let's not dwell on it. Stay for tea?",
+    "category": "apology",
+    "conditions": {
+      "min_stage": "friend"
+    }
+  },
+  {
+    "id": "routine_tea",
+    "speaker": "aiko",
+    "line": "Evening tea is my favorite ritual.",
+    "category": "routine",
+    "conditions": {
+      "time_of_day": [
+        "evening"
+      ]
+    }
+  },
+  {
+    "id": "routine_read",
+    "speaker": "aiko",
+    "line": "I was reading by the window when you arrived.",
+    "category": "routine",
+    "conditions": {
+      "rooms": [
+        "living_room"
+      ]
+    }
+  },
+  {
+    "id": "routine_cook",
+    "speaker": "aiko",
+    "line": "I'm trying a new recipe for dinner.",
+    "category": "routine",
+    "conditions": {
+      "rooms": [
+        "kitchen"
+      ]
+    }
+  },
+  {
+    "id": "routine_sleepy",
+    "speaker": "aiko",
+    "line": "It's getting late... but I don't mind the company.",
+    "category": "routine",
+    "conditions": {
+      "time_of_day": [
+        "night"
+      ]
+    }
+  },
+  {
+    "id": "routine_morning",
+    "speaker": "aiko",
+    "line": "Mornings are quiet here. I like the peace.",
+    "category": "routine",
+    "conditions": {
+      "time_of_day": [
+        "morning"
+      ]
+    }
+  },
+  {
+    "id": "routine_wardrobe",
+    "speaker": "aiko",
+    "line": "I was picking an outfit for tomorrow.",
+    "category": "routine",
+    "conditions": {
+      "rooms": [
+        "wardrobe"
+      ]
+    }
+  },
+  {
+    "id": "memory_meal",
+    "speaker": "aiko",
+    "line": "Remember that dinner we shared? I still think about it.",
+    "category": "memory_callback",
+    "conditions": {
+      "memories": [
+        "first_shared_meal"
+      ],
+      "min_stage": "friend"
+    }
+  },
+  {
+    "id": "memory_compliment",
+    "speaker": "aiko",
+    "line": "You complimented me before... I never forgot that.",
+    "category": "memory_callback",
+    "conditions": {
+      "memories": [
+        "compliment_received"
+      ]
+    }
+  },
+  {
+    "id": "memory_rain",
+    "speaker": "aiko",
+    "line": "Rainy evenings like this remind me of our first long talk.",
+    "category": "memory_callback",
+    "conditions": {
+      "memories": [
+        "rainy_evening_talk"
+      ],
+      "min_stage": "friend"
+    }
+  },
+  {
+    "id": "memory_gift",
+    "speaker": "aiko",
+    "line": "The gift you gave me is on my shelf.",
+    "category": "memory_callback",
+    "conditions": {
+      "memories": [
+        "gift_received"
+      ],
+      "min_stage": "friend"
+    }
+  },
+  {
+    "id": "memory_movie",
+    "speaker": "aiko",
+    "line": "We should watch another movie sometime.",
+    "category": "memory_callback",
+    "conditions": {
+      "memories": [
+        "first_movie_night"
+      ],
+      "min_stage": "close_friend"
+    }
+  },
+  {
+    "id": "reject_gentle",
+    "speaker": "aiko",
+    "line": "I'm not ready for that yet. I hope you understand.",
+    "category": "rejection"
+  },
+  {
+    "id": "reject_boundary",
+    "speaker": "aiko",
+    "line": "That's one of my boundaries. Please respect it.",
+    "category": "rejection"
+  },
+  {
+    "id": "reject_shy",
+    "speaker": "aiko",
+    "line": "I... need a little more time.",
+    "category": "rejection",
+    "conditions": {
+      "min_stage": "acquaintance"
+    }
+  },
+  {
+    "id": "reject_redirect",
+    "speaker": "aiko",
+    "line": "How about we just talk instead?",
+    "category": "rejection"
+  },
+  {
+    "id": "living_cozy",
+    "speaker": "aiko",
+    "line": "The living room feels extra cozy when it rains.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "living_room"
+      ]
+    }
+  },
+  {
+    "id": "bedroom_quiet",
+    "speaker": "aiko",
+    "line": "My bedroom is my quiet space.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "bedroom"
+      ],
+      "min_stage": "close_friend"
+    }
+  },
+  {
+    "id": "kitchen_warm",
+    "speaker": "aiko",
+    "line": "The kitchen smells like home.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "kitchen"
+      ]
+    }
+  },
+  {
+    "id": "balcony_view",
+    "speaker": "aiko",
+    "line": "The city lights look beautiful from the balcony.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "balcony"
+      ],
+      "min_stage": "friend"
+    }
+  },
+  {
+    "id": "outfit_cozy",
+    "speaker": "aiko",
+    "line": "I picked something comfortable for tonight.",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "cozy",
+        "casual"
+      ]
+    }
+  },
+  {
+    "id": "outfit_dress",
+    "speaker": "aiko",
+    "line": "Do you think this dress suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "formal",
+        "date"
+      ],
+      "min_stage": "romantic_interest"
+    }
+  },
+  {
+    "id": "outfit_pajama",
+    "speaker": "aiko",
+    "line": "Don't laugh... it's my favorite pajama set.",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "sleepwear"
+      ],
+      "min_stage": "close_friend"
+    }
+  },
+  {
+    "id": "outfit_confidence",
+    "speaker": "aiko",
+    "line": "Wearing this makes me feel a little braver.",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "casual"
+      ],
+      "min_stage": "friend"
+    }
+  },
+  {
+    "id": "rain_listen",
+    "speaker": "aiko",
+    "line": "I love the sound of rain on the windows.",
+    "category": "rainy",
+    "conditions": {
+      "rooms": [
+        "living_room"
+      ],
+      "time_of_day": [
+        "evening"
+      ]
+    }
+  },
+  {
+    "id": "rain_cozy",
+    "speaker": "aiko",
+    "line": "Days like this are made for staying in together.",
+    "category": "rainy",
+    "conditions": {
+      "min_stage": "friend"
+    }
+  },
+  {
+    "id": "rain_talk",
+    "speaker": "aiko",
+    "line": "Rain makes me want to share secrets.",
+    "category": "rainy",
+    "conditions": {
+      "min_stage": "close_friend"
+    }
+  },
+  {
+    "id": "rain_first",
+    "speaker": "aiko",
+    "line": "I don't mind the rain when you're here.",
+    "category": "rainy",
+    "conditions": {
+      "min_stage": "acquaintance"
+    }
+  },
+  {
+    "id": "rainy_evening_start",
+    "speaker": "aiko",
+    "line": "It's raining pretty hard out there. Want to stay a while?",
+    "category": "rainy",
+    "conditions": {
+      "rooms": [
+        "living_room"
+      ],
+      "time_of_day": [
+        "evening"
+      ]
+    },
+    "choices": [
+      {
+        "id": "stay",
+        "label": "I'd love to stay.",
+        "trust_delta": 0.03,
+        "affection_delta": 0.05,
+        "memory_tag": "rainy_evening_talk",
+        "next": "rain_cozy"
+      },
+      {
+        "id": "compliment",
+        "label": "You look lovely tonight.",
+        "trust_delta": 0.04,
+        "affection_delta": 0.06,
+        "memory_tag": "compliment_received",
+        "next": "compliment_blush"
+      }
+    ]
+  }
+]

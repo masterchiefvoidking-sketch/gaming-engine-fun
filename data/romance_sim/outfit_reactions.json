@@ -1,0 +1,132 @@
+[
+  {
+    "id": "react_cozy",
+    "outfit_tags": [
+      "cozy",
+      "casual"
+    ],
+    "line": "This sweater? It's my comfort outfit for rainy days.",
+    "memory_tag": "outfit_reveal",
+    "affection_delta": 0.03,
+    "confidence_delta": 0.02
+  },
+  {
+    "id": "react_date_dress",
+    "outfit_id": "date_dress",
+    "line": "I wore this hoping you'd notice...",
+    "memory_tag": "outfit_reveal",
+    "affection_delta": 0.08,
+    "confidence_delta": 0.05
+  },
+  {
+    "id": "react_pajama",
+    "outfit_tags": [
+      "sleepwear"
+    ],
+    "line": "Don't tease me... I wasn't expecting company.",
+    "affection_delta": 0.04
+  },
+  {
+    "id": "react_formal",
+    "outfit_tags": [
+      "formal"
+    ],
+    "line": "I dressed up a little. Do I look okay?",
+    "affection_delta": 0.06,
+    "confidence_delta": 0.04
+  },
+  {
+    "id": "react_academy",
+    "outfit_tags": [
+      "academy",
+      "formalwear"
+    ],
+    "line": "This blazer is from my academy days.",
+    "affection_delta": 0.03
+  },
+  {
+    "id": "react_skirt",
+    "outfit_tags": [
+      "casual"
+    ],
+    "line": "I like how this skirt moves when I walk.",
+    "confidence_delta": 0.03
+  },
+  {
+    "id": "react_ribbon",
+    "outfit_tags": [
+      "accessory"
+    ],
+    "line": "The ribbon? It's a small touch I enjoy.",
+    "affection_delta": 0.02
+  },
+  {
+    "id": "react_wet_hair",
+    "outfit_tags": [
+      "casual"
+    ],
+    "line": "My hair's a mess from the rain...",
+    "affection_delta": 0.02
+  },
+  {
+    "id": "react_confident",
+    "outfit_tags": [
+      "date"
+    ],
+    "line": "I feel brave in this outfit around you.",
+    "affection_delta": 0.07,
+    "confidence_delta": 0.08
+  },
+  {
+    "id": "react_shy",
+    "outfit_tags": [
+      "casual"
+    ],
+    "line": "I wasn't sure if this was too much...",
+    "affection_delta": 0.04
+  },
+  {
+    "id": "react_evening",
+    "outfit_tags": [
+      "casual",
+      "cozy"
+    ],
+    "line": "I changed after work. More comfortable now.",
+    "affection_delta": 0.02
+  },
+  {
+    "id": "react_wardrobe",
+    "outfit_tags": [
+      "casual"
+    ],
+    "line": "I was just trying things on in the wardrobe.",
+    "confidence_delta": 0.03
+  },
+  {
+    "id": "react_favorite",
+    "outfit_tags": [
+      "cozy"
+    ],
+    "line": "This is my favorite outfit at home.",
+    "affection_delta": 0.05
+  },
+  {
+    "id": "react_new",
+    "outfit_tags": [
+      "casual"
+    ],
+    "line": "It's new. I wanted your opinion first.",
+    "affection_delta": 0.06,
+    "confidence_delta": 0.04
+  },
+  {
+    "id": "react_elegant",
+    "outfit_tags": [
+      "formal",
+      "date"
+    ],
+    "line": "I saved this look for a special evening.",
+    "affection_delta": 0.09,
+    "confidence_delta": 0.06
+  }
+]
