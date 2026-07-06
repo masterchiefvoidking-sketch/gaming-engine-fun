@@ -1,10 +1,36 @@
 {
   "id": "bedroom_goodnight",
-  "name": "Bedroom Goodnight",
+  "name": "Bedroom Goodnight Scene",
   "nodes": [
-    {"id": "n0", "type": "start", "target": "", "outputs": ["n1"]},
-    {"id": "n1", "type": "dialogue", "target": "goodnight_scene", "outputs": ["n2"]},
-    {"id": "n2", "type": "lighting", "target": "bedroom_night", "outputs": ["n3"]},
-    {"id": "n3", "type": "end", "target": "", "outputs": []}
+    {
+      "id": "n0",
+      "type": "start",
+      "target": "",
+      "outputs": [
+        "n1"
+      ]
+    },
+    {
+      "id": "n1",
+      "type": "dialogue",
+      "target": "fare_06",
+      "outputs": [
+        "n2"
+      ]
+    },
+    {
+      "id": "n2",
+      "type": "reward",
+      "target": "trust",
+      "outputs": [
+        "n3"
+      ]
+    },
+    {
+      "id": "n3",
+      "type": "end",
+      "target": "",
+      "outputs": []
+    }
   ]
 }

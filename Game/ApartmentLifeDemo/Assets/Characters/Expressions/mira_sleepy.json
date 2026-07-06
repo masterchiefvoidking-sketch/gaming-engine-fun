@@ -1,1 +1,13 @@
-{"id": "mira_sleepy", "name": "Sleepy", "character": "mira"}
+{
+  "id": "mira_sleepy",
+  "character": "mira",
+  "original": true,
+  "name": "Sleepy",
+  "eyes": "half_closed",
+  "eyebrows": "relaxed_low",
+  "mouth": "yawn_small",
+  "head_tilt": 4.0,
+  "blush": 0.05,
+  "animation_cue": "sleepy_blink",
+  "dialogue_hook": "fare_06"
+}

@@ -4,13 +4,13 @@
 TEST(AnimeRoomLightingTest, LoadsPresets) {
     eve::world::AnimeRoomLightingSystem lighting;
     ASSERT_TRUE(lighting.load_presets(EVE_DATA_DIR "/anime/room_lighting.json"));
-    EXPECT_TRUE(lighting.apply_preset("wardrobe_cozy_lamp"));
+    EXPECT_TRUE(lighting.apply_preset("cozy_lamp"));
 }
 
 TEST(AnimeRoomLightingTest, AppliesRoomMood) {
     eve::world::AnimeRoomLightingSystem lighting;
     lighting.load_presets(EVE_DATA_DIR "/anime/room_lighting.json");
-    EXPECT_TRUE(lighting.apply_room_mood("wardrobe", eve::world::AnimeLightingMood::WarmSunset));
+    EXPECT_TRUE(lighting.apply_room_mood("living_room", eve::world::AnimeLightingMood::WarmSunset));
 }
 
 TEST(AnimeRoomLightingTest, ListsPresetsForRoom) {

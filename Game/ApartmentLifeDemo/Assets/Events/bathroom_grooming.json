@@ -1,6 +1,6 @@
 {
-  "id": "cozy_evening",
-  "name": "Cozy Evening",
+  "id": "bathroom_grooming",
+  "name": "Bathroom Grooming Routine",
   "nodes": [
     {
       "id": "n0",
@@ -12,30 +12,22 @@
     },
     {
       "id": "n1",
-      "type": "lighting",
-      "target": "",
+      "type": "dialogue",
+      "target": "bound_01",
       "outputs": [
         "n2"
       ]
     },
     {
       "id": "n2",
-      "type": "dialogue",
-      "target": "cozy_evening",
+      "type": "reward",
+      "target": "trust",
       "outputs": [
         "n3"
       ]
     },
     {
       "id": "n3",
-      "type": "camera",
-      "target": "",
-      "outputs": [
-        "n4"
-      ]
-    },
-    {
-      "id": "n4",
       "type": "end",
       "target": "",
       "outputs": []

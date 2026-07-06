@@ -1,6 +1,6 @@
 {
-  "id": "apology_comfort",
-  "name": "Comfort / Apology Scene",
+  "id": "window_conversation",
+  "name": "Window Night Conversation",
   "nodes": [
     {
       "id": "n0",
@@ -13,7 +13,7 @@
     {
       "id": "n1",
       "type": "dialogue",
-      "target": "bound_03",
+      "target": "room_04",
       "outputs": [
         "n2"
       ]

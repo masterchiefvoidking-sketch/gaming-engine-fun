@@ -1,1 +1,13 @@
-{"id": "mira_soft_smile", "name": "Soft Smile", "character": "mira"}
+{
+  "id": "mira_soft_smile",
+  "character": "mira",
+  "original": true,
+  "name": "Soft Smile",
+  "eyes": "gentle",
+  "eyebrows": "soft_arc",
+  "mouth": "small_smile",
+  "head_tilt": 2.0,
+  "blush": 0.15,
+  "animation_cue": "smile_soft",
+  "dialogue_hook": "gf_02"
+}

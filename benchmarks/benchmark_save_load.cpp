@@ -4,14 +4,14 @@
 #include <iostream>
 
 int main() {
-    constexpr u32 kIterations = 1000;
+    constexpr eve::u32 kIterations = 1000;
     eve::platform::UnifiedSaveSystem save_system;
     eve::platform::UnifiedSaveGame save;
     save.project_id = "benchmark";
     save.character.character_id = "mira";
 
     const auto save_start = std::chrono::steady_clock::now();
-    for (u32 i = 0; i < kIterations; ++i) {
+    for (eve::u32 i = 0; i < kIterations; ++i) {
         save.save_slot = "slot_" + std::to_string(i % 10);
         if (!save_system.save("/tmp/eve_bench_save.json", save)) {
             return 1;
@@ -23,7 +23,7 @@ int main() {
 
     eve::platform::UnifiedSaveGame loaded;
     const auto load_start = std::chrono::steady_clock::now();
-    for (u32 i = 0; i < kIterations; ++i) {
+    for (eve::u32 i = 0; i < kIterations; ++i) {
         if (!save_system.load("/tmp/eve_bench_save.json", loaded)) {
             return 1;
         }

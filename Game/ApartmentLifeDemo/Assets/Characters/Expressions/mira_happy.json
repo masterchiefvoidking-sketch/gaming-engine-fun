@@ -1,0 +1,13 @@
+{
+  "id": "mira_happy",
+  "character": "mira",
+  "original": true,
+  "name": "Happy",
+  "eyes": "bright",
+  "eyebrows": "raised_happy",
+  "mouth": "open_smile",
+  "head_tilt": 3.0,
+  "blush": 0.2,
+  "animation_cue": "laugh_light",
+  "dialogue_hook": "mood_01"
+}

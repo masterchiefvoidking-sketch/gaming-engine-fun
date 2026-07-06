@@ -1,6 +1,6 @@
 {
-  "id": "wardrobe_preview",
-  "name": "Wardrobe Preview",
+  "id": "wardrobe_outfit_reveal",
+  "name": "Wardrobe Outfit Reveal",
   "nodes": [
     {
       "id": "n0",
@@ -12,16 +12,16 @@
     },
     {
       "id": "n1",
-      "type": "camera",
-      "target": "",
+      "type": "dialogue",
+      "target": "outfit_01",
       "outputs": [
         "n2"
       ]
     },
     {
       "id": "n2",
-      "type": "dialogue",
-      "target": "wardrobe_preview",
+      "type": "reward",
+      "target": "trust",
       "outputs": [
         "n3"
       ]

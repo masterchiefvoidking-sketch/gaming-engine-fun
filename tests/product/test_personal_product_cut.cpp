@@ -27,11 +27,11 @@ TEST(ContentCompletionTest, MeetsApartmentLifeRequirements) {
     EXPECT_GE(report.expressions, 10u);
     EXPECT_GE(report.rooms, 6u);
     EXPECT_GE(report.object_interactions, 50u);
-    EXPECT_GE(report.dialogue_lines, 100u);
+    EXPECT_GE(report.dialogue_lines, 150u);
     EXPECT_GE(report.events, 10u);
-    EXPECT_GE(report.camera_presets, 10u);
+    EXPECT_GE(report.camera_presets, 12u);
     EXPECT_GE(report.lighting_presets, 10u);
-    EXPECT_GE(report.photo_presets, 5u);
+    EXPECT_GE(report.photo_presets, 8u);
 }
 
 TEST(BugTriageTest, BlocksP0AndP1) {

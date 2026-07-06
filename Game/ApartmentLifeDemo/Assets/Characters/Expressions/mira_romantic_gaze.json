@@ -1,1 +1,13 @@
-{"id": "mira_romantic_gaze", "name": "Romantic Gaze", "character": "mira"}
+{
+  "id": "mira_romantic_gaze",
+  "character": "mira",
+  "original": true,
+  "name": "Romantic Gaze",
+  "eyes": "soft_focus",
+  "eyebrows": "gentle",
+  "mouth": "tender_smile",
+  "head_tilt": 5.0,
+  "blush": 0.35,
+  "animation_cue": "romantic_look",
+  "dialogue_hook": "rel_10"
+}

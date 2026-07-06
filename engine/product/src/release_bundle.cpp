@@ -52,11 +52,11 @@ std::string content_md(const ContentCompletionReport& report) {
     out << "| Expressions | " << report.expressions << " | 10 |\n";
     out << "| Rooms | " << report.rooms << " | 6 |\n";
     out << "| Object interactions | " << report.object_interactions << " | 50 |\n";
-    out << "| Dialogue lines | " << report.dialogue_lines << " | 100 |\n";
+    out << "| Dialogue lines | " << report.dialogue_lines << " | 150 |\n";
     out << "| Events | " << report.events << " | 10 |\n";
-    out << "| Camera presets | " << report.camera_presets << " | 10 |\n";
+    out << "| Camera presets | " << report.camera_presets << " | 12 |\n";
     out << "| Lighting presets | " << report.lighting_presets << " | 10 |\n";
-    out << "| Photo presets | " << report.photo_presets << " | 5 |\n";
+    out << "| Photo presets | " << report.photo_presets << " | 8 |\n";
     out << "\nStatus: " << (report.complete ? "COMPLETE" : "INCOMPLETE") << "\n";
     return out.str();
 }

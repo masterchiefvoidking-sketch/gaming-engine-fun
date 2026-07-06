@@ -99,20 +99,20 @@ ContentCompletionReport ContentCompletionValidator::validate(std::string_view ga
     if (report.object_interactions < 50) {
         report.missing_requirements.push_back("Need at least 50 object interactions");
     }
-    if (report.dialogue_lines < 100) {
-        report.missing_requirements.push_back("Need at least 100 dialogue lines");
+    if (report.dialogue_lines < 150) {
+        report.missing_requirements.push_back("Need at least 150 dialogue lines");
     }
     if (report.events < 10) {
         report.missing_requirements.push_back("Need at least 10 playable events");
     }
-    if (report.camera_presets < 10) {
-        report.missing_requirements.push_back("Need at least 10 camera presets");
+    if (report.camera_presets < 12) {
+        report.missing_requirements.push_back("Need at least 12 camera presets");
     }
     if (report.lighting_presets < 10) {
         report.missing_requirements.push_back("Need at least 10 lighting presets");
     }
-    if (report.photo_presets < 5) {
-        report.missing_requirements.push_back("Need at least 5 photo mode presets");
+    if (report.photo_presets < 8) {
+        report.missing_requirements.push_back("Need at least 8 photo mode presets");
     }
 
     report.complete = report.missing_requirements.empty();

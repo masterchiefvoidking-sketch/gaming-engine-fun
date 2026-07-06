@@ -2,9 +2,35 @@
   "id": "morning_greeting",
   "name": "Morning Greeting",
   "nodes": [
-    {"id": "n0", "type": "start", "target": "", "outputs": ["n1"]},
-    {"id": "n1", "type": "dialogue", "target": "greet_morning", "outputs": ["n2"]},
-    {"id": "n2", "type": "reward", "target": "trust", "outputs": ["n3"]},
-    {"id": "n3", "type": "end", "target": "", "outputs": []}
+    {
+      "id": "n0",
+      "type": "start",
+      "target": "",
+      "outputs": [
+        "n1"
+      ]
+    },
+    {
+      "id": "n1",
+      "type": "dialogue",
+      "target": "gf_01",
+      "outputs": [
+        "n2"
+      ]
+    },
+    {
+      "id": "n2",
+      "type": "reward",
+      "target": "trust",
+      "outputs": [
+        "n3"
+      ]
+    },
+    {
+      "id": "n3",
+      "type": "end",
+      "target": "",
+      "outputs": []
+    }
   ]
 }
