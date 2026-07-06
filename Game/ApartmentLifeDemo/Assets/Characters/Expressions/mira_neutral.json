@@ -1,1 +1,13 @@
-{"id": "mira_neutral", "name": "Neutral", "character": "mira"}
+{
+  "id": "mira_neutral",
+  "character": "mira",
+  "original": true,
+  "name": "Neutral",
+  "eyes": "neutral_wide",
+  "eyebrows": "relaxed",
+  "mouth": "closed_soft",
+  "head_tilt": 0.0,
+  "blush": 0.0,
+  "animation_cue": "idle_neutral",
+  "dialogue_hook": "gen_01"
+}

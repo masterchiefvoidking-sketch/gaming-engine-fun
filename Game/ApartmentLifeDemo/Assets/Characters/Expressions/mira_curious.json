@@ -1,1 +1,13 @@
-{"id": "mira_curious", "name": "Curious", "character": "mira"}
+{
+  "id": "mira_curious",
+  "character": "mira",
+  "original": true,
+  "name": "Curious",
+  "eyes": "focused",
+  "eyebrows": "one_raised",
+  "mouth": "slight_open",
+  "head_tilt": 6.0,
+  "blush": 0.1,
+  "animation_cue": "head_tilt_curious",
+  "dialogue_hook": "gen_04"
+}

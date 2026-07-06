@@ -68,6 +68,10 @@ ctest --test-dir build --output-on-failure
 | `EVE_BUILD_RC1_RELEASE` | ON | RC1 release pipeline |
 | `EVE_BUILD_ARCHITECTURE_FREEZE` | ON | Architecture freeze audit (Phase 15) |
 
+## Content Pack 01 (Phase 16)
+
+See [ContentPack01/README.md](ContentPack01/README.md) and [docs/PHASE16_CONTENT_PRODUCTION.md](docs/PHASE16_CONTENT_PRODUCTION.md).
+
 ## Run the Editor
 
 ```bash

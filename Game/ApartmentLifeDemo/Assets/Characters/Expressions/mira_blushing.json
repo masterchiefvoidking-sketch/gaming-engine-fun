@@ -1,1 +1,13 @@
-{"id": "mira_blushing", "name": "Blushing", "character": "mira"}
+{
+  "id": "mira_blushing",
+  "character": "mira",
+  "original": true,
+  "name": "Embarrassed",
+  "eyes": "downcast",
+  "eyebrows": "tense",
+  "mouth": "pursed",
+  "head_tilt": -8.0,
+  "blush": 0.7,
+  "animation_cue": "embarrassed_fidget",
+  "dialogue_hook": "outfit_01"
+}

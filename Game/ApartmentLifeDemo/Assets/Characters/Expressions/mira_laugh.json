@@ -1,1 +1,13 @@
-{"id": "mira_laugh", "name": "Laugh", "character": "mira"}
+{
+  "id": "mira_laugh",
+  "character": "mira",
+  "original": true,
+  "name": "Laughing",
+  "eyes": "crinkled",
+  "eyebrows": "raised",
+  "mouth": "laugh_open",
+  "head_tilt": 7.0,
+  "blush": 0.25,
+  "animation_cue": "laugh_full",
+  "dialogue_hook": "mood_05"
+}

@@ -1,6 +1,6 @@
 {
-  "id": "balcony_sunset",
-  "name": "Balcony Sunset",
+  "id": "rainy_movie_night",
+  "name": "Rainy Movie Night",
   "nodes": [
     {
       "id": "n0",
@@ -12,30 +12,22 @@
     },
     {
       "id": "n1",
-      "type": "lighting",
-      "target": "",
+      "type": "dialogue",
+      "target": "gen_10",
       "outputs": [
         "n2"
       ]
     },
     {
       "id": "n2",
-      "type": "dialogue",
-      "target": "balcony_sunset",
+      "type": "reward",
+      "target": "trust",
       "outputs": [
         "n3"
       ]
     },
     {
       "id": "n3",
-      "type": "relationship",
-      "target": "",
-      "outputs": [
-        "n4"
-      ]
-    },
-    {
-      "id": "n4",
       "type": "end",
       "target": "",
       "outputs": []

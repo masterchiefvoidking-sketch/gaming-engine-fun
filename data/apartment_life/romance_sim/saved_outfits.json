@@ -1,0 +1,57 @@
+[
+  {
+    "id": "cozy_apartment",
+    "name": "Cozy Apartment",
+    "items": [
+      "mira_outfit_01",
+      "mira_outfit_13"
+    ],
+    "hair": "mira_hair_loose",
+    "expression": "mira_soft_smile",
+    "reaction_dialogue": "outfit_01"
+  },
+  {
+    "id": "morning_casual",
+    "name": "Morning Casual",
+    "items": [
+      "mira_outfit_05",
+      "mira_outfit_14"
+    ],
+    "hair": "mira_hair_bun",
+    "expression": "mira_neutral",
+    "reaction_dialogue": "outfit_02"
+  },
+  {
+    "id": "dinner_outfit",
+    "name": "Dinner Outfit",
+    "items": [
+      "mira_outfit_08",
+      "mira_outfit_17"
+    ],
+    "hair": "mira_hair_wavy",
+    "expression": "mira_romantic_gaze",
+    "reaction_dialogue": "outfit_03"
+  },
+  {
+    "id": "movie_night",
+    "name": "Movie Night",
+    "items": [
+      "mira_outfit_03",
+      "mira_outfit_12"
+    ],
+    "hair": "mira_hair_braided",
+    "expression": "mira_soft_smile",
+    "reaction_dialogue": "outfit_04"
+  },
+  {
+    "id": "sleep_routine",
+    "name": "Sleep Routine",
+    "items": [
+      "mira_outfit_11",
+      "mira_outfit_19"
+    ],
+    "hair": "mira_hair_loose",
+    "expression": "mira_sleepy",
+    "reaction_dialogue": "outfit_05"
+  }
+]

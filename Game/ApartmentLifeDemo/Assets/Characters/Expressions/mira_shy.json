@@ -1,1 +1,13 @@
-{"id": "mira_shy", "name": "Shy", "character": "mira"}
+{
+  "id": "mira_shy",
+  "character": "mira",
+  "original": true,
+  "name": "Shy",
+  "eyes": "averted",
+  "eyebrows": "worried_soft",
+  "mouth": "small_smile",
+  "head_tilt": -5.0,
+  "blush": 0.45,
+  "animation_cue": "shy_glance",
+  "dialogue_hook": "mood_02"
+}

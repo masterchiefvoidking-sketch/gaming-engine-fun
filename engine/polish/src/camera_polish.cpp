@@ -169,7 +169,7 @@ bool CameraPolish::focus_bathroom_privacy_safe(render::InspectionCamera& camera)
 bool CameraPolish::focus_photo_mode(render::InspectionCamera& camera) {
     camera.set_mode(render::CameraMode::Photo);
     camera.depth_of_field_mutable().enabled = true;
-    return apply_room_preset(camera, "photo_mode");
+    return apply_room_preset(camera, "photo_portrait");
 }
 
 const RoomCameraLimits* CameraPolish::active_limits() const {

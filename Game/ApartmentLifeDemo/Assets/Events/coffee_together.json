@@ -1,6 +1,6 @@
 {
-  "id": "morning_coffee",
-  "name": "Morning Coffee",
+  "id": "coffee_together",
+  "name": "Coffee Together",
   "nodes": [
     {
       "id": "n0",
@@ -13,7 +13,7 @@
     {
       "id": "n1",
       "type": "dialogue",
-      "target": "morning_coffee",
+      "target": "gen_07",
       "outputs": [
         "n2"
       ]
@@ -21,7 +21,7 @@
     {
       "id": "n2",
       "type": "reward",
-      "target": "",
+      "target": "trust",
       "outputs": [
         "n3"
       ]

@@ -2,9 +2,35 @@
   "id": "shared_dinner",
   "name": "Shared Dinner",
   "nodes": [
-    {"id": "n0", "type": "start", "target": "", "outputs": ["n1"]},
-    {"id": "n1", "type": "dialogue", "target": "invite_dinner_yes", "outputs": ["n2"]},
-    {"id": "n2", "type": "reward", "target": "affection", "outputs": ["n3"]},
-    {"id": "n3", "type": "end", "target": "", "outputs": []}
+    {
+      "id": "n0",
+      "type": "start",
+      "target": "",
+      "outputs": [
+        "n1"
+      ]
+    },
+    {
+      "id": "n1",
+      "type": "dialogue",
+      "target": "rel_03",
+      "outputs": [
+        "n2"
+      ]
+    },
+    {
+      "id": "n2",
+      "type": "reward",
+      "target": "trust",
+      "outputs": [
+        "n3"
+      ]
+    },
+    {
+      "id": "n3",
+      "type": "end",
+      "target": "",
+      "outputs": []
+    }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "id": "mira_annoyed",
+  "character": "mira",
+  "original": true,
+  "name": "Annoyed",
+  "eyes": "narrow",
+  "eyebrows": "furrowed",
+  "mouth": "flat",
+  "head_tilt": -3.0,
+  "blush": 0.0,
+  "animation_cue": "annoyed_sigh",
+  "dialogue_hook": "bound_04"
+}

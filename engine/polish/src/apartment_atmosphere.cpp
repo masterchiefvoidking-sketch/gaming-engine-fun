@@ -15,25 +15,25 @@ bool ApartmentAtmosphere::apply_time_preset(world::AnimeRoomLightingSystem& ligh
     state_.time_preset = preset;
     switch (preset) {
     case TimeOfDayPreset::Morning:
-        state_.active_lighting_id = "bedroom_morning";
+        state_.active_lighting_id = "morning_soft";
         state_.lamp_intensity = 0.5f;
         state_.tv_glow = 0.0f;
         break;
     case TimeOfDayPreset::Afternoon:
-        state_.active_lighting_id = "living_room_cozy";
+        state_.active_lighting_id = "afternoon_daylight";
         state_.lamp_intensity = 0.4f;
         break;
     case TimeOfDayPreset::Sunset:
-        state_.active_lighting_id = "living_room_sunset";
+        state_.active_lighting_id = "golden_hour";
         state_.lamp_intensity = 0.65f;
         break;
     case TimeOfDayPreset::RainyEvening:
-        state_.active_lighting_id = "dining_rainy";
+        state_.active_lighting_id = "rainy_evening";
         state_.lamp_intensity = 0.75f;
         state_.tv_glow = 0.3f;
         break;
     case TimeOfDayPreset::Night:
-        state_.active_lighting_id = "bedroom_night";
+        state_.active_lighting_id = "movie_night";
         state_.lamp_intensity = 0.35f;
         state_.tv_glow = 0.15f;
         break;
@@ -45,18 +45,18 @@ bool ApartmentAtmosphere::apply_time_preset(world::AnimeRoomLightingSystem& ligh
 
 bool ApartmentAtmosphere::apply_room(std::string_view room_id,
                                    world::AnimeRoomLightingSystem& lighting) {
-    std::string preset = "wardrobe_cozy_lamp";
+    std::string preset = "wardrobe_studio";
     if (room_id == "living_room") {
-        preset = state_.time_preset == TimeOfDayPreset::RainyEvening ? "dining_rainy"
-                                                                    : "living_room_sunset";
+        preset = state_.time_preset == TimeOfDayPreset::RainyEvening ? "rainy_evening"
+                                                                    : "golden_hour";
     } else if (room_id == "bedroom") {
-        preset = state_.time_preset == TimeOfDayPreset::Night ? "bedroom_night" : "bedroom_morning";
+        preset = state_.time_preset == TimeOfDayPreset::Night ? "movie_night" : "morning_soft";
     } else if (room_id == "kitchen" || room_id == "dining_room") {
-        preset = "dining_rainy";
+        preset = "rainy_evening";
     } else if (room_id == "bathroom") {
-        preset = "bedroom_night";
+        preset = "bathroom_mirror";
     } else if (room_id == "wardrobe") {
-        preset = "wardrobe_cozy_lamp";
+        preset = "wardrobe_studio";
     }
     state_.active_lighting_id = preset;
     return lighting.apply_preset(preset);

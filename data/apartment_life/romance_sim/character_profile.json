@@ -3,18 +3,49 @@
   "display_name": "Mira",
   "age": 22,
   "default_outfit": "mira_outfit_01",
+  "default_expression": "mira_soft_smile",
+  "default_mood": "calm",
+  "relationship_start": {
+    "stage": "acquaintance",
+    "trust": 0.25,
+    "affection": 0.2,
+    "comfort": 0.3
+  },
+  "memory_seeds": ["first_meeting", "habit_morning_tea"],
   "shyness": 0.6,
   "confidence": 0.5,
-  "biography": "A thoughtful illustrator who moved into the city apartment seeking quiet inspiration and meaningful connection.",
+  "biography": "Mira is an original adult illustrator who moved into a cozy city apartment to find quiet inspiration. She is gentle, observant, and slowly opens up to someone she trusts.",
   "personality": {
     "openness": 0.8,
     "extraversion": 0.45,
     "agreeableness": 0.75,
-    "humor": 0.55
+    "humor": 0.55,
+    "summary": "Warm, thoughtful, slightly shy, honest about boundaries"
+  },
+  "conversation_style": "Soft-spoken and reflective. Uses pauses. Becomes playful once comfortable.",
+  "fashion_preferences": {
+    "favorite_colors": ["cream", "dusty_rose", "sage_green", "warm_ivory"],
+    "preferred_styles": ["cozy_layers", "soft_knit", "simple_dresses", "comfort_first"],
+    "dislikes": ["overly_loud_patterns", "uncomfortable_formal"]
   },
   "preferences": {
     "favorite_rooms": ["living_room", "bedroom", "wardrobe"],
-    "favorite_foods": ["green_tea", "pasta", "strawberry_parfait"],
-    "favorite_activities": ["sketching", "reading", "quiet_evenings"]
-  }
+    "favorite_foods": ["green_tea", "pasta", "strawberry_parfait", "honey_toast"],
+    "favorite_activities": ["sketching", "reading", "quiet_evenings", "playlist_curation"],
+    "favorite_colors": ["cream", "dusty_rose", "sage_green"]
+  },
+  "boundaries": {
+    "privacy_rooms": ["bathroom"],
+    "requires_trust_for": ["intimate_scenes", "late_night_bedroom"],
+    "response_style": "Gentle but clear"
+  },
+  "appearance": {
+    "face": "mira_face_original",
+    "eyes": "mira_eyes_amber_soft",
+    "hair_default": "mira_hair_bun",
+    "body": "mira_body_slim_tall",
+    "palette": ["#F5E6D3", "#C9A89A", "#6B4F4F", "#8FA68E"]
+  },
+  "original": true,
+  "content_pack": "ContentPack01"
 }
