@@ -14,6 +14,8 @@ EVE Adult Engine is organized as a set of layered modules with explicit dependen
 ├─────────────────────────────────────────────┤
 │  platform       Mission, save, web, mobile  │
 ├─────────────────────────────────────────────┤
+│  interaction    Input, camera, ring, UI     │
+├─────────────────────────────────────────────┤
 │  content, scene, world, ai, human, animation│
 ├─────────────────────────────────────────────┤
 │  render         Vulkan, materials, shaders  │
@@ -39,6 +41,7 @@ EVE Adult Engine is organized as a set of layered modules with explicit dependen
 | `ecs` | Scene entity model | `World`, `ComponentRegistry` |
 | `render` | GPU presentation | `VulkanContext` |
 | `platform` | Mission scope, unified save, web deploy | `UnifiedSaveSystem`, `WebPublisher`, `GameSession` |
+| `interaction` | Player input, camera, ring, UI | `InputController`, `InteractionRing`, `WebCharacterViewer` |
 | `content` | Game content authoring | `ContentDatabase`, `ProjectLayout`, `GameContentProject` |
 | `editor` | Authoring shell | `EditorApplication`, `CreatorStudio` |
 
@@ -61,6 +64,9 @@ PBR skin/hair shaders, cloth simulation hooks, dialogue and emotion systems, apa
 
 ### Phase 9 (current direction)
 Engine mission reset: lean scope, unified save, web deployment tooling, mobile-ready input, local backups and templates. See `docs/ENGINE_MISSION.md`.
+
+### Phase 10
+Web and mobile interaction layer: unified input, character inspection, interaction ring, responsive UI, quality settings, browser save storage, Web Apartment Character Viewer. See `docs/PHASE10_WEB_MOBILE_INTERACTION.md`.
 
 ## Threading Model
 
