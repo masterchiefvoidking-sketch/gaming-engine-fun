@@ -6,6 +6,7 @@ add_library(eve_editor_lib STATIC
     src/interaction_editor.cpp
     src/wardrobe_tools.cpp
     src/anime_visual_tools.cpp
+    src/romance_sim_tools.cpp
 )
 
 add_library(eve::editor ALIAS eve_editor_lib)

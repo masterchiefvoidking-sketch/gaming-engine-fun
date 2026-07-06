@@ -4,6 +4,18 @@ add_library(eve_ai STATIC
     src/schedule.cpp
     src/social_ai.cpp
     src/romance_hooks.cpp
+    src/relationship_stages.cpp
+    src/character_sim_state.cpp
+    src/boundaries.cpp
+    src/mood_system.cpp
+    src/dialogue_engine.cpp
+    src/memory_system.cpp
+    src/room_behavior.cpp
+    src/outfit_reactions.cpp
+    src/romance_events.cpp
+    src/adaptive_schedule.cpp
+    src/scene_interruption.cpp
+    src/relationship_simulation.cpp
 )
 
 add_library(eve::ai ALIAS eve_ai)
@@ -19,6 +31,7 @@ target_link_libraries(eve_ai
         eve::core
         eve::ecs
         eve::world
+        nlohmann_json::nlohmann_json
 )
 
 target_compile_features(eve_ai PUBLIC cxx_std_20)
