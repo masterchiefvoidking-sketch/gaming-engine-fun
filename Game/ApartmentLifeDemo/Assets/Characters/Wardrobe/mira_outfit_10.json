@@ -1,0 +1,20 @@
+{
+  "id": "mira_outfit_10",
+  "name": "Mira Outfit 10",
+  "category": "outerwear",
+  "thumbnail": "thumbs/mira_outfit_10.png",
+  "mesh": "meshes/mira_outfit_10.gltf",
+  "material": "mat_anime_cotton",
+  "physics": "soft_cloth",
+  "tags": [
+    "mira",
+    "original",
+    "casual"
+  ],
+  "color_variants": [
+    "default",
+    "cream",
+    "navy"
+  ],
+  "collection": "mira_wardrobe"
+}

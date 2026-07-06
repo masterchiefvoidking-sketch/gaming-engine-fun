@@ -1,0 +1,13 @@
+{
+  "id": "refrigerator",
+  "name": "Refrigerator",
+  "physics": "static",
+  "blocks_nav": false,
+  "interactions": [
+    {
+      "id": "use",
+      "label": "Interact",
+      "animation": "interact_generic"
+    }
+  ]
+}

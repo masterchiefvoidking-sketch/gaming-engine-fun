@@ -1,0 +1,12 @@
+{
+  "id": "mira_apology",
+  "name": "Apology",
+  "nodes": [
+    {
+      "id": "mira_apology_start",
+      "speaker": "mira",
+      "line": "I appreciate you understanding.",
+      "expression": "soft_smile"
+    }
+  ]
+}

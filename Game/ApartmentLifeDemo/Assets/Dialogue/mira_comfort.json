@@ -1,0 +1,12 @@
+{
+  "id": "mira_comfort",
+  "name": "Comfort",
+  "nodes": [
+    {
+      "id": "mira_comfort_start",
+      "speaker": "mira",
+      "line": "I'm glad you're here with me.",
+      "expression": "soft_smile"
+    }
+  ]
+}

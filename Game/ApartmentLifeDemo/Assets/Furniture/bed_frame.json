@@ -1,0 +1,13 @@
+{
+  "id": "bed_frame",
+  "name": "Bed Frame",
+  "physics": "static",
+  "blocks_nav": true,
+  "interactions": [
+    {
+      "id": "use",
+      "label": "Interact",
+      "animation": "interact_generic"
+    }
+  ]
+}

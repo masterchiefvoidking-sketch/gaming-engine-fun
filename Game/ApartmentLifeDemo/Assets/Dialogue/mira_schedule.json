@@ -1,0 +1,12 @@
+{
+  "id": "mira_schedule",
+  "name": "Routine",
+  "nodes": [
+    {
+      "id": "mira_schedule_start",
+      "speaker": "mira",
+      "line": "I usually sketch in the mornings.",
+      "expression": "soft_smile"
+    }
+  ]
+}

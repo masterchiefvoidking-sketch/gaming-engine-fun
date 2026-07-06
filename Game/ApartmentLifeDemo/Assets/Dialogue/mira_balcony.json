@@ -1,0 +1,12 @@
+{
+  "id": "mira_balcony",
+  "name": "Balcony Talk",
+  "nodes": [
+    {
+      "id": "mira_balcony_start",
+      "speaker": "mira",
+      "line": "The sunset looks incredible from here.",
+      "expression": "soft_smile"
+    }
+  ]
+}

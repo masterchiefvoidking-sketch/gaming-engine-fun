@@ -1,0 +1,12 @@
+{
+  "id": "mira_cooking",
+  "name": "Cooking Together",
+  "nodes": [
+    {
+      "id": "mira_cooking_start",
+      "speaker": "mira",
+      "line": "I'm trying a new recipe tonight.",
+      "expression": "soft_smile"
+    }
+  ]
+}

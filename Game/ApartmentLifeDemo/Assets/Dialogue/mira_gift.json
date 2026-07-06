@@ -1,0 +1,12 @@
+{
+  "id": "mira_gift",
+  "name": "Gift Thanks",
+  "nodes": [
+    {
+      "id": "mira_gift_start",
+      "speaker": "mira",
+      "line": "You didn't have to, but thank you.",
+      "expression": "soft_smile"
+    }
+  ]
+}
