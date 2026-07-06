@@ -63,7 +63,11 @@ Includes character, apartment rooms, wardrobe, dialogue, relationship state, pho
 
 ## Tests
 
-12 new tests in `tests/build/test_personal_build.cpp` — profiles, cooking, validation, manifests, archives, content packs, backup, pipeline, export panel, full demo.
+15 tests in `tests/build/test_personal_build.cpp` — profiles, cooking, validation, broken refs, save migration, manifests, archives, content packs, backup, pipeline, export panel, run locally, full demo.
+
+## Project Structure
+
+See `docs/PROJECT_STRUCTURE.md` for mapping from spec layout to repository paths.
 
 ## Out of Scope
 

@@ -7,6 +7,7 @@ add_library(eve_build STATIC
     src/personal_content_pack.cpp
     src/personal_backup_tool.cpp
     src/build_pipeline.cpp
+    src/save_migration.cpp
 )
 
 add_library(eve::build ALIAS eve_build)

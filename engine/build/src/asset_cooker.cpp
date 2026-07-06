@@ -90,6 +90,20 @@ AssetCookResult AssetCooker::cook(std::string_view project_root, std::string_vie
     runtime["asset_count"] = result.assets.size();
     FileSystem::write_text_file(cooked_root + "/runtime_package.json", runtime.dump(2));
 
+    nlohmann::json shader_variants;
+    shader_variants["quality_tier"] = profile.shader_quality;
+    shader_variants["renderer"] = profile.renderer;
+    shader_variants["variants"] = {"skin", "hair", "cloth", "toon_outline"};
+    FileSystem::write_text_file(cooked_root + "/shader_variants.json", shader_variants.dump(2));
+
+    nlohmann::json animation_clips = nlohmann::json::array();
+    for (const CookedAssetEntry& asset : result.assets) {
+        if (asset.asset_type == "data" && asset.source_path.find("Animations") != std::string::npos) {
+            animation_clips.push_back({{"path", asset.cooked_path}, {"compressed", asset.compressed}});
+        }
+    }
+    FileSystem::write_text_file(cooked_root + "/animation_clips.json", animation_clips.dump(2));
+
     result.success = !result.assets.empty();
     result.output_dir = cooked_root;
     result.message = result.success ? "Assets cooked" : "No assets found";

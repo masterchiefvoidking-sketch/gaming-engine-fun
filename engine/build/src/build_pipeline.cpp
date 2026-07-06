@@ -54,6 +54,9 @@ BuildPipelineResult BuildPipeline::export_project(const BuildPipelineConfig& con
     build_info["progressive_loading"] = profile.progressive_loading;
     build_info["touch_controls"] = profile.touch_controls;
     build_info["cooked_assets"] = result.cook.assets.size();
+    build_info["wasm"] = profile.platform == PlatformTarget::Web;
+    build_info["performance_profiler"] =
+        profile.platform == PlatformTarget::Windows && profile.debug_console;
     FileSystem::write_text_file(out_dir + "/build_info.json", build_info.dump(2));
 
     if (profile.platform == PlatformTarget::Web) {

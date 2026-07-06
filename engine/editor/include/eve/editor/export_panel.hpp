@@ -23,6 +23,7 @@ public:
     bool validate();
     bool cook_and_build();
     bool open_output_folder() const;
+    bool run_build_locally() const;
     [[nodiscard]] const ExportPanelState& state() const { return state_; }
     [[nodiscard]] const build::ValidationReport& last_validation() const { return last_validation_; }
 

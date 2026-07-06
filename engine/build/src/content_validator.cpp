@@ -1,5 +1,6 @@
 #include <eve/build/content_validator.hpp>
 
+#include <eve/build/save_migration.hpp>
 #include <eve/content/game_content_project.hpp>
 #include <eve/core/filesystem/filesystem.hpp>
 
@@ -128,6 +129,51 @@ ValidationReport ContentValidator::validate(std::string_view project_root,
     }
     if (profile.platform == PlatformTarget::Windows && profile.renderer == "webgpu") {
         report.add_warning("platform_renderer", "WebGPU is unusual for Windows desktop builds");
+    }
+
+    for (const std::string& file : FileSystem::list_directory(root + "/Assets/Characters/Wardrobe")) {
+        if (file.size() < 6 || file.substr(file.size() - 5) != ".json") {
+            continue;
+        }
+        const std::string path = root + "/Assets/Characters/Wardrobe/" + file;
+        try {
+            const auto json = nlohmann::json::parse(FileSystem::read_text_file(path));
+            if (!json.contains("id") || !json.contains("category")) {
+                report.add_error("clothing_compatibility", "Wardrobe item missing required fields",
+                                 path);
+            }
+            if (json.contains("material") && json["material"].get<std::string>().empty()) {
+                report.add_warning("missing_shader", "Wardrobe item missing material shader", path);
+            }
+        } catch (const nlohmann::json::exception&) {
+            report.add_error("clothing_compatibility", "Invalid wardrobe item", path);
+        }
+    }
+
+    const std::string animations_dir = root + "/Assets/Animations";
+    if (FileSystem::is_directory(animations_dir)) {
+        bool has_animation = false;
+        for (const std::string& file : FileSystem::list_directory(animations_dir)) {
+            if (file.ends_with(".json") || file.ends_with(".glb")) {
+                has_animation = true;
+            }
+        }
+        if (!has_animation) {
+            report.add_warning("no_animations", "Animations folder has no clip files");
+        }
+    }
+
+    const std::string saves_dir = root + "/Saves";
+    if (FileSystem::is_directory(saves_dir)) {
+        for (const std::string& file : FileSystem::list_directory(saves_dir)) {
+            if (!file.ends_with(".json")) {
+                continue;
+            }
+            const std::string path = saves_dir + "/" + file;
+            if (SaveMigration().needs_migration(path)) {
+                report.add_warning("save_schema_mismatch", "Save file needs migration", path);
+            }
+        }
     }
 
     report.passed = !report.has_errors();

@@ -6,6 +6,7 @@
 #include <eve/build/personal_backup_tool.hpp>
 #include <eve/build/personal_content_pack.hpp>
 #include <eve/build/project_archive.hpp>
+#include <eve/build/save_migration.hpp>
 #include <eve/core/filesystem/filesystem.hpp>
 #include <eve/editor/export_panel.hpp>
 #include <eve/personal_export/personal_export_demo.hpp>
@@ -45,6 +46,7 @@ TEST(AssetCookerTest, CooksRuntimePackage) {
     ASSERT_TRUE(result.success);
     EXPECT_GT(result.assets.size(), 10u);
     EXPECT_TRUE(eve::FileSystem::exists(result.output_dir + "/runtime_package.json"));
+    EXPECT_TRUE(eve::FileSystem::exists(result.output_dir + "/shader_variants.json"));
     std::filesystem::remove_all(out);
 }
 
@@ -157,6 +159,53 @@ TEST(BuildPipelineTest, WebDevelopmentExport) {
     ASSERT_TRUE(result.success) << result.message;
     EXPECT_TRUE(eve::FileSystem::exists(result.output_path + "/web/manifest.json"));
     std::filesystem::remove_all(out);
+}
+
+TEST(ContentValidatorTest, DetectsBrokenReference) {
+    const std::filesystem::path temp =
+        std::filesystem::temp_directory_path() / "eve_broken_ref_test";
+    std::filesystem::create_directories(temp / "Assets");
+    eve::FileSystem::write_text_file((temp / "project.json").string(), R"({"title":"Test"})");
+    eve::FileSystem::write_text_file((temp / "Assets/content_index.json").string(),
+                                     R"([{"path":"missing/asset.json"}])");
+
+    const auto profile =
+        eve::build::settings_for_profile(eve::build::ExportProfile::WindowsDevelopment);
+    const eve::build::ValidationReport report =
+        eve::build::ContentValidator().validate(temp.string(), profile);
+    EXPECT_FALSE(report.passed);
+    bool found = false;
+    for (const auto& issue : report.issues) {
+        if (issue.code == "broken_reference") {
+            found = true;
+        }
+    }
+    EXPECT_TRUE(found);
+    std::filesystem::remove_all(temp);
+}
+
+TEST(SaveMigrationTest, MigratesLegacySave) {
+    const std::filesystem::path save_path =
+        std::filesystem::temp_directory_path() / "eve_legacy_save.json";
+    eve::FileSystem::write_text_file(save_path.string(),
+                                     R"({"project_id":"demo","character":{"id":"mira"}})");
+
+    eve::build::SaveMigration migration;
+    ASSERT_TRUE(migration.needs_migration(save_path.string()));
+    const eve::build::SaveMigrationResult result = migration.migrate(save_path.string());
+    ASSERT_TRUE(result.success);
+    EXPECT_EQ(result.to_version, eve::platform::kUnifiedSaveVersion);
+    EXPECT_FALSE(migration.needs_migration(save_path.string()));
+    std::filesystem::remove(save_path);
+}
+
+TEST(ExportPanelTest, RunsBuildLocally) {
+    eve::editor::ExportPanel panel;
+    panel.set_project(kGameRoot, "Apartment Life Demo");
+    panel.set_profile(eve::build::ExportProfile::WebDevelopment);
+    ASSERT_TRUE(panel.cook_and_build());
+    EXPECT_TRUE(panel.run_build_locally());
+    EXPECT_TRUE(eve::FileSystem::exists(panel.state().last_output_path + "/launch.json"));
 }
 
 TEST(ExportPanelTest, ValidatesAndBuilds) {

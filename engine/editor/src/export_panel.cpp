@@ -1,6 +1,9 @@
 #include <eve/editor/export_panel.hpp>
 
+#include <eve/build/export_profiles.hpp>
 #include <eve/core/filesystem/filesystem.hpp>
+
+#include <nlohmann/json.hpp>
 
 namespace eve::editor {
 
@@ -35,8 +38,34 @@ bool ExportPanel::cook_and_build() {
     state_.last_success = result.success;
     state_.last_output_path = result.output_path;
     state_.last_message = result.message;
-  last_validation_ = result.validation;
+    last_validation_ = result.validation;
     return result.success;
+}
+
+bool ExportPanel::run_build_locally() const {
+    if (state_.last_output_path.empty() || !FileSystem::is_directory(state_.last_output_path)) {
+        return false;
+    }
+
+    const build::ExportProfileSettings settings =
+        build::settings_for_profile(state_.profile);
+    nlohmann::json launch;
+    launch["project"] = state_.project_name;
+    launch["profile"] = build::profile_name(state_.profile);
+    launch["output"] = state_.last_output_path;
+    launch["offline_only"] = true;
+
+    if (settings.platform == build::PlatformTarget::Web) {
+        launch["entry"] = state_.last_output_path + "/web/index.html";
+        launch["save_backend"] = "indexeddb";
+    } else {
+        launch["entry"] = state_.last_output_path + "/package.json";
+        launch["save_backend"] = "local_files";
+        launch["screenshot_folder"] = state_.project_root + "/Screenshots";
+        launch["profiler"] = settings.debug_console;
+    }
+
+    return FileSystem::write_text_file(state_.last_output_path + "/launch.json", launch.dump(2));
 }
 
 bool ExportPanel::open_output_folder() const {
