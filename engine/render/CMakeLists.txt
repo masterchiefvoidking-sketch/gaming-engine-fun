@@ -5,6 +5,11 @@ add_library(eve_render STATIC
     src/hair_renderer.cpp
     src/photo_mode.cpp
     src/mirror_renderer.cpp
+    src/anime_human_material.cpp
+    src/anime_eye_system.cpp
+    src/anime_hair_renderer.cpp
+    src/anime_outline_pass.cpp
+    src/romance_camera.cpp
 )
 
 add_library(eve::render ALIAS eve_render)
@@ -18,6 +23,7 @@ target_include_directories(eve_render
 target_link_libraries(eve_render
     PUBLIC
         eve::core
+        nlohmann_json::nlohmann_json
         Vulkan::Vulkan
         glfw
 )
