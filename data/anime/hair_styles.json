@@ -6,5 +6,11 @@
   {"id": "ponytail", "style": "ponytail", "chunk_count": 22, "physics_sway": 0.5},
   {"id": "wavy", "style": "wavy", "chunk_count": 30, "physics_sway": 0.38},
   {"id": "braids", "style": "braids", "chunk_count": 26, "physics_sway": 0.25},
-  {"id": "bangs_side", "style": "bangs_side", "chunk_count": 20, "physics_sway": 0.22}
+  {"id": "bangs_side", "style": "bangs_side", "chunk_count": 20, "physics_sway": 0.22},
+  {"id": "mira_hair_bun", "style": "bangs_side", "chunk_count": 22, "physics_sway": 0.18,
+   "root_color": {"r": 0.20, "g": 0.12, "b": 0.26}, "tip_color": {"r": 0.42, "g": 0.28, "b": 0.36}},
+  {"id": "mira_hair_loose", "style": "long_straight", "chunk_count": 30, "physics_sway": 0.32},
+  {"id": "mira_hair_short", "style": "short_bob", "chunk_count": 18, "physics_sway": 0.2},
+  {"id": "mira_hair_wavy", "style": "wavy", "chunk_count": 30, "physics_sway": 0.38},
+  {"id": "mira_hair_braided", "style": "braids", "chunk_count": 26, "physics_sway": 0.25}
 ]

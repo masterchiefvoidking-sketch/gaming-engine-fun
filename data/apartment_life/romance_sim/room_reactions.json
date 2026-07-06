@@ -1,0 +1,72 @@
+[
+  {
+    "id": "bed_rest",
+    "room_id": "bedroom",
+    "label": "Rest",
+    "dialogue_id": "bedroom_quiet",
+    "interaction_id": "rest"
+  },
+  {
+    "id": "bed_read",
+    "room_id": "bedroom",
+    "label": "Read",
+    "dialogue_id": "routine_read",
+    "interaction_id": "read"
+  },
+  {
+    "id": "bath_groom",
+    "room_id": "bathroom",
+    "label": "Grooming",
+    "dialogue_id": "routine_morning",
+    "interaction_id": "groom"
+  },
+  {
+    "id": "bath_mirror",
+    "room_id": "bathroom",
+    "label": "Mirror",
+    "dialogue_id": "compliment_hair",
+    "interaction_id": "mirror"
+  },
+  {
+    "id": "living_tv",
+    "room_id": "living_room",
+    "label": "Watch TV",
+    "dialogue_id": "living_cozy",
+    "interaction_id": "watch_tv"
+  },
+  {
+    "id": "living_talk",
+    "room_id": "living_room",
+    "label": "Conversation",
+    "dialogue_id": "rain_listen",
+    "interaction_id": "talk"
+  },
+  {
+    "id": "living_rain",
+    "room_id": "living_room",
+    "label": "Rain watching",
+    "dialogue_id": "rain_cozy",
+    "interaction_id": "relax"
+  },
+  {
+    "id": "dining_eat",
+    "room_id": "dining_room",
+    "label": "Shared meal",
+    "dialogue_id": "invite_dinner_yes",
+    "interaction_id": "eat"
+  },
+  {
+    "id": "dining_cook",
+    "room_id": "kitchen",
+    "label": "Cooking",
+    "dialogue_id": "routine_cook",
+    "interaction_id": "cook"
+  },
+  {
+    "id": "wardrobe_preview",
+    "room_id": "wardrobe",
+    "label": "Outfit preview",
+    "dialogue_id": "routine_wardrobe",
+    "interaction_id": "change_outfit"
+  }
+]

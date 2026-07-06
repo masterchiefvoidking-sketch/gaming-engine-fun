@@ -1,0 +1,20 @@
+{
+  "id": "mira",
+  "display_name": "Mira",
+  "age": 22,
+  "default_outfit": "mira_outfit_01",
+  "shyness": 0.6,
+  "confidence": 0.5,
+  "biography": "A thoughtful illustrator who moved into the city apartment seeking quiet inspiration and meaningful connection.",
+  "personality": {
+    "openness": 0.8,
+    "extraversion": 0.45,
+    "agreeableness": 0.75,
+    "humor": 0.55
+  },
+  "preferences": {
+    "favorite_rooms": ["living_room", "bedroom", "wardrobe"],
+    "favorite_foods": ["green_tea", "pasta", "strawberry_parfait"],
+    "favorite_activities": ["sketching", "reading", "quiet_evenings"]
+  }
+}

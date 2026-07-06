@@ -1,0 +1,10 @@
+{
+  "id": "living_room_music",
+  "name": "Living Room Music",
+  "nodes": [
+    {"id": "n0", "type": "start", "target": "", "outputs": ["n1"]},
+    {"id": "n1", "type": "dialogue", "target": "room_living_room_talk", "outputs": ["n2"]},
+    {"id": "n2", "type": "camera", "target": "living_room_wide", "outputs": ["n3"]},
+    {"id": "n3", "type": "end", "target": "", "outputs": []}
+  ]
+}

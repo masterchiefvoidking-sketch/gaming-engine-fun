@@ -58,6 +58,10 @@ if(EVE_BUILD_PERSONAL_EXPORT OR EVE_BUILD_TESTS)
     add_subdirectory(apps/personal_export)
 endif()
 
+if(EVE_BUILD_APARTMENT_LIFE_DEMO OR EVE_BUILD_TESTS)
+    add_subdirectory(apps/apartment_life_demo)
+endif()
+
 if(EVE_ENABLE_BENCHMARKS)
     add_subdirectory(benchmarks)
 endif()

@@ -1,0 +1,20 @@
+{
+  "character_id": "mira",
+  "boundaries": [
+    {
+      "id": "privacy_bathroom",
+      "description": "Bathroom grooming requires privacy and trust",
+      "blocked_actions": ["shower_scene", "bath_scene"]
+    },
+    {
+      "id": "no_unwanted_touch",
+      "description": "No physical contact without sufficient trust",
+      "blocked_actions": ["hold_hand", "hug"]
+    },
+    {
+      "id": "no_late_night_push",
+      "description": "No pushing intimacy late at night without closeness",
+      "blocked_actions": ["intimate_scene", "bedroom_invite"]
+    }
+  ]
+}

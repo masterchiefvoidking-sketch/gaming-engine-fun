@@ -4,57 +4,463 @@
     "display_name": "Cozy Knit Sweater",
     "category": "casualwear",
     "layer": "main_clothing",
-    "coverage_tags": ["torso", "arms"],
-    "compatibility_tags": ["apartment", "casual"]
+    "coverage_tags": [
+      "torso",
+      "arms"
+    ],
+    "compatibility_tags": [
+      "apartment",
+      "casual"
+    ]
   },
   {
     "id": "plaid_skirt",
     "display_name": "Plaid Skirt",
     "category": "bottoms",
     "layer": "main_clothing",
-    "coverage_tags": ["hips", "legs"]
+    "coverage_tags": [
+      "hips",
+      "legs"
+    ]
   },
   {
     "id": "silk_pajama_set",
     "display_name": "Silk Pajama Set",
     "category": "sleepwear",
     "layer": "main_clothing",
-    "coverage_tags": ["torso", "legs"]
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ]
   },
   {
     "id": "date_dress",
     "display_name": "Rose Date Dress",
     "category": "dresses",
     "layer": "main_clothing",
-    "coverage_tags": ["full_body"],
-    "incompatible_items": ["plaid_skirt", "cozy_sweater"]
+    "coverage_tags": [
+      "full_body"
+    ],
+    "incompatible_items": [
+      "plaid_skirt",
+      "cozy_sweater"
+    ]
   },
   {
     "id": "academy_blazer",
     "display_name": "Academy Blazer",
     "category": "formalwear",
     "layer": "outerwear",
-    "coverage_tags": ["torso", "shoulders"]
+    "coverage_tags": [
+      "torso",
+      "shoulders"
+    ]
   },
   {
     "id": "mary_janes",
     "display_name": "Mary Jane Shoes",
     "category": "shoes",
     "layer": "accessory",
-    "coverage_tags": ["feet"]
+    "coverage_tags": [
+      "feet"
+    ]
   },
   {
     "id": "ribbon_choker",
     "display_name": "Ribbon Choker",
     "category": "jewelry",
     "layer": "jewelry",
-    "coverage_tags": ["neck"]
+    "coverage_tags": [
+      "neck"
+    ]
   },
   {
     "id": "hair_ribbon",
     "display_name": "Hair Ribbon",
     "category": "accessories",
     "layer": "accessory",
-    "coverage_tags": ["hair"]
+    "coverage_tags": [
+      "hair"
+    ]
+  },
+  {
+    "id": "mira_outfit_01",
+    "display_name": "Mira Outfit 1",
+    "category": "casualwear",
+    "layer": "main_clothing",
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ],
+    "compatibility_tags": [
+      "mira",
+      "apartment"
+    ],
+    "tags": [
+      "mira",
+      "original",
+      "casual"
+    ]
+  },
+  {
+    "id": "mira_outfit_02",
+    "display_name": "Mira Outfit 2",
+    "category": "casualwear",
+    "layer": "main_clothing",
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ],
+    "compatibility_tags": [
+      "mira",
+      "apartment"
+    ],
+    "tags": [
+      "mira",
+      "original",
+      "casual"
+    ]
+  },
+  {
+    "id": "mira_outfit_03",
+    "display_name": "Mira Outfit 3",
+    "category": "formalwear",
+    "layer": "main_clothing",
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ],
+    "compatibility_tags": [
+      "mira",
+      "apartment"
+    ],
+    "tags": [
+      "mira",
+      "original",
+      "casual"
+    ]
+  },
+  {
+    "id": "mira_outfit_04",
+    "display_name": "Mira Outfit 4",
+    "category": "sleepwear",
+    "layer": "main_clothing",
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ],
+    "compatibility_tags": [
+      "mira",
+      "apartment"
+    ],
+    "tags": [
+      "mira",
+      "original",
+      "casual"
+    ]
+  },
+  {
+    "id": "mira_outfit_05",
+    "display_name": "Mira Outfit 5",
+    "category": "casualwear",
+    "layer": "main_clothing",
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ],
+    "compatibility_tags": [
+      "mira",
+      "apartment"
+    ],
+    "tags": [
+      "mira",
+      "original",
+      "casual"
+    ]
+  },
+  {
+    "id": "mira_outfit_06",
+    "display_name": "Mira Outfit 6",
+    "category": "casualwear",
+    "layer": "main_clothing",
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ],
+    "compatibility_tags": [
+      "mira",
+      "apartment"
+    ],
+    "tags": [
+      "mira",
+      "original",
+      "casual"
+    ]
+  },
+  {
+    "id": "mira_outfit_07",
+    "display_name": "Mira Outfit 7",
+    "category": "casualwear",
+    "layer": "main_clothing",
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ],
+    "compatibility_tags": [
+      "mira",
+      "apartment"
+    ],
+    "tags": [
+      "mira",
+      "original",
+      "casual"
+    ]
+  },
+  {
+    "id": "mira_outfit_08",
+    "display_name": "Mira Outfit 8",
+    "category": "formalwear",
+    "layer": "main_clothing",
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ],
+    "compatibility_tags": [
+      "mira",
+      "apartment"
+    ],
+    "tags": [
+      "mira",
+      "original",
+      "casual"
+    ]
+  },
+  {
+    "id": "mira_outfit_09",
+    "display_name": "Mira Outfit 9",
+    "category": "sleepwear",
+    "layer": "main_clothing",
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ],
+    "compatibility_tags": [
+      "mira",
+      "apartment"
+    ],
+    "tags": [
+      "mira",
+      "original",
+      "casual"
+    ]
+  },
+  {
+    "id": "mira_outfit_10",
+    "display_name": "Mira Outfit 10",
+    "category": "casualwear",
+    "layer": "main_clothing",
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ],
+    "compatibility_tags": [
+      "mira",
+      "apartment"
+    ],
+    "tags": [
+      "mira",
+      "original",
+      "casual"
+    ]
+  },
+  {
+    "id": "mira_outfit_11",
+    "display_name": "Mira Outfit 11",
+    "category": "casualwear",
+    "layer": "main_clothing",
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ],
+    "compatibility_tags": [
+      "mira",
+      "apartment"
+    ],
+    "tags": [
+      "mira",
+      "original",
+      "casual"
+    ]
+  },
+  {
+    "id": "mira_outfit_12",
+    "display_name": "Mira Outfit 12",
+    "category": "casualwear",
+    "layer": "main_clothing",
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ],
+    "compatibility_tags": [
+      "mira",
+      "apartment"
+    ],
+    "tags": [
+      "mira",
+      "original",
+      "casual"
+    ]
+  },
+  {
+    "id": "mira_outfit_13",
+    "display_name": "Mira Outfit 13",
+    "category": "formalwear",
+    "layer": "main_clothing",
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ],
+    "compatibility_tags": [
+      "mira",
+      "apartment"
+    ],
+    "tags": [
+      "mira",
+      "original",
+      "casual"
+    ]
+  },
+  {
+    "id": "mira_outfit_14",
+    "display_name": "Mira Outfit 14",
+    "category": "sleepwear",
+    "layer": "main_clothing",
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ],
+    "compatibility_tags": [
+      "mira",
+      "apartment"
+    ],
+    "tags": [
+      "mira",
+      "original",
+      "casual"
+    ]
+  },
+  {
+    "id": "mira_outfit_15",
+    "display_name": "Mira Outfit 15",
+    "category": "casualwear",
+    "layer": "main_clothing",
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ],
+    "compatibility_tags": [
+      "mira",
+      "apartment"
+    ],
+    "tags": [
+      "mira",
+      "original",
+      "casual"
+    ]
+  },
+  {
+    "id": "mira_outfit_16",
+    "display_name": "Mira Outfit 16",
+    "category": "casualwear",
+    "layer": "main_clothing",
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ],
+    "compatibility_tags": [
+      "mira",
+      "apartment"
+    ],
+    "tags": [
+      "mira",
+      "original",
+      "casual"
+    ]
+  },
+  {
+    "id": "mira_outfit_17",
+    "display_name": "Mira Outfit 17",
+    "category": "casualwear",
+    "layer": "main_clothing",
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ],
+    "compatibility_tags": [
+      "mira",
+      "apartment"
+    ],
+    "tags": [
+      "mira",
+      "original",
+      "casual"
+    ]
+  },
+  {
+    "id": "mira_outfit_18",
+    "display_name": "Mira Outfit 18",
+    "category": "formalwear",
+    "layer": "main_clothing",
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ],
+    "compatibility_tags": [
+      "mira",
+      "apartment"
+    ],
+    "tags": [
+      "mira",
+      "original",
+      "casual"
+    ]
+  },
+  {
+    "id": "mira_outfit_19",
+    "display_name": "Mira Outfit 19",
+    "category": "sleepwear",
+    "layer": "main_clothing",
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ],
+    "compatibility_tags": [
+      "mira",
+      "apartment"
+    ],
+    "tags": [
+      "mira",
+      "original",
+      "casual"
+    ]
+  },
+  {
+    "id": "mira_outfit_20",
+    "display_name": "Mira Outfit 20",
+    "category": "casualwear",
+    "layer": "main_clothing",
+    "coverage_tags": [
+      "torso",
+      "legs"
+    ],
+    "compatibility_tags": [
+      "mira",
+      "apartment"
+    ],
+    "tags": [
+      "mira",
+      "original",
+      "casual"
+    ]
   }
 ]

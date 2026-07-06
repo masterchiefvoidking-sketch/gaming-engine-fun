@@ -1,0 +1,10 @@
+{
+  "id": "apology_comfort",
+  "name": "Apology Comfort",
+  "nodes": [
+    {"id": "n0", "type": "start", "target": "", "outputs": ["n1"]},
+    {"id": "n1", "type": "dialogue", "target": "apology_soft", "outputs": ["n2"]},
+    {"id": "n2", "type": "reward", "target": "comfort", "outputs": ["n3"]},
+    {"id": "n3", "type": "end", "target": "", "outputs": []}
+  ]
+}

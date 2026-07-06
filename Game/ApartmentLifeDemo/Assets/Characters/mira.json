@@ -1,7 +1,8 @@
 {
   "id": "mira",
   "name": "Mira",
-  "biography": "A thoughtful illustrator who moved into the city apartment seeking quiet inspiration.",
+  "age": 22,
+  "biography": "A thoughtful illustrator who moved into the city apartment seeking quiet inspiration and meaningful connection.",
   "voice_profile": "warm_soft",
   "conversation_style": "gentle",
   "schedule": "mira_daily",
@@ -9,7 +10,13 @@
   "personality": {
     "openness": 0.8,
     "extraversion": 0.45,
-    "agreeableness": 0.75
+    "agreeableness": 0.75,
+    "humor": 0.55
+  },
+  "preferences": {
+    "favorite_rooms": ["living_room", "bedroom", "wardrobe"],
+    "favorite_foods": ["green_tea", "pasta", "strawberry_parfait"],
+    "favorite_activities": ["sketching", "reading", "quiet_evenings"]
   },
   "appearance": {
     "face": "mira_face",
@@ -19,6 +26,24 @@
   },
   "dialogue_packages": [
     "mira_greetings",
-    "mira_evening_talks"
+    "mira_evening_talks",
+    "mira_coffee",
+    "mira_cooking",
+    "mira_food",
+    "mira_movie",
+    "mira_music",
+    "mira_rain",
+    "mira_balcony",
+    "mira_goodnight",
+    "mira_wardrobe",
+    "mira_compliment",
+    "mira_gift",
+    "mira_apology",
+    "mira_comfort",
+    "mira_trust",
+    "mira_memory",
+    "mira_photo",
+    "mira_reading",
+    "mira_schedule"
   ]
 }

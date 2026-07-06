@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "character": "mira",
+  "clips": [
+    {"id": "idle_stand", "duration": 2.0, "loop": true},
+    {"id": "sit_sofa", "duration": 3.0, "loop": false},
+    {"id": "wave_greeting", "duration": 1.5, "loop": false},
+    {"id": "sketch_idle", "duration": 4.0, "loop": true},
+    {"id": "mirror_pose", "duration": 2.5, "loop": false},
+    {"id": "photo_pose_cute", "duration": 2.0, "loop": false},
+    {"id": "sleep_bed", "duration": 5.0, "loop": true},
+    {"id": "cook_kitchen", "duration": 3.5, "loop": false},
+    {"id": "dance_living", "duration": 4.0, "loop": false},
+    {"id": "brush_hair", "duration": 2.5, "loop": false}
+  ]
+}

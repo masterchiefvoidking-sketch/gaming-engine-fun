@@ -6,9 +6,12 @@
 
 namespace eve::ai {
 
-bool RelationshipSimulation::initialize(std::string_view data_root) {
+bool RelationshipSimulation::initialize(std::string_view data_root, std::string_view character_id,
+                                        std::string_view romance_subdir) {
     data_root_ = std::string(data_root);
-    const std::string base = data_root_ + "/romance_sim";
+    character_id_ = std::string(character_id);
+    romance_subdir_ = std::string(romance_subdir);
+    const std::string base = data_root_ + "/" + romance_subdir_;
 
     profiles_.load_profile(base + "/character_profile.json");
     profiles_.load_boundaries(base + "/boundaries.json");
@@ -23,7 +26,7 @@ bool RelationshipSimulation::initialize(std::string_view data_root) {
         try {
             const auto json = nlohmann::json::parse(schedule_content);
             DailySchedule schedule;
-            schedule.character_id = json.value("character_id", "aiko");
+            schedule.character_id = json.value("character_id", character_id_);
             for (const auto& entry : json["entries"]) {
                 ScheduleEntry se;
                 se.start_hour = entry.value("start", 0.0f);
@@ -37,11 +40,11 @@ bool RelationshipSimulation::initialize(std::string_view data_root) {
         }
     }
 
-    CharacterSimState* character = profiles_.find("aiko");
+    CharacterSimState* character = profiles_.find(character_id_);
     if (character != nullptr) {
         character->consent = ConsentState::Granted;
         character->current_room_id = "living_room";
-        character->current_outfit_id = "cozy_sweater";
+        character->current_outfit_id = "mira_outfit_01";
     }
 
     RelationshipModel& rel = relationships_.get_or_create(sim_state_.player_id, sim_state_.character_id);
@@ -58,7 +61,7 @@ InteractionResult RelationshipSimulation::talk(std::string_view dialogue_node_id
 }
 
 InteractionResult RelationshipSimulation::offer_compliment() {
-    CharacterSimState* character = profiles_.find("aiko");
+    CharacterSimState* character = profiles_.find(character_id_);
     if (character == nullptr) {
         return {};
     }
@@ -89,7 +92,7 @@ InteractionResult RelationshipSimulation::offer_compliment() {
 }
 
 InteractionResult RelationshipSimulation::invite_to_dinner() {
-    CharacterSimState* character = profiles_.find("aiko");
+    CharacterSimState* character = profiles_.find(character_id_);
     if (character == nullptr) {
         return {};
     }
@@ -122,7 +125,7 @@ InteractionResult RelationshipSimulation::invite_to_dinner() {
 }
 
 InteractionResult RelationshipSimulation::trigger_outfit_dialogue() {
-    CharacterSimState* character = profiles_.find("aiko");
+    CharacterSimState* character = profiles_.find(character_id_);
     if (character == nullptr) {
         return {};
     }
@@ -149,7 +152,7 @@ InteractionResult RelationshipSimulation::trigger_outfit_dialogue() {
 }
 
 InteractionResult RelationshipSimulation::trigger_event(std::string_view event_id) {
-    CharacterSimState* character = profiles_.find("aiko");
+    CharacterSimState* character = profiles_.find(character_id_);
     if (character == nullptr) {
         return {};
     }
@@ -177,7 +180,7 @@ InteractionResult RelationshipSimulation::trigger_event(std::string_view event_i
 
 InteractionResult RelationshipSimulation::make_choice(std::string_view node_id,
                                                       std::string_view choice_id) {
-    CharacterSimState* character = profiles_.find("aiko");
+    CharacterSimState* character = profiles_.find(character_id_);
     if (character == nullptr) {
         return {};
     }
@@ -212,7 +215,7 @@ InteractionResult RelationshipSimulation::make_choice(std::string_view node_id,
 }
 
 bool RelationshipSimulation::save_state(std::string_view path) const {
-    const CharacterSimState* character = profiles_.find("aiko");
+    const CharacterSimState* character = profiles_.find(character_id_);
     const RelationshipModel* rel = relationships_.find(sim_state_.player_id, sim_state_.character_id);
     if (character == nullptr || rel == nullptr) {
         return false;
@@ -251,7 +254,7 @@ bool RelationshipSimulation::load_state(std::string_view path) {
         sim_state_.weather = json.value("weather", "rain");
         sim_state_.day_index = json.value("day_index", 0);
 
-        CharacterSimState* character = profiles_.find("aiko");
+        CharacterSimState* character = profiles_.find(character_id_);
         RelationshipModel& rel =
             relationships_.get_or_create(sim_state_.player_id, sim_state_.character_id);
         if (character != nullptr && json.contains("character")) {
@@ -291,11 +294,11 @@ bool RelationshipSimulation::load_state(std::string_view path) {
 }
 
 CharacterSimState* RelationshipSimulation::character() {
-    return profiles_.find("aiko");
+    return profiles_.find(character_id_);
 }
 
 const CharacterSimState* RelationshipSimulation::character() const {
-    return profiles_.find("aiko");
+    return profiles_.find(character_id_);
 }
 
 const RelationshipModel* RelationshipSimulation::relationship() const {
@@ -307,7 +310,7 @@ RelationshipModel* RelationshipSimulation::relationship() {
 }
 
 RelationshipStage RelationshipSimulation::current_stage() const {
-    const CharacterSimState* character = profiles_.find("aiko");
+    const CharacterSimState* character = profiles_.find(character_id_);
     if (character == nullptr) {
         return RelationshipStage::Stranger;
     }
@@ -320,7 +323,7 @@ RelationshipStage RelationshipSimulation::current_stage() const {
 
 DialogueContext RelationshipSimulation::build_dialogue_context() const {
     DialogueContext ctx;
-    ctx.character = const_cast<CharacterSimState*>(profiles_.find("aiko"));
+    ctx.character = const_cast<CharacterSimState*>(profiles_.find(character_id_));
     ctx.stage = current_stage();
     ctx.time_of_day = sim_state_.time_of_day;
     if (ctx.character != nullptr) {
@@ -335,7 +338,7 @@ DialogueContext RelationshipSimulation::build_dialogue_context() const {
 }
 
 void RelationshipSimulation::sync_relationship_stage() {
-    CharacterSimState* character = profiles_.find("aiko");
+    CharacterSimState* character = profiles_.find(character_id_);
     if (character == nullptr) {
         return;
     }
@@ -351,7 +354,7 @@ void RelationshipSimulation::sync_relationship_stage() {
 }
 
 InteractionResult RelationshipSimulation::execute_dialogue_node(std::string_view node_id) {
-    CharacterSimState* character = profiles_.find("aiko");
+    CharacterSimState* character = profiles_.find(character_id_);
     if (character == nullptr) {
         return {};
     }

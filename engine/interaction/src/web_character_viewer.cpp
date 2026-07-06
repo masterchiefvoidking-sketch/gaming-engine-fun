@@ -10,7 +10,7 @@ bool WebCharacterViewer::initialize(const WebCharacterViewerConfig& config) {
     if (!inspection_.initialize(config_.data_root)) {
         return false;
     }
-    if (!relationship_.initialize(config_.data_root)) {
+    if (!relationship_.initialize(config_.data_root, config_.character_id, config_.romance_subdir)) {
         return false;
     }
     storage_.set_desktop_storage(LocalFileStorage(config_.data_root + "/saves"));
@@ -21,12 +21,16 @@ bool WebCharacterViewer::initialize(const WebCharacterViewerConfig& config) {
     save_data_.project_id = config_.project_id;
     save_data_.save_slot = config_.save_slot;
     ring_context_.is_character = true;
-    ring_context_.target_id = "mira";
-    ring_context_.target_label = "Mira";
-    ring_context_.interaction.room_id = "living_room";
+    ring_context_.target_id = config_.character_id;
+    ring_context_.target_label = config_.character_name;
+    ring_context_.interaction.room_id = config_.initial_room;
+    inspection_.preview_outfit(config_.default_outfit);
+    inspection_.preview_hair(config_.default_hair);
+    inspection_.preview_expression(config_.default_expression);
     refresh_ring_context();
     initialized_ = true;
-    EVE_LOG(Info, "WebCharacterViewer", "Viewer ready (offline=", config_.offline_only, ")");
+    EVE_LOG(Info, "WebCharacterViewer", "Viewer ready for ", config_.character_name,
+            " (offline=", config_.offline_only, ")");
     return true;
 }
 
@@ -100,7 +104,7 @@ bool WebCharacterViewer::execute_ring_action(RingActionType action) {
     case RingActionType::Look:
         return handle_focus();
     case RingActionType::Talk:
-        relationship_.talk("greet_evening");
+        relationship_.talk(config_.default_greet_dialogue);
         refresh_ring_context();
         return true;
     case RingActionType::Compliment:

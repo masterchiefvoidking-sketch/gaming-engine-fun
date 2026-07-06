@@ -1,0 +1,17 @@
+{
+  "character_id": "mira",
+  "entries": [
+    {"start": 7.0, "end": 7.5, "room": "bedroom", "label": "Wake up"},
+    {"start": 7.5, "end": 8.0, "room": "bathroom", "label": "Morning grooming"},
+    {"start": 8.0, "end": 8.5, "room": "kitchen", "label": "Breakfast"},
+    {"start": 9.0, "end": 12.0, "room": "living_room", "label": "Sketch and read"},
+    {"start": 12.0, "end": 13.0, "room": "kitchen", "label": "Lunch"},
+    {"start": 13.0, "end": 17.0, "room": "living_room", "label": "Quiet afternoon"},
+    {"start": 17.0, "end": 18.0, "room": "wardrobe", "label": "Outfit change"},
+    {"start": 18.0, "end": 19.0, "room": "kitchen", "label": "Cook dinner"},
+    {"start": 19.0, "end": 20.0, "room": "dining_room", "label": "Dinner together"},
+    {"start": 20.0, "end": 22.0, "room": "living_room", "label": "Evening leisure"},
+    {"start": 22.0, "end": 23.0, "room": "bathroom", "label": "Night routine"},
+    {"start": 23.0, "end": 7.0, "room": "bedroom", "label": "Sleep"}
+  ]
+}
