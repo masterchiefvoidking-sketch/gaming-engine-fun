@@ -12,7 +12,9 @@ EVE Adult Engine is organized as a set of layered modules with explicit dependen
 ├─────────────────────────────────────────────┤
 │  editor         Docking UI shell            │
 ├─────────────────────────────────────────────┤
-│  world, ai, human, animation, physics       │
+│  platform       Mission, save, web, mobile  │
+├─────────────────────────────────────────────┤
+│  content, scene, world, ai, human, animation│
 ├─────────────────────────────────────────────┤
 │  render         Vulkan, materials, shaders  │
 ├─────────────────────────────────────────────┤
@@ -36,7 +38,9 @@ EVE Adult Engine is organized as a set of layered modules with explicit dependen
 | `core` | Engine infrastructure | `Logger`, `Serializer`, `ReflectionRegistry`, `JobSystem` |
 | `ecs` | Scene entity model | `World`, `ComponentRegistry` |
 | `render` | GPU presentation | `VulkanContext` |
-| `editor` | Authoring shell | `EditorApplication` |
+| `platform` | Mission scope, unified save, web deploy | `UnifiedSaveSystem`, `WebPublisher`, `GameSession` |
+| `content` | Game content authoring | `ContentDatabase`, `ProjectLayout`, `GameContentProject` |
+| `editor` | Authoring shell | `EditorApplication`, `CreatorStudio` |
 
 ## Extension Points
 
@@ -54,6 +58,9 @@ Swapchain and frame graph, ImGui docking UI, animation state machines, character
 
 ### Milestone 3
 PBR skin/hair shaders, cloth simulation hooks, dialogue and emotion systems, apartment builder.
+
+### Phase 9 (current direction)
+Engine mission reset: lean scope, unified save, web deployment tooling, mobile-ready input, local backups and templates. See `docs/ENGINE_MISSION.md`.
 
 ## Threading Model
 
