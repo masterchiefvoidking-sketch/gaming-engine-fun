@@ -1,0 +1,2 @@
+eve_add_test(eve_scripting_tests test_script_engine.cpp)
+target_link_libraries(eve_scripting_tests PRIVATE eve::scripting)

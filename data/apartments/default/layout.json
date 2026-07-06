@@ -1,0 +1,106 @@
+{
+  "id": "default_apartment",
+  "display_name": "Luxury City Apartment",
+  "spawn_room": "hallway",
+  "rooms": [
+    {
+      "id": "bedroom",
+      "display_name": "Bedroom",
+      "type": "bedroom",
+      "bounds": {"min_x": 0, "min_y": 0, "min_z": 0, "max_x": 5, "max_y": 3, "max_z": 6},
+      "connected_rooms": ["hallway", "bathroom", "wardrobe"],
+      "default_interactables": ["bed", "nightstand", "window_bedroom", "tv_bedroom"],
+      "interaction_tags": ["sleep", "relax", "wardrobe"]
+    },
+    {
+      "id": "bathroom",
+      "display_name": "Bathroom",
+      "type": "bathroom",
+      "bounds": {"min_x": 5, "min_y": 0, "min_z": 0, "max_x": 8, "max_y": 3, "max_z": 4},
+      "connected_rooms": ["bedroom", "hallway"],
+      "default_interactables": ["shower", "bathtub", "sink", "mirror", "towel_rack"],
+      "interaction_tags": ["hygiene", "lighting"]
+    },
+    {
+      "id": "wardrobe",
+      "display_name": "Dressing Room",
+      "type": "wardrobe",
+      "bounds": {"min_x": 0, "min_y": 0, "min_z": 6, "max_x": 4, "max_y": 3, "max_z": 9},
+      "connected_rooms": ["bedroom"],
+      "default_interactables": ["wardrobe_closet", "full_mirror", "jewelry_box"],
+      "interaction_tags": ["wardrobe"]
+    },
+    {
+      "id": "living_room",
+      "display_name": "Living Room",
+      "type": "living_room",
+      "bounds": {"min_x": 8, "min_y": 0, "min_z": 0, "max_x": 14, "max_y": 3, "max_z": 7},
+      "connected_rooms": ["hallway", "balcony"],
+      "default_interactables": ["sofa", "tv_living", "bookshelf", "plants", "window_blinds"],
+      "interaction_tags": ["entertainment", "social", "decorating"]
+    },
+    {
+      "id": "dining_room",
+      "display_name": "Dining Room",
+      "type": "dining_room",
+      "bounds": {"min_x": 8, "min_y": 0, "min_z": 7, "max_x": 12, "max_y": 3, "max_z": 11},
+      "connected_rooms": ["kitchen", "hallway"],
+      "default_interactables": ["dining_table", "chandelier"],
+      "interaction_tags": ["dining", "social"]
+    },
+    {
+      "id": "kitchen",
+      "display_name": "Kitchen",
+      "type": "kitchen",
+      "bounds": {"min_x": 12, "min_y": 0, "min_z": 7, "max_x": 16, "max_y": 3, "max_z": 11},
+      "connected_rooms": ["dining_room", "hallway"],
+      "default_interactables": ["stove", "fridge", "coffee_machine", "dishwasher", "pantry"],
+      "interaction_tags": ["dining", "appliance"]
+    },
+    {
+      "id": "office",
+      "display_name": "Office",
+      "type": "office",
+      "bounds": {"min_x": 0, "min_y": 0, "min_z": 9, "max_x": 4, "max_y": 3, "max_z": 12},
+      "connected_rooms": ["hallway"],
+      "default_interactables": ["desk", "computer", "office_chair"],
+      "interaction_tags": ["work"]
+    },
+    {
+      "id": "balcony",
+      "display_name": "Balcony",
+      "type": "balcony",
+      "bounds": {"min_x": 14, "min_y": 0, "min_z": 0, "max_x": 17, "max_y": 3, "max_z": 5},
+      "connected_rooms": ["living_room"],
+      "default_interactables": ["balcony_plants", "exercise_mat"],
+      "interaction_tags": ["social", "relax"]
+    },
+    {
+      "id": "hallway",
+      "display_name": "Hallway",
+      "type": "hallway",
+      "bounds": {"min_x": 5, "min_y": 0, "min_z": 4, "max_x": 8, "max_y": 3, "max_z": 9},
+      "connected_rooms": ["bedroom", "bathroom", "living_room", "dining_room", "kitchen", "office", "laundry_room", "storage"],
+      "default_interactables": ["hallway_lights"],
+      "interaction_tags": ["lighting"]
+    },
+    {
+      "id": "laundry_room",
+      "display_name": "Laundry Room",
+      "type": "laundry_room",
+      "bounds": {"min_x": 5, "min_y": 0, "min_z": 9, "max_x": 8, "max_y": 3, "max_z": 12},
+      "connected_rooms": ["hallway"],
+      "default_interactables": ["washer", "dryer"],
+      "interaction_tags": ["cleaning", "appliance"]
+    },
+    {
+      "id": "storage",
+      "display_name": "Storage",
+      "type": "storage",
+      "bounds": {"min_x": 8, "min_y": 0, "min_z": 11, "max_x": 11, "max_y": 3, "max_z": 14},
+      "connected_rooms": ["hallway"],
+      "default_interactables": ["storage_shelves"],
+      "interaction_tags": ["storage"]
+    }
+  ]
+}

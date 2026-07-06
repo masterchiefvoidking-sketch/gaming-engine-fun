@@ -1,0 +1,44 @@
+# Build artifacts
+build/
+out/
+cmake-build-*/
+*.user
+*.suo
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+
+# Compiled objects
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test and coverage
+Testing/
+coverage/
+*.gcno
+*.gcda
+*.gcov
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Generated
+compile_commands.json

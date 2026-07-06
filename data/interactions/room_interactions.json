@@ -1,0 +1,99 @@
+[
+  {
+    "id": "bed",
+    "display_name": "Bed",
+    "room": "bedroom",
+    "default_state": "idle",
+    "supported_states": ["idle", "in_use"],
+    "actions": [
+      {"id": "sleep", "label": "Sleep", "category": "sleep", "animation": "anim_sleep", "sound": "sfx_bed", "duration": 3600, "ai_usable": true, "resulting_state": "in_use"},
+      {"id": "nap", "label": "Nap", "category": "sleep", "animation": "anim_nap", "sound": "sfx_bed", "duration": 1800, "ai_usable": true},
+      {"id": "make_bed", "label": "Make the bed", "category": "cleaning", "animation": "anim_make_bed", "duration": 30, "ai_usable": true, "resulting_state": "idle"}
+    ]
+  },
+  {
+    "id": "shower",
+    "display_name": "Shower",
+    "room": "bathroom",
+    "actions": [
+      {"id": "shower", "label": "Take a shower", "category": "hygiene", "animation": "anim_shower", "sound": "sfx_water", "duration": 600, "ai_usable": true, "resulting_state": "in_use"},
+      {"id": "clean_shower", "label": "Clean shower", "category": "cleaning", "animation": "anim_clean", "duration": 120, "ai_usable": true}
+    ]
+  },
+  {
+    "id": "mirror",
+    "display_name": "Mirror",
+    "room": "bathroom",
+    "actions": [
+      {"id": "brush_teeth", "label": "Brush teeth", "category": "hygiene", "animation": "anim_brush_teeth", "duration": 120, "ai_usable": true},
+      {"id": "apply_makeup", "label": "Apply makeup", "category": "hygiene", "animation": "anim_makeup", "duration": 300, "ai_usable": true},
+      {"id": "hair_care", "label": "Hair care", "category": "hygiene", "animation": "anim_hair", "duration": 240, "ai_usable": true}
+    ]
+  },
+  {
+    "id": "wardrobe_closet",
+    "display_name": "Wardrobe Closet",
+    "room": "wardrobe",
+    "actions": [
+      {"id": "change_outfit", "label": "Change outfit", "category": "wardrobe", "animation": "anim_change_clothes", "duration": 180, "ai_usable": true},
+      {"id": "organize_clothes", "label": "Organize clothes", "category": "wardrobe", "animation": "anim_organize", "duration": 300, "ai_usable": true},
+      {"id": "random_outfit", "label": "Random outfit", "category": "wardrobe", "animation": "anim_change_clothes", "duration": 120, "ai_usable": true, "tags": ["random"]}
+    ]
+  },
+  {
+    "id": "tv_living",
+    "display_name": "Television",
+    "room": "living_room",
+    "actions": [
+      {"id": "watch_tv", "label": "Watch television", "category": "entertainment", "animation": "anim_watch_tv", "sound": "sfx_tv", "duration": 1800, "ai_usable": true, "resulting_state": "on"},
+      {"id": "watch_movie", "label": "Watch a movie", "category": "entertainment", "animation": "anim_watch_movie", "sound": "sfx_tv", "duration": 7200, "ai_usable": true, "tags": ["social"]},
+      {"id": "listen_music", "label": "Listen to music", "category": "entertainment", "animation": "anim_listen_music", "sound": "sfx_music", "duration": 900, "ai_usable": true}
+    ]
+  },
+  {
+    "id": "stove",
+    "display_name": "Stove",
+    "room": "kitchen",
+    "actions": [
+      {"id": "cook_meal", "label": "Cook a meal", "category": "dining", "animation": "anim_cook", "sound": "sfx_cooking", "duration": 1200, "ai_usable": true, "tags": ["social"]},
+      {"id": "prepare_snack", "label": "Prepare a snack", "category": "dining", "animation": "anim_cook", "duration": 300, "ai_usable": true}
+    ]
+  },
+  {
+    "id": "coffee_machine",
+    "display_name": "Coffee Machine",
+    "room": "kitchen",
+    "actions": [
+      {"id": "brew_coffee", "label": "Brew coffee", "category": "dining", "animation": "anim_coffee", "sound": "sfx_coffee", "duration": 120, "ai_usable": true},
+      {"id": "brew_tea", "label": "Brew tea", "category": "dining", "animation": "anim_tea", "duration": 180, "ai_usable": true}
+    ]
+  },
+  {
+    "id": "dining_table",
+    "display_name": "Dining Table",
+    "room": "dining_room",
+    "actions": [
+      {"id": "dine_together", "label": "Dine together", "category": "social", "animation": "anim_dine", "duration": 1800, "ai_usable": true, "tags": ["social"]},
+      {"id": "set_table", "label": "Set the table", "category": "dining", "animation": "anim_set_table", "duration": 180, "ai_usable": true}
+    ]
+  },
+  {
+    "id": "sofa",
+    "display_name": "Sofa",
+    "room": "living_room",
+    "actions": [
+      {"id": "relax", "label": "Relax", "category": "entertainment", "animation": "anim_relax", "duration": 600, "ai_usable": true},
+      {"id": "conversation", "label": "Have a conversation", "category": "social", "animation": "anim_talk", "duration": 900, "ai_usable": true, "tags": ["social"]},
+      {"id": "read_book", "label": "Read a book", "category": "entertainment", "animation": "anim_read", "duration": 1200, "ai_usable": true, "tags": ["social"]}
+    ]
+  },
+  {
+    "id": "hallway_lights",
+    "display_name": "Hallway Lights",
+    "room": "hallway",
+    "actions": [
+      {"id": "lights_on", "label": "Turn lights on", "category": "lighting", "duration": 1, "ai_usable": true, "resulting_state": "on"},
+      {"id": "lights_off", "label": "Turn lights off", "category": "lighting", "duration": 1, "ai_usable": true, "resulting_state": "off"}
+    ]
+  }
+]
