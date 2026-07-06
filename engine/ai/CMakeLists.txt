@@ -3,6 +3,7 @@ add_library(eve_ai STATIC
     src/relationship.cpp
     src/schedule.cpp
     src/social_ai.cpp
+    src/romance_hooks.cpp
 )
 
 add_library(eve::ai ALIAS eve_ai)

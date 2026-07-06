@@ -16,6 +16,15 @@ enum class CameraMode : u8 {
     ThirdPerson,
     Cinematic,
     Photo,
+    Wardrobe,
+    Mirror,
+    BodyRegionFocus,
+};
+
+enum class ContentRatingLockout : u8 {
+    None = 0,
+    Mature,
+    AdultsOnly,
 };
 
 struct CameraPreset {
@@ -57,6 +66,9 @@ public:
     void add_preset(CameraPreset preset);
     void apply_preset(std::string_view preset_id);
     void begin_cinematic_path(std::vector<math::Vec3> path, f32 duration_seconds);
+    void focus_body_region(const math::Vec3& center, const math::Vec3& offset = {0.0f, 0.0f, 0.0f});
+    void transition_to(const math::Vec3& position, const math::Vec3& focus, f32 duration_seconds);
+    void set_content_rating_lockout(ContentRatingLockout lockout);
     void update(f32 delta_seconds, const OrbitCameraInput& input = {});
 
     [[nodiscard]] math::Mat4 view_matrix() const;
@@ -66,6 +78,8 @@ public:
     [[nodiscard]] CameraMode mode() const { return mode_; }
     [[nodiscard]] const DepthOfFieldSettings& depth_of_field() const { return dof_; }
     [[nodiscard]] const ExposureSettings& exposure() const { return exposure_; }
+
+    [[nodiscard]] bool is_locked_out(ContentRatingLockout required_rating) const;
 
     DepthOfFieldSettings& depth_of_field_mutable() { return dof_; }
     ExposureSettings& exposure_mutable() { return exposure_; }
@@ -89,6 +103,14 @@ private:
     std::vector<math::Vec3> cinematic_path_;
     f32 cinematic_duration_ = 0.0f;
     f32 cinematic_elapsed_ = 0.0f;
+    math::Vec3 transition_start_pos_{};
+    math::Vec3 transition_end_pos_{};
+    math::Vec3 transition_start_focus_{};
+    math::Vec3 transition_end_focus_{};
+    f32 transition_duration_ = 0.0f;
+    f32 transition_elapsed_ = 0.0f;
+    bool transitioning_ = false;
+    ContentRatingLockout rating_lockout_ = ContentRatingLockout::None;
 };
 
 } // namespace eve::render

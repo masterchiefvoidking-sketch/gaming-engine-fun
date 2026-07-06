@@ -1,0 +1,37 @@
+[
+  {
+    "id": "wardrobe_mirror",
+    "display_name": "Full-Length Mirror",
+    "room": "wardrobe",
+    "action": "mirror_inspection",
+    "position": {"x": 0.0, "y": 1.2, "z": -1.5}
+  },
+  {
+    "id": "wardrobe_rack",
+    "display_name": "Clothing Rack",
+    "room": "wardrobe",
+    "action": "browse_outfits",
+    "position": {"x": -1.2, "y": 1.0, "z": 0.0}
+  },
+  {
+    "id": "wardrobe_seat",
+    "display_name": "Dressing Stool",
+    "room": "wardrobe",
+    "action": "sit_and_change",
+    "position": {"x": 0.5, "y": 0.45, "z": 0.3}
+  },
+  {
+    "id": "jewelry_display",
+    "display_name": "Jewelry Display",
+    "room": "wardrobe",
+    "action": "preview_jewelry",
+    "position": {"x": 1.0, "y": 1.1, "z": -0.5}
+  },
+  {
+    "id": "photo_spot",
+    "display_name": "Photo Spot",
+    "room": "wardrobe",
+    "action": "photo_mode",
+    "position": {"x": 0.0, "y": 1.0, "z": 1.5}
+  }
+]

@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <eve/core/logging/logger.hpp>
 #include <eve/render/human_shader_pipeline.hpp>
 
@@ -23,6 +24,18 @@ void HumanShaderPipeline::apply_skin_params(const SkinShaderParams& skin) {
 
 void HumanShaderPipeline::apply_hair_params(const HairShaderParams& hair) {
     material_.hair = hair;
+}
+
+void HumanShaderPipeline::set_cloth_wetness(f32 wetness) {
+    material_.cloth.wetness = std::clamp(wetness, 0.0f, 1.0f);
+}
+
+void HumanShaderPipeline::set_makeup_params(const MakeupShaderParams& makeup) {
+    material_.makeup = makeup;
+}
+
+void HumanShaderPipeline::set_jewelry_params(const JewelryShaderParams& jewelry) {
+    material_.jewelry = jewelry;
 }
 
 } // namespace eve::render

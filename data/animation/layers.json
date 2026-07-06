@@ -1,0 +1,66 @@
+[
+  {
+    "id": "base_locomotion",
+    "name": "Base Locomotion",
+    "priority": 0,
+    "default_weight": 1.0,
+    "additive": false,
+    "default_clip": "anim_idle"
+  },
+  {
+    "id": "upper_body_gestures",
+    "name": "Upper Body Gestures",
+    "priority": 10,
+    "default_weight": 0.0,
+    "additive": true,
+    "default_clip": "anim_gesture_neutral"
+  },
+  {
+    "id": "facial_expressions",
+    "name": "Facial Expressions",
+    "priority": 20,
+    "default_weight": 1.0,
+    "additive": true,
+    "default_clip": "expr_neutral"
+  },
+  {
+    "id": "breathing",
+    "name": "Breathing",
+    "priority": 5,
+    "default_weight": 0.6,
+    "additive": true,
+    "default_clip": "anim_breathing"
+  },
+  {
+    "id": "cloth_physics",
+    "name": "Cloth Physics",
+    "priority": 15,
+    "default_weight": 1.0,
+    "additive": false,
+    "default_clip": "cloth_sim_passive"
+  },
+  {
+    "id": "hair_physics",
+    "name": "Hair Physics",
+    "priority": 15,
+    "default_weight": 1.0,
+    "additive": false,
+    "default_clip": "hair_sim_passive"
+  },
+  {
+    "id": "idle_movement",
+    "name": "Idle Movement",
+    "priority": 3,
+    "default_weight": 0.4,
+    "additive": true,
+    "default_clip": "anim_idle_sway"
+  },
+  {
+    "id": "camera_facing_pose",
+    "name": "Camera-Facing Pose",
+    "priority": 25,
+    "default_weight": 0.0,
+    "additive": true,
+    "default_clip": "pose_camera_aware"
+  }
+]

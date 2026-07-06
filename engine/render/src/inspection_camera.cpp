@@ -45,6 +45,18 @@ void InspectionCamera::begin_cinematic_path(std::vector<math::Vec3> path, f32 du
 }
 
 void InspectionCamera::update(f32 delta_seconds, const OrbitCameraInput& input) {
+    if (transitioning_) {
+        transition_elapsed_ += delta_seconds;
+        const f32 t = std::clamp(transition_elapsed_ / transition_duration_, 0.0f, 1.0f);
+        const f32 smooth = t * t * (3.0f - 2.0f * t);
+        position_ = transition_start_pos_ * (1.0f - smooth) + transition_end_pos_ * smooth;
+        focus_ = transition_start_focus_ * (1.0f - smooth) + transition_end_focus_ * smooth;
+        if (t >= 1.0f) {
+            transitioning_ = false;
+        }
+        return;
+    }
+
     if (input.set_focus) {
         focus_ = input.focus_point;
     }
@@ -52,6 +64,9 @@ void InspectionCamera::update(f32 delta_seconds, const OrbitCameraInput& input) 
     switch (mode_) {
     case CameraMode::Orbit:
     case CameraMode::Photo:
+    case CameraMode::Wardrobe:
+    case CameraMode::Mirror:
+    case CameraMode::BodyRegionFocus:
         update_orbit(input);
         break;
     case CameraMode::Cinematic:
@@ -110,6 +125,31 @@ void InspectionCamera::update_cinematic(f32 delta_seconds) {
     const std::size_t next = std::min(index + 1, cinematic_path_.size() - 1);
     const f32 local_t = scaled - static_cast<f32>(index);
     position_ = cinematic_path_[index] * (1.0f - local_t) + cinematic_path_[next] * local_t;
+}
+
+void InspectionCamera::focus_body_region(const math::Vec3& center, const math::Vec3& offset) {
+    mode_ = CameraMode::BodyRegionFocus;
+    focus_ = center;
+    position_ = center + offset + math::Vec3{0.0f, 0.0f, 1.2f};
+    distance_ = 1.2f;
+}
+
+void InspectionCamera::transition_to(const math::Vec3& position, const math::Vec3& focus, f32 duration_seconds) {
+    transition_start_pos_ = position_;
+    transition_end_pos_ = position;
+    transition_start_focus_ = focus_;
+    transition_end_focus_ = focus;
+    transition_duration_ = std::max(duration_seconds, 0.01f);
+    transition_elapsed_ = 0.0f;
+    transitioning_ = true;
+}
+
+void InspectionCamera::set_content_rating_lockout(ContentRatingLockout lockout) {
+    rating_lockout_ = lockout;
+}
+
+bool InspectionCamera::is_locked_out(ContentRatingLockout required_rating) const {
+    return static_cast<u8>(required_rating) > static_cast<u8>(rating_lockout_);
 }
 
 } // namespace eve::render
