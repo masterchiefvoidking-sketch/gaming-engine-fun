@@ -70,6 +70,10 @@ if(EVE_BUILD_PERSONAL_PRODUCT_CUT OR EVE_BUILD_TESTS)
     add_subdirectory(apps/personal_product_cut)
 endif()
 
+if(EVE_BUILD_ARCHITECTURE_FREEZE OR EVE_BUILD_TESTS)
+    add_subdirectory(apps/architecture_freeze)
+endif()
+
 if(EVE_ENABLE_BENCHMARKS)
     add_subdirectory(benchmarks)
 endif()

@@ -7,26 +7,22 @@ EVE Adult Engine is organized as a set of layered modules with explicit dependen
 ## Layer Model
 
 ```
-┌─────────────────────────────────────────────┐
-│  apps/          Editor, tools, samples      │
-├─────────────────────────────────────────────┤
-│  editor         Docking UI shell            │
-├─────────────────────────────────────────────┤
-│  platform       Mission, save, web, mobile  │
-├─────────────────────────────────────────────┤
-│  interaction    Input, camera, ring, UI     │
-├─────────────────────────────────────────────┤
-│  build          Personal export pipeline    │
-├─────────────────────────────────────────────┤
-│  content, scene, world, ai, human, animation│
-├─────────────────────────────────────────────┤
-│  render         Vulkan, materials, shaders  │
-├─────────────────────────────────────────────┤
-│  ecs            Entity-component-system       │
-├─────────────────────────────────────────────┤
-│  core           Foundation utilities          │
-└─────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────┐
+│  apps/     Editor, demos, release pipelines, audit tools    │
+├─────────────────────────────────────────────────────────────┤
+│  product, audit, gameplay, polish, editor                   │
+├─────────────────────────────────────────────────────────────┤
+│  interaction, build, scene, human, ai, world, animation     │
+├─────────────────────────────────────────────────────────────┤
+│  content, platform, scripting                               │
+├─────────────────────────────────────────────────────────────┤
+│  render, ecs, physics (stub)                                │
+├─────────────────────────────────────────────────────────────┤
+│  core           Foundation utilities                        │
+└─────────────────────────────────────────────────────────────┘
 ```
+
+All 19 engine modules have `README.md` files. See `docs/PHASE15_ARCHITECTURE_FREEZE.md` for the engineering audit.
 
 ## Core Principles
 
@@ -41,12 +37,23 @@ EVE Adult Engine is organized as a set of layered modules with explicit dependen
 |--------|----------------|-----------|
 | `core` | Engine infrastructure | `Logger`, `Serializer`, `ReflectionRegistry`, `JobSystem` |
 | `ecs` | Scene entity model | `World`, `ComponentRegistry` |
-| `render` | GPU presentation | `VulkanContext` |
-| `platform` | Mission scope, unified save, web deploy | `UnifiedSaveSystem`, `WebPublisher`, `GameSession` |
-| `interaction` | Player input, camera, ring, UI | `InputController`, `InteractionRing`, `WebCharacterViewer` |
+| `render` | GPU presentation | `VulkanContext`, `PhotoMode`, `RomanceCameraController` |
+| `animation` | Motion systems | `AnimationStateMachine`, `AnimationLayerStack` |
+| `scripting` | Script host | `ScriptEngine`, `IScriptHost` |
+| `world` | Apartment simulation | `ApartmentLoader`, `InteractionSystem`, `ApartmentPersistence` |
+| `ai` | Romance/relationship sim | `RelationshipSimulation`, `DialogueEngine` |
+| `scene` | Scene direction | `SceneDirector`, `EventScheduler` |
+| `content` | Game content authoring | `ContentDatabase`, `GameContentProject`, `WardrobeDatabase` |
+| `platform` | Mission scope, save, web | `UnifiedSaveSystem`, `WebPublisher`, `GameSession` |
+| `interaction` | Player input, viewer | `InputController`, `WebCharacterViewer` |
 | `build` | Personal export pipeline | `BuildPipeline`, `AssetCooker`, `ContentValidator` |
-| `content` | Game content authoring | `ContentDatabase`, `ProjectLayout`, `GameContentProject` |
+| `human` | Digital humans | `CharacterCreator`, `WardrobeSystem`, `AnimeVisualPipeline` |
+| `physics` | Physics stub (future) | `kModuleName` only |
 | `editor` | Authoring shell | `EditorApplication`, `CreatorStudio` |
+| `polish` | Performance and validation | `PerformanceProfiler`, `ValidationGate` |
+| `gameplay` | Session orchestration | `ApartmentLifeSession` |
+| `product` | Release tooling | `PersonalProductCut`, `ReleaseBundle` |
+| `audit` | Engineering audit | `ArchitectureFreeze`, `ModuleHealthAuditor` |
 
 ## Extension Points
 

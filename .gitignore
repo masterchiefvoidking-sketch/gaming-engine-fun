@@ -56,3 +56,4 @@ Releases/*/WindowsRelease/
 Releases/*/WebDev/
 Releases/*/WebRelease/
 Releases/*/BackupArchive/
+build/_audit_test_output/

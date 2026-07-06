@@ -66,7 +66,7 @@ ctest --test-dir build --output-on-failure
 | `EVE_BUILD_TESTS` | ON | Build automated tests |
 | `EVE_ENABLE_VULKAN_VALIDATION` | OFF | Enable Vulkan validation layers |
 | `EVE_BUILD_RC1_RELEASE` | ON | RC1 release pipeline |
-| `EVE_BUILD_PERSONAL_PRODUCT_CUT` | ON | Personal product cut (Phase 14) |
+| `EVE_BUILD_ARCHITECTURE_FREEZE` | ON | Architecture freeze audit (Phase 15) |
 
 ## Run the Editor
 
@@ -81,6 +81,14 @@ ctest --test-dir build --output-on-failure
 ```
 
 See [docs/PHASE14_PERSONAL_PRODUCT_CUT.md](docs/PHASE14_PERSONAL_PRODUCT_CUT.md) for the full personal-use workflow.
+
+## Architecture Freeze (Phase 15)
+
+```bash
+./build/apps/architecture_freeze/eve-architecture-freeze
+```
+
+See [docs/PHASE15_ARCHITECTURE_FREEZE.md](docs/PHASE15_ARCHITECTURE_FREEZE.md) and `Audit/` for engineering reports.
 
 ## Testing
 
