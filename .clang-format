@@ -1,0 +1,33 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ColumnLimit: 100
+BreakBeforeBraces: Attach
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: Never
+NamespaceIndentation: None
+SortIncludes: CaseSensitive
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex: '^"eve/'
+    Priority: 1
+  - Regex: '^<'
+    Priority: 2
+  - Regex: '.*'
+    Priority: 3
+AccessModifierOffset: -4
+AlignAfterOpenBracket: Align
+AlignOperands: true
+AlignTrailingComments: true
+BinPackArguments: true
+BinPackParameters: true
+BreakConstructorInitializers: BeforeComma
+BreakInheritanceList: BeforeComma
+Cpp11BracedListStyle: true
+FixNamespaceComments: true
+PointerAlignment: Left
+SpaceAfterCStyleCast: false
+SpaceBeforeParens: ControlStatements

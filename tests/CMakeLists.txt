@@ -1,0 +1,14 @@
+include(GoogleTest)
+
+function(eve_add_test target)
+    add_executable(${target} ${ARGN})
+    target_link_libraries(${target} PRIVATE GTest::gtest_main)
+    target_compile_features(${target} PRIVATE cxx_std_20)
+    eve_set_compile_warnings(${target})
+    gtest_discover_tests(${target})
+endfunction()
+
+add_subdirectory(core)
+add_subdirectory(ecs)
+add_subdirectory(render)
+add_subdirectory(editor)
