@@ -4,6 +4,11 @@ add_library(eve_human STATIC
     src/character_interaction_system.cpp
     src/character_framework.cpp
     src/photo_mode_bridge.cpp
+    src/body_regions.cpp
+    src/interaction_rules.cpp
+    src/body_interaction_system.cpp
+    src/wardrobe_system.cpp
+    src/dressing_room.cpp
 )
 
 add_library(eve::human ALIAS eve_human)

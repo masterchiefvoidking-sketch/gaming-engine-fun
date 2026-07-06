@@ -1,0 +1,19 @@
+{
+  "id": "default_female_body",
+  "display_name": "Default Female Body",
+  "regions": [
+    {"id": "head", "region": "head", "center": {"x": 0.0, "y": 1.65, "z": 0.0}, "half_extents": {"x": 0.12, "y": 0.14, "z": 0.12}},
+    {"id": "hair", "region": "hair", "center": {"x": 0.0, "y": 1.72, "z": -0.02}, "half_extents": {"x": 0.15, "y": 0.12, "z": 0.15}},
+    {"id": "face", "region": "face", "center": {"x": 0.0, "y": 1.62, "z": 0.06}, "half_extents": {"x": 0.08, "y": 0.09, "z": 0.06}},
+    {"id": "neck", "region": "neck", "center": {"x": 0.0, "y": 1.48, "z": 0.0}, "half_extents": {"x": 0.06, "y": 0.06, "z": 0.06}},
+    {"id": "shoulders", "region": "shoulders", "center": {"x": 0.0, "y": 1.38, "z": 0.0}, "half_extents": {"x": 0.22, "y": 0.08, "z": 0.12}},
+    {"id": "arms", "region": "arms", "center": {"x": 0.28, "y": 1.15, "z": 0.0}, "half_extents": {"x": 0.08, "y": 0.25, "z": 0.08}},
+    {"id": "hands", "region": "hands", "center": {"x": 0.35, "y": 0.85, "z": 0.05}, "half_extents": {"x": 0.06, "y": 0.06, "z": 0.06}},
+    {"id": "torso", "region": "torso", "center": {"x": 0.0, "y": 1.15, "z": 0.0}, "half_extents": {"x": 0.18, "y": 0.22, "z": 0.12}},
+    {"id": "back", "region": "back", "center": {"x": 0.0, "y": 1.15, "z": -0.08}, "half_extents": {"x": 0.18, "y": 0.22, "z": 0.06}},
+    {"id": "waist", "region": "waist", "center": {"x": 0.0, "y": 0.95, "z": 0.0}, "half_extents": {"x": 0.14, "y": 0.08, "z": 0.10}},
+    {"id": "hips", "region": "hips", "center": {"x": 0.0, "y": 0.82, "z": 0.0}, "half_extents": {"x": 0.20, "y": 0.10, "z": 0.14}},
+    {"id": "legs", "region": "legs", "center": {"x": 0.0, "y": 0.50, "z": 0.0}, "half_extents": {"x": 0.12, "y": 0.35, "z": 0.12}},
+    {"id": "feet", "region": "feet", "center": {"x": 0.0, "y": 0.08, "z": 0.04}, "half_extents": {"x": 0.10, "y": 0.05, "z": 0.14}}
+  ]
+}

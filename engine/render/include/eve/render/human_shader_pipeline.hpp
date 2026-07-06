@@ -52,6 +52,20 @@ struct ClothShaderParams {
     f32 roughness = 0.7f;
     f32 sheen = 0.2f;
     f32 anisotropy = 0.1f;
+    f32 wetness = 0.0f;
+};
+
+struct MakeupShaderParams {
+    f32 lipstick_intensity = 0.0f;
+    f32 blush_intensity = 0.0f;
+    f32 eyeshadow_intensity = 0.0f;
+    math::Vec3 lipstick_color{0.8f, 0.15f, 0.25f};
+};
+
+struct JewelryShaderParams {
+    f32 metallic = 0.95f;
+    f32 roughness = 0.15f;
+    f32 gem_refraction = 1.77f;
 };
 
 struct HumanMaterialProfile {
@@ -59,6 +73,8 @@ struct HumanMaterialProfile {
     EyeShaderParams eyes;
     HairShaderParams hair;
     ClothShaderParams cloth;
+    MakeupShaderParams makeup;
+    JewelryShaderParams jewelry;
     PBRTextureSet textures;
 };
 
@@ -74,6 +90,9 @@ public:
 
     void apply_skin_params(const SkinShaderParams& skin);
     void apply_hair_params(const HairShaderParams& hair);
+    void set_cloth_wetness(f32 wetness);
+    void set_makeup_params(const MakeupShaderParams& makeup);
+    void set_jewelry_params(const JewelryShaderParams& jewelry);
     void set_upscale_technology(UpscaleTechnology tech) { upscale_ = tech; }
     void enable_ssr(bool enabled) { ssr_enabled_ = enabled; }
     void enable_ssao(bool enabled) { ssao_enabled_ = enabled; }

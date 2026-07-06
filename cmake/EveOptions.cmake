@@ -1,5 +1,5 @@
 option(EVE_BUILD_EDITOR "Build the EVE editor application" ON)
-option(EVE_BUILD_EXAMPLE_SCENE "Build apartment character example scene" ON)
+option(EVE_BUILD_WARDROBE_SLICE "Build wardrobe vertical slice application" ON)
 option(EVE_BUILD_TESTS "Build automated tests" ON)
 option(EVE_ENABLE_VULKAN_VALIDATION "Enable Vulkan validation layers" OFF)
 option(EVE_ENABLE_BENCHMARKS "Build subsystem benchmarks" OFF)

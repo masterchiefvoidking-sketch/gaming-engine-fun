@@ -4,6 +4,7 @@ add_library(eve_render STATIC
     src/human_shader_pipeline.cpp
     src/hair_renderer.cpp
     src/photo_mode.cpp
+    src/mirror_renderer.cpp
 )
 
 add_library(eve::render ALIAS eve_render)

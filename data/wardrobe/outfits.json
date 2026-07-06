@@ -1,0 +1,20 @@
+[
+  {
+    "id": "casual_day",
+    "name": "Casual Day",
+    "favorite": true,
+    "item_ids": ["silk_blouse", "denim_jeans", "stiletto_heels"]
+  },
+  {
+    "id": "evening_elegance",
+    "name": "Evening Elegance",
+    "favorite": false,
+    "item_ids": ["evening_dress", "pearl_necklace", "stiletto_heels"]
+  },
+  {
+    "id": "cozy_night",
+    "name": "Cozy Night",
+    "favorite": false,
+    "item_ids": ["silk_nightgown", "sheer_socks"]
+  }
+]

@@ -108,6 +108,7 @@ class CharacterCreator {
 public:
     void set_profile(CharacterProfile profile);
     [[nodiscard]] const CharacterProfile& profile() const { return profile_; }
+    [[nodiscard]] CharacterProfile& profile_mutable() { return profile_; }
 
     void apply_body_preset(BodyTypePreset preset);
     void set_morph(std::string_view key, f32 value);
