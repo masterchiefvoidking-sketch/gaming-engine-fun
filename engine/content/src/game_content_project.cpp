@@ -2,6 +2,8 @@
 #include <eve/core/filesystem/filesystem.hpp>
 #include <eve/core/logging/logger.hpp>
 
+#include <nlohmann/json.hpp>
+
 namespace eve::content {
 
 bool GameContentProject::open(std::string_view game_root) {
