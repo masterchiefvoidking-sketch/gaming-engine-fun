@@ -25,3 +25,11 @@ add_subdirectory(tests)
 if(EVE_BUILD_EDITOR)
     add_subdirectory(apps/editor)
 endif()
+
+if(EVE_BUILD_EXAMPLE_SCENE)
+    add_subdirectory(apps/example_scene)
+endif()
+
+if(EVE_ENABLE_BENCHMARKS)
+    add_subdirectory(benchmarks)
+endif()

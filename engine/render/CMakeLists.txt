@@ -1,5 +1,9 @@
 add_library(eve_render STATIC
     src/vulkan_context.cpp
+    src/inspection_camera.cpp
+    src/human_shader_pipeline.cpp
+    src/hair_renderer.cpp
+    src/photo_mode.cpp
 )
 
 add_library(eve::render ALIAS eve_render)

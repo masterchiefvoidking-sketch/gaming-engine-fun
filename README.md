@@ -99,3 +99,7 @@ This is the **first milestone**: repository structure, CMake, core systems, ECS,
 ## Phase 2 — Apartment Life Simulation
 
 See [Phase 2 Documentation](docs/PHASE2_APARTMENT_SIM.md) for the interactive apartment framework, relationship system, social AI, data-driven interactions, and scripting hooks.
+
+## Phase 3 — Digital Human Framework
+
+See [Phase 3 Documentation](docs/PHASE3_DIGITAL_HUMAN.md) for character customization, inspection camera, animation state machine, PBR human shaders, hair rendering, photo mode, and the example apartment scene.

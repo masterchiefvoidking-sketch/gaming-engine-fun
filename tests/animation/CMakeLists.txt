@@ -1,0 +1,2 @@
+eve_add_test(eve_animation_tests test_animation.cpp)
+target_link_libraries(eve_animation_tests PRIVATE eve::animation)
