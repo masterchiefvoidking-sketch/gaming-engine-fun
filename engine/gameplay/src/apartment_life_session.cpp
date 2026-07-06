@@ -74,11 +74,28 @@ bool ApartmentLifeSession::initialize(const ApartmentLifeConfig& config) {
     }
 
     director_.attach_camera(viewer_.inspection().camera());
-    lighting_.load_presets(config_.data_root + "/apartment/anime_lighting.json");
+    lighting_.load_presets(config_.data_root + "/anime/room_lighting.json");
     expressions_.load_presets(config_.data_root + "/anime/expressions.json");
     director_.attach_lighting(lighting_);
     director_.attach_motion(motion_);
     director_.attach_expressions(expressions_);
+
+    graphics_.apply_preset(polish::GraphicsPreset::High);
+    interaction::QualitySettings quality;
+    graphics_.apply_quality_tier(quality);
+    viewer_.set_quality(quality);
+    graphics_.apply_to_material(viewer_.inspection().pipeline().material());
+    graphics_.apply_to_outline(viewer_.inspection().pipeline().outline());
+    camera_polish_.load_room_presets(config_.data_root + "/camera/room_presets.json");
+    camera_polish_.set_active_room(config_.initial_room);
+    animation_polish_.attach(motion_, expressions_, viewer_.inspection().pipeline().eyes());
+    wardrobe_polish_.initialize(config_.game_root);
+    atmosphere_.load(config_.data_root);
+    atmosphere_.apply_time_preset(lighting_, polish::TimeOfDayPreset::Sunset);
+    atmosphere_.apply_room(current_room_, lighting_);
+
+    profiler_.set_budget({60.0f, 16.67f, 2048.0f, 5000});
+    profiler_.set_frame_cap(120);
 
     const content::ApartmentContentDefinition* apartment =
         content_.apartments().find_apartment(config_.apartment_id);
@@ -152,6 +169,10 @@ void ApartmentLifeSession::update(f32 delta_seconds) {
     if (!initialized_) {
         return;
     }
+    profiler_.begin_frame();
+    camera_polish_.apply_smooth_input(viewer_.inspection().camera(), delta_seconds,
+                                      viewer_.input().frame());
+    animation_polish_.update(delta_seconds);
     viewer_.update(delta_seconds);
     if (scene_active_) {
         const scene::SceneStepResult step = director_.advance(delta_seconds);
@@ -159,6 +180,9 @@ void ApartmentLifeSession::update(f32 delta_seconds) {
             scene_active_ = false;
         }
     }
+    profiler_.record_animation_cost(0.8f);
+    profiler_.record_draw_calls(1200);
+    profiler_.end_frame(delta_seconds);
 }
 
 bool ApartmentLifeSession::change_room(std::string_view room_id) {
@@ -171,6 +195,8 @@ bool ApartmentLifeSession::change_room(std::string_view room_id) {
     if (character != nullptr) {
         character->current_room_id = current_room_;
     }
+    camera_polish_.set_active_room(current_room_);
+    atmosphere_.apply_room(current_room_, lighting_);
     refresh_room_interactions();
     return true;
 }
@@ -310,11 +336,10 @@ bool ApartmentLifeSession::auto_save() {
 }
 
 bool ApartmentLifeSession::validate_content() const {
-    build::ContentValidator validator;
-    const build::ExportProfileSettings profile =
-        build::settings_for_profile(build::ExportProfile::WindowsDevelopment);
-    const build::ValidationReport report = validator.validate(config_.game_root, profile);
-    return report.passed;
+    polish::ValidationGate gate;
+    const polish::ValidationGateResult result =
+        gate.validate_for_export(config_.game_root, build::ExportProfile::WindowsDevelopment);
+    return result.passed;
 }
 
 bool ApartmentLifeSession::export_windows_dev(std::string& output_path) {

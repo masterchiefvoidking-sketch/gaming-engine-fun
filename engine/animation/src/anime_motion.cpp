@@ -26,6 +26,10 @@ void AnimeMotionController::set_body_language(AnimeBodyLanguageId language) {
     case AnimeBodyLanguageId::MirrorPose:
         state_.active_clip = "anim_mirror_pose";
         break;
+    case AnimeBodyLanguageId::IdleBreathing:
+        state_.head_tilt = 0.0f;
+        state_.active_clip = "anim_idle_breathing";
+        break;
     case AnimeBodyLanguageId::OutfitPreviewWalk:
         state_.active_clip = "anim_walk_preview";
         break;
@@ -44,6 +48,12 @@ void AnimeMotionController::trigger_reaction(std::string_view reaction_id) {
         set_body_language(AnimeBodyLanguageId::Embarrassed);
     } else if (reaction_id == "shy") {
         set_body_language(AnimeBodyLanguageId::Shy);
+    } else if (reaction_id == "sit") {
+        state_.active_clip = "anim_sit_down";
+        state_.shoulder_offset = 0.02f;
+    } else if (reaction_id == "stand") {
+        state_.active_clip = "anim_stand_up";
+        state_.shoulder_offset = 0.0f;
     }
 }
 
@@ -56,7 +66,9 @@ void AnimeMotionController::update(f32 delta_seconds) {
     state_.breathing_offset = std::sin(elapsed_ * 2.5f) * 0.015f;
     state_.hair_sway = std::sin(elapsed_ * 1.8f) * 0.03f;
     state_.cloth_sway = std::sin(elapsed_ * 1.4f) * 0.02f;
-    (void)eye_tracking_;
+    if (eye_tracking_) {
+        state_.head_tilt += std::sin(elapsed_ * 0.6f) * 0.01f;
+    }
 }
 
 } // namespace eve::animation

@@ -54,12 +54,14 @@ void AnimeVisualPipeline::shutdown() {
 }
 
 void AnimeVisualPipeline::update(f32 delta_seconds) {
+    outline_.begin_pass();
     expressions_.update(delta_seconds);
     motion_.update(delta_seconds);
     eyes_.update(delta_seconds);
     hair_.update(delta_seconds, {0.0f, 1.65f, 0.0f});
     character_.update(delta_seconds);
     sync_expression_to_render();
+    outline_.end_pass();
 }
 
 void AnimeVisualPipeline::orbit_camera(f32 yaw, f32 pitch, f32 zoom) {
