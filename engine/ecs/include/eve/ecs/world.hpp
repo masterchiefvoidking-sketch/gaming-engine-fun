@@ -100,14 +100,18 @@ template <typename T> T& World::add_component(EntityId entity) {
     }
 
     const auto* desc = registry_.descriptor(id);
-    std::function<void(u8*)> deleter = [desc](u8* ptr) {
-        if (desc != nullptr && desc->destroy != nullptr) {
-            desc->destroy(ptr);
+    void (*destroy_fn)(void*) = desc->destroy;
+    const std::size_t alignment = desc->alignment;
+    std::function<void(u8*)> deleter = [destroy_fn, alignment](u8* ptr) {
+        if (destroy_fn != nullptr) {
+            destroy_fn(ptr);
         }
-        delete[] ptr;
+        ::operator delete(ptr, std::align_val_t{alignment});
     };
 
-    std::unique_ptr<u8, std::function<void(u8*)>> storage(new u8[desc->size], std::move(deleter));
+    void* raw = ::operator new(desc->size, std::align_val_t{alignment});
+    std::unique_ptr<u8, std::function<void(u8*)>> storage(static_cast<u8*>(raw),
+                                                          std::move(deleter));
     T* component = new (storage.get()) T();
     record.components.emplace(id, std::move(storage));
     record.component_types.push_back(id);

@@ -95,3 +95,7 @@ License to be determined. Contributions welcome once governance is established.
 ## Status
 
 This is the **first milestone**: repository structure, CMake, core systems, ECS, Vulkan initialization, editor shell, tests, and CI. Rendering, UI docking, animation, and character systems are scaffolded for subsequent milestones.
+
+## Phase 2 — Apartment Life Simulation
+
+See [Phase 2 Documentation](docs/PHASE2_APARTMENT_SIM.md) for the interactive apartment framework, relationship system, social AI, data-driven interactions, and scripting hooks.

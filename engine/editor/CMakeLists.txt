@@ -1,5 +1,9 @@
 add_library(eve_editor_lib STATIC
     src/editor_application.cpp
+    src/apartment_builder.cpp
+    src/relationship_inspector.cpp
+    src/schedule_editor.cpp
+    src/interaction_editor.cpp
 )
 
 add_library(eve::editor ALIAS eve_editor_lib)
@@ -15,6 +19,9 @@ target_link_libraries(eve_editor_lib
         eve::core
         eve::ecs
         eve::render
+        eve::world
+        eve::ai
+        eve::scripting
         glfw
 )
 
