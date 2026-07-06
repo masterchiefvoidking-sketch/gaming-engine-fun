@@ -1,0 +1,482 @@
+[
+  {
+    "id": "sofa_cream_inspect",
+    "room": "living_room",
+    "object_id": "sofa_cream",
+    "label": "Inspect sofa cream",
+    "action": "inspect",
+    "placeholder": true
+  },
+  {
+    "id": "sofa_cream_use",
+    "room": "living_room",
+    "object_id": "sofa_cream",
+    "label": "Use sofa cream",
+    "action": "use",
+    "placeholder": true
+  },
+  {
+    "id": "sofa_cream_sit",
+    "room": "living_room",
+    "object_id": "sofa_cream",
+    "label": "Sit sofa cream",
+    "action": "sit",
+    "placeholder": true
+  },
+  {
+    "id": "tv_stand_inspect",
+    "room": "living_room",
+    "object_id": "tv_stand",
+    "label": "Inspect tv stand",
+    "action": "inspect",
+    "placeholder": true
+  },
+  {
+    "id": "tv_stand_use",
+    "room": "living_room",
+    "object_id": "tv_stand",
+    "label": "Use tv stand",
+    "action": "use",
+    "placeholder": true
+  },
+  {
+    "id": "tv_stand_sit",
+    "room": "living_room",
+    "object_id": "tv_stand",
+    "label": "Sit tv stand",
+    "action": "sit",
+    "placeholder": true
+  },
+  {
+    "id": "floor_lamp_inspect",
+    "room": "living_room",
+    "object_id": "floor_lamp",
+    "label": "Inspect floor lamp",
+    "action": "inspect",
+    "placeholder": true
+  },
+  {
+    "id": "floor_lamp_use",
+    "room": "living_room",
+    "object_id": "floor_lamp",
+    "label": "Use floor lamp",
+    "action": "use",
+    "placeholder": true
+  },
+  {
+    "id": "floor_lamp_sit",
+    "room": "living_room",
+    "object_id": "floor_lamp",
+    "label": "Sit floor lamp",
+    "action": "sit",
+    "placeholder": true
+  },
+  {
+    "id": "rug_woven_inspect",
+    "room": "living_room",
+    "object_id": "rug_woven",
+    "label": "Inspect rug woven",
+    "action": "inspect",
+    "placeholder": true
+  },
+  {
+    "id": "rug_woven_use",
+    "room": "living_room",
+    "object_id": "rug_woven",
+    "label": "Use rug woven",
+    "action": "use",
+    "placeholder": true
+  },
+  {
+    "id": "rug_woven_sit",
+    "room": "living_room",
+    "object_id": "rug_woven",
+    "label": "Sit rug woven",
+    "action": "sit",
+    "placeholder": true
+  },
+  {
+    "id": "plant_monstera_inspect",
+    "room": "living_room",
+    "object_id": "plant_monstera",
+    "label": "Inspect plant monstera",
+    "action": "inspect",
+    "placeholder": true
+  },
+  {
+    "id": "plant_monstera_use",
+    "room": "living_room",
+    "object_id": "plant_monstera",
+    "label": "Use plant monstera",
+    "action": "use",
+    "placeholder": true
+  },
+  {
+    "id": "plant_monstera_sit",
+    "room": "living_room",
+    "object_id": "plant_monstera",
+    "label": "Sit plant monstera",
+    "action": "sit",
+    "placeholder": true
+  },
+  {
+    "id": "record_player_inspect",
+    "room": "living_room",
+    "object_id": "record_player",
+    "label": "Inspect record player",
+    "action": "inspect",
+    "placeholder": true
+  },
+  {
+    "id": "record_player_use",
+    "room": "living_room",
+    "object_id": "record_player",
+    "label": "Use record player",
+    "action": "use",
+    "placeholder": true
+  },
+  {
+    "id": "record_player_sit",
+    "room": "living_room",
+    "object_id": "record_player",
+    "label": "Sit record player",
+    "action": "sit",
+    "placeholder": true
+  },
+  {
+    "id": "bookshelf_inspect",
+    "room": "living_room",
+    "object_id": "bookshelf",
+    "label": "Inspect bookshelf",
+    "action": "inspect",
+    "placeholder": true
+  },
+  {
+    "id": "bookshelf_use",
+    "room": "living_room",
+    "object_id": "bookshelf",
+    "label": "Use bookshelf",
+    "action": "use",
+    "placeholder": true
+  },
+  {
+    "id": "bookshelf_sit",
+    "room": "living_room",
+    "object_id": "bookshelf",
+    "label": "Sit bookshelf",
+    "action": "sit",
+    "placeholder": true
+  },
+  {
+    "id": "kitchen_counter_inspect",
+    "room": "kitchen",
+    "object_id": "kitchen_counter",
+    "label": "Inspect kitchen counter",
+    "action": "inspect",
+    "placeholder": true
+  },
+  {
+    "id": "kitchen_counter_use",
+    "room": "kitchen",
+    "object_id": "kitchen_counter",
+    "label": "Use kitchen counter",
+    "action": "use",
+    "placeholder": true
+  },
+  {
+    "id": "kitchen_counter_sit",
+    "room": "kitchen",
+    "object_id": "kitchen_counter",
+    "label": "Sit kitchen counter",
+    "action": "sit",
+    "placeholder": true
+  },
+  {
+    "id": "refrigerator_inspect",
+    "room": "kitchen",
+    "object_id": "refrigerator",
+    "label": "Inspect refrigerator",
+    "action": "inspect",
+    "placeholder": true
+  },
+  {
+    "id": "refrigerator_use",
+    "room": "kitchen",
+    "object_id": "refrigerator",
+    "label": "Use refrigerator",
+    "action": "use",
+    "placeholder": true
+  },
+  {
+    "id": "refrigerator_sit",
+    "room": "kitchen",
+    "object_id": "refrigerator",
+    "label": "Sit refrigerator",
+    "action": "sit",
+    "placeholder": true
+  },
+  {
+    "id": "bed_frame_inspect",
+    "room": "bedroom",
+    "object_id": "bed_frame",
+    "label": "Inspect bed frame",
+    "action": "inspect",
+    "placeholder": true
+  },
+  {
+    "id": "bed_frame_use",
+    "room": "bedroom",
+    "object_id": "bed_frame",
+    "label": "Use bed frame",
+    "action": "use",
+    "placeholder": true
+  },
+  {
+    "id": "bed_frame_sit",
+    "room": "bedroom",
+    "object_id": "bed_frame",
+    "label": "Sit bed frame",
+    "action": "sit",
+    "placeholder": true
+  },
+  {
+    "id": "nightstand_inspect",
+    "room": "bedroom",
+    "object_id": "nightstand",
+    "label": "Inspect nightstand",
+    "action": "inspect",
+    "placeholder": true
+  },
+  {
+    "id": "nightstand_use",
+    "room": "bedroom",
+    "object_id": "nightstand",
+    "label": "Use nightstand",
+    "action": "use",
+    "placeholder": true
+  },
+  {
+    "id": "nightstand_sit",
+    "room": "bedroom",
+    "object_id": "nightstand",
+    "label": "Sit nightstand",
+    "action": "sit",
+    "placeholder": true
+  },
+  {
+    "id": "desk_inspect",
+    "room": "bedroom",
+    "object_id": "desk",
+    "label": "Inspect desk",
+    "action": "inspect",
+    "placeholder": true
+  },
+  {
+    "id": "desk_use",
+    "room": "bedroom",
+    "object_id": "desk",
+    "label": "Use desk",
+    "action": "use",
+    "placeholder": true
+  },
+  {
+    "id": "desk_sit",
+    "room": "bedroom",
+    "object_id": "desk",
+    "label": "Sit desk",
+    "action": "sit",
+    "placeholder": true
+  },
+  {
+    "id": "office_chair_inspect",
+    "room": "bedroom",
+    "object_id": "office_chair",
+    "label": "Inspect office chair",
+    "action": "inspect",
+    "placeholder": true
+  },
+  {
+    "id": "office_chair_use",
+    "room": "bedroom",
+    "object_id": "office_chair",
+    "label": "Use office chair",
+    "action": "use",
+    "placeholder": true
+  },
+  {
+    "id": "office_chair_sit",
+    "room": "bedroom",
+    "object_id": "office_chair",
+    "label": "Sit office chair",
+    "action": "sit",
+    "placeholder": true
+  },
+  {
+    "id": "bathroom_mirror_inspect",
+    "room": "bathroom",
+    "object_id": "bathroom_mirror",
+    "label": "Inspect bathroom mirror",
+    "action": "inspect",
+    "placeholder": true
+  },
+  {
+    "id": "bathroom_mirror_use",
+    "room": "bathroom",
+    "object_id": "bathroom_mirror",
+    "label": "Use bathroom mirror",
+    "action": "use",
+    "placeholder": true
+  },
+  {
+    "id": "bathroom_mirror_sit",
+    "room": "bathroom",
+    "object_id": "bathroom_mirror",
+    "label": "Sit bathroom mirror",
+    "action": "sit",
+    "placeholder": true
+  },
+  {
+    "id": "dining_table_inspect",
+    "room": "dining_room",
+    "object_id": "dining_table",
+    "label": "Inspect dining table",
+    "action": "inspect",
+    "placeholder": true
+  },
+  {
+    "id": "dining_table_use",
+    "room": "dining_room",
+    "object_id": "dining_table",
+    "label": "Use dining table",
+    "action": "use",
+    "placeholder": true
+  },
+  {
+    "id": "dining_table_sit",
+    "room": "dining_room",
+    "object_id": "dining_table",
+    "label": "Sit dining table",
+    "action": "sit",
+    "placeholder": true
+  },
+  {
+    "id": "dining_chair_inspect",
+    "room": "dining_room",
+    "object_id": "dining_chair",
+    "label": "Inspect dining chair",
+    "action": "inspect",
+    "placeholder": true
+  },
+  {
+    "id": "dining_chair_use",
+    "room": "dining_room",
+    "object_id": "dining_chair",
+    "label": "Use dining chair",
+    "action": "use",
+    "placeholder": true
+  },
+  {
+    "id": "dining_chair_sit",
+    "room": "dining_room",
+    "object_id": "dining_chair",
+    "label": "Sit dining chair",
+    "action": "sit",
+    "placeholder": true
+  },
+  {
+    "id": "coffee_table_inspect",
+    "room": "dining_room",
+    "object_id": "coffee_table",
+    "label": "Inspect coffee table",
+    "action": "inspect",
+    "placeholder": true
+  },
+  {
+    "id": "coffee_table_use",
+    "room": "dining_room",
+    "object_id": "coffee_table",
+    "label": "Use coffee table",
+    "action": "use",
+    "placeholder": true
+  },
+  {
+    "id": "coffee_table_sit",
+    "room": "dining_room",
+    "object_id": "coffee_table",
+    "label": "Sit coffee table",
+    "action": "sit",
+    "placeholder": true
+  },
+  {
+    "id": "wardrobe_cabinet_inspect",
+    "room": "wardrobe",
+    "object_id": "wardrobe_cabinet",
+    "label": "Inspect wardrobe cabinet",
+    "action": "inspect",
+    "placeholder": true
+  },
+  {
+    "id": "wardrobe_cabinet_use",
+    "room": "wardrobe",
+    "object_id": "wardrobe_cabinet",
+    "label": "Use wardrobe cabinet",
+    "action": "use",
+    "placeholder": true
+  },
+  {
+    "id": "wardrobe_cabinet_sit",
+    "room": "wardrobe",
+    "object_id": "wardrobe_cabinet",
+    "label": "Sit wardrobe cabinet",
+    "action": "sit",
+    "placeholder": true
+  },
+  {
+    "id": "curtains_sheer_inspect",
+    "room": "wardrobe",
+    "object_id": "curtains_sheer",
+    "label": "Inspect curtains sheer",
+    "action": "inspect",
+    "placeholder": true
+  },
+  {
+    "id": "curtains_sheer_use",
+    "room": "wardrobe",
+    "object_id": "curtains_sheer",
+    "label": "Use curtains sheer",
+    "action": "use",
+    "placeholder": true
+  },
+  {
+    "id": "curtains_sheer_sit",
+    "room": "wardrobe",
+    "object_id": "curtains_sheer",
+    "label": "Sit curtains sheer",
+    "action": "sit",
+    "placeholder": true
+  },
+  {
+    "id": "wall_shelf_inspect",
+    "room": "wardrobe",
+    "object_id": "wall_shelf",
+    "label": "Inspect wall shelf",
+    "action": "inspect",
+    "placeholder": true
+  },
+  {
+    "id": "wall_shelf_use",
+    "room": "wardrobe",
+    "object_id": "wall_shelf",
+    "label": "Use wall shelf",
+    "action": "use",
+    "placeholder": true
+  },
+  {
+    "id": "wall_shelf_sit",
+    "room": "wardrobe",
+    "object_id": "wall_shelf",
+    "label": "Sit wall shelf",
+    "action": "sit",
+    "placeholder": true
+  }
+]

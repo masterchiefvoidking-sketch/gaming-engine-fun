@@ -1,0 +1,8 @@
+[
+  {"id": "portrait_soft", "label": "Soft Portrait", "room": "living_room", "fov": 28, "depth_of_field": 0.7, "filter": "warm_glow"},
+  {"id": "full_body_mirror", "label": "Mirror Full Body", "room": "wardrobe", "fov": 35, "depth_of_field": 0.4, "filter": "neutral"},
+  {"id": "sunset_window", "label": "Sunset Window", "room": "living_room", "fov": 32, "depth_of_field": 0.5, "filter": "golden_hour"},
+  {"id": "bedroom_intimate", "label": "Bedroom Intimate", "room": "bedroom", "fov": 30, "depth_of_field": 0.8, "filter": "soft_pink"},
+  {"id": "kitchen_candid", "label": "Kitchen Candid", "room": "kitchen", "fov": 38, "depth_of_field": 0.3, "filter": "natural"},
+  {"id": "balcony_silhouette", "label": "Balcony Silhouette", "room": "balcony", "fov": 34, "depth_of_field": 0.6, "filter": "neon_edge"}
+]
