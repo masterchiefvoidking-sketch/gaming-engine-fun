@@ -1,0 +1,152 @@
+[
+  {
+    "id": "morning_friend",
+    "label": "Morning with friend",
+    "min_stage": "friend",
+    "time_of_day": [
+      "morning"
+    ],
+    "rooms": [
+      "living_room",
+      "kitchen"
+    ]
+  },
+  {
+    "id": "morning_acquaintance",
+    "label": "Morning acquaintance",
+    "min_stage": "acquaintance",
+    "time_of_day": [
+      "morning"
+    ]
+  },
+  {
+    "id": "morning_privacy",
+    "label": "Morning grooming privacy",
+    "min_stage": "friend",
+    "rooms": [
+      "bathroom"
+    ],
+    "require_privacy": true
+  },
+  {
+    "id": "friend_wardrobe",
+    "label": "Friend wardrobe",
+    "min_stage": "friend",
+    "rooms": [
+      "wardrobe"
+    ]
+  },
+  {
+    "id": "friend_kitchen",
+    "label": "Friend kitchen",
+    "min_stage": "friend",
+    "rooms": [
+      "kitchen"
+    ]
+  },
+  {
+    "id": "dinner_friend",
+    "label": "Dinner with friend",
+    "min_stage": "friend",
+    "rooms": [
+      "dining_room"
+    ],
+    "time_of_day": [
+      "evening"
+    ]
+  },
+  {
+    "id": "evening_relaxed",
+    "label": "Evening relaxed",
+    "min_stage": "acquaintance",
+    "time_of_day": [
+      "evening"
+    ],
+    "rooms": [
+      "living_room"
+    ]
+  },
+  {
+    "id": "evening_friend",
+    "label": "Evening friend balcony",
+    "min_stage": "friend",
+    "time_of_day": [
+      "evening"
+    ],
+    "rooms": [
+      "balcony"
+    ]
+  },
+  {
+    "id": "night_close_friend",
+    "label": "Night close friend",
+    "min_stage": "close_friend",
+    "time_of_day": [
+      "night"
+    ],
+    "rooms": [
+      "bedroom"
+    ],
+    "min_trust": 0.5
+  },
+  {
+    "id": "gift_friend",
+    "label": "Gift with friend",
+    "min_stage": "friend",
+    "rooms": [
+      "living_room"
+    ]
+  },
+  {
+    "id": "rainy_movie_night",
+    "label": "Rainy movie night",
+    "min_stage": "acquaintance",
+    "weather": [
+      "rain"
+    ],
+    "rooms": [
+      "living_room"
+    ],
+    "time_of_day": [
+      "evening",
+      "night"
+    ],
+    "min_trust": 0.1
+  },
+  {
+    "id": "rainy_movie_romantic",
+    "label": "Romantic rainy movie",
+    "min_stage": "romantic_interest",
+    "weather": [
+      "rain"
+    ],
+    "min_trust": 0.5,
+    "min_affection": 0.4
+  },
+  {
+    "id": "movie_repeat",
+    "label": "Movie repeat",
+    "min_stage": "friend",
+    "memories": [
+      "first_movie_night"
+    ],
+    "rooms": [
+      "living_room"
+    ]
+  },
+  {
+    "id": "comfort_needed",
+    "label": "Comfort needed",
+    "min_stage": "friend",
+    "max_stress": 0.8,
+    "min_comfort": 0.2
+  },
+  {
+    "id": "celebration_ready",
+    "label": "Celebration ready",
+    "min_stage": "close_friend",
+    "story_flags": [
+      "celebration_flag"
+    ]
+  }
+]

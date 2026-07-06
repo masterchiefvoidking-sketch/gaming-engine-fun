@@ -1,0 +1,126 @@
+[
+  {
+    "id": "sit",
+    "label": "Sit",
+    "clip": "anim_sit",
+    "expression": "neutral",
+    "duration": 1.5
+  },
+  {
+    "id": "stand",
+    "label": "Stand",
+    "clip": "anim_stand",
+    "duration": 1.0
+  },
+  {
+    "id": "turn",
+    "label": "Turn",
+    "clip": "anim_turn",
+    "duration": 0.8
+  },
+  {
+    "id": "walk",
+    "label": "Walk",
+    "clip": "anim_walk",
+    "duration": 2.0
+  },
+  {
+    "id": "lean",
+    "label": "Lean",
+    "clip": "anim_lean",
+    "expression": "shy",
+    "duration": 1.2
+  },
+  {
+    "id": "smile",
+    "label": "Smile",
+    "expression": "soft_smile",
+    "duration": 1.0
+  },
+  {
+    "id": "laugh",
+    "label": "Laugh",
+    "expression": "laugh",
+    "duration": 1.5
+  },
+  {
+    "id": "blush",
+    "label": "Blush",
+    "expression": "blushing",
+    "duration": 1.2
+  },
+  {
+    "id": "look_away",
+    "label": "Look away",
+    "expression": "shy",
+    "duration": 1.0
+  },
+  {
+    "id": "eye_contact",
+    "label": "Eye contact",
+    "expression": "romantic_gaze",
+    "duration": 1.5
+  },
+  {
+    "id": "wave",
+    "label": "Wave",
+    "clip": "anim_wave",
+    "duration": 1.0
+  },
+  {
+    "id": "stretch",
+    "label": "Stretch",
+    "clip": "anim_stretch",
+    "duration": 1.5
+  },
+  {
+    "id": "hold_object",
+    "label": "Hold object",
+    "clip": "anim_hold",
+    "duration": 2.0
+  },
+  {
+    "id": "place_object",
+    "label": "Place object",
+    "clip": "anim_place",
+    "duration": 1.0
+  },
+  {
+    "id": "eat",
+    "label": "Eat",
+    "clip": "anim_eat",
+    "duration": 2.0
+  },
+  {
+    "id": "drink",
+    "label": "Drink",
+    "clip": "anim_drink",
+    "duration": 1.5
+  },
+  {
+    "id": "read",
+    "label": "Read",
+    "clip": "anim_read",
+    "duration": 3.0
+  },
+  {
+    "id": "watch_tv",
+    "label": "Watch TV",
+    "clip": "anim_watch_tv",
+    "duration": 2.0
+  },
+  {
+    "id": "mirror_pose",
+    "label": "Mirror pose",
+    "clip": "anim_mirror",
+    "expression": "curious",
+    "duration": 2.0
+  },
+  {
+    "id": "outfit_preview_walk",
+    "label": "Outfit preview walk",
+    "clip": "anim_catwalk",
+    "expression": "confident",
+    "duration": 3.0
+  }
+]

@@ -46,6 +46,14 @@ RelationshipModel& RelationshipRegistry::get_or_create(EntityId a, EntityId b) {
     return it->second;
 }
 
+RelationshipModel* RelationshipRegistry::find(EntityId a, EntityId b) {
+    const auto it = relationships_.find(make_key(a, b));
+    if (it == relationships_.end()) {
+        return nullptr;
+    }
+    return &it->second;
+}
+
 const RelationshipModel* RelationshipRegistry::find(EntityId a, EntityId b) const {
     const auto it = relationships_.find(make_key(a, b));
     if (it == relationships_.end()) {

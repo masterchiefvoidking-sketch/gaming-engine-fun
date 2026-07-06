@@ -42,6 +42,10 @@ if(EVE_BUILD_RAINY_DEMO OR EVE_BUILD_TESTS)
     add_subdirectory(apps/rainy_evening_demo)
 endif()
 
+if(EVE_BUILD_MOVIE_DEMO OR EVE_BUILD_TESTS)
+    add_subdirectory(apps/rainy_movie_night_demo)
+endif()
+
 if(EVE_ENABLE_BENCHMARKS)
     add_subdirectory(benchmarks)
 endif()

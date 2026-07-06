@@ -68,6 +68,7 @@ struct RelationshipModel {
 class RelationshipRegistry {
 public:
     RelationshipModel& get_or_create(EntityId a, EntityId b);
+    [[nodiscard]] RelationshipModel* find(EntityId a, EntityId b);
     [[nodiscard]] const RelationshipModel* find(EntityId a, EntityId b) const;
     [[nodiscard]] std::size_t count() const { return relationships_.size(); }
 

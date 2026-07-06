@@ -7,6 +7,7 @@ add_library(eve_editor_lib STATIC
     src/wardrobe_tools.cpp
     src/anime_visual_tools.cpp
     src/romance_sim_tools.cpp
+    src/scene_director_tools.cpp
 )
 
 add_library(eve::editor ALIAS eve_editor_lib)
@@ -24,6 +25,7 @@ target_link_libraries(eve_editor_lib
         eve::render
         eve::world
         eve::ai
+        eve::scene
         eve::scripting
         eve::human
         eve::animation

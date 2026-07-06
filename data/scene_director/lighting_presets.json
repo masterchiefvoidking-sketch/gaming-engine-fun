@@ -1,0 +1,72 @@
+[
+  {
+    "id": "morning_soft",
+    "label": "Morning soft light",
+    "room": "living_room",
+    "preset": "living_morning",
+    "transition": 1.5
+  },
+  {
+    "id": "cozy_lamp_rain",
+    "label": "Cozy lamp rainy evening",
+    "room": "living_room",
+    "preset": "living_cozy_lamp",
+    "transition": 2.0
+  },
+  {
+    "id": "dining_warm",
+    "label": "Warm dining light",
+    "room": "dining_room",
+    "preset": "dining_warm",
+    "transition": 1.0
+  },
+  {
+    "id": "bathroom_bright",
+    "label": "Bright bathroom",
+    "room": "bathroom",
+    "preset": "bathroom_bright",
+    "transition": 0.8
+  },
+  {
+    "id": "night_soft",
+    "label": "Soft night light",
+    "room": "bedroom",
+    "preset": "bedroom_night",
+    "transition": 2.0
+  },
+  {
+    "id": "sunset_glow",
+    "label": "Sunset glow",
+    "room": "balcony",
+    "preset": "balcony_sunset",
+    "transition": 2.5
+  },
+  {
+    "id": "wardrobe_spotlight",
+    "label": "Wardrobe spotlight",
+    "room": "wardrobe",
+    "preset": "wardrobe_spot",
+    "transition": 1.0
+  },
+  {
+    "id": "kitchen_warm",
+    "label": "Kitchen warm",
+    "room": "kitchen",
+    "preset": "kitchen_warm",
+    "transition": 1.0
+  },
+  {
+    "id": "rainy_day",
+    "label": "Rainy day ambient",
+    "room": "living_room",
+    "preset": "living_rainy",
+    "transition": 2.0
+  },
+  {
+    "id": "celebration_warm",
+    "label": "Celebration warm",
+    "room": "dining_room",
+    "preset": "dining_celebration",
+    "transition": 1.5
+  }
+]

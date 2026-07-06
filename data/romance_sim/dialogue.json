@@ -566,5 +566,81 @@
         "next": "compliment_blush"
       }
     ]
+  },
+  {
+    "id": "movie_invite_low_trust",
+    "speaker": "aiko",
+    "line": "A movie? On a night like this? ...Sure, I wouldn't mind the company.",
+    "category": "movie",
+    "conditions": {
+      "min_trust": 0.0,
+      "rooms": [
+        "living_room"
+      ],
+      "time_of_day": [
+        "evening",
+        "night"
+      ]
+    }
+  },
+  {
+    "id": "movie_invite_high_trust",
+    "speaker": "aiko",
+    "line": "I'd love that. Pick something cozy \u2014 I'll grab blankets.",
+    "category": "movie",
+    "conditions": {
+      "min_trust": 0.35,
+      "rooms": [
+        "living_room"
+      ],
+      "weather": [
+        "rain"
+      ],
+      "time_of_day": [
+        "evening",
+        "night"
+      ]
+    }
+  },
+  {
+    "id": "movie_start",
+    "speaker": "aiko",
+    "line": "This is nice... rain on the windows, soft light, and you here.",
+    "category": "movie",
+    "conditions": {
+      "rooms": [
+        "living_room"
+      ],
+      "time_of_day": [
+        "evening",
+        "night"
+      ]
+    }
+  },
+  {
+    "id": "movie_reaction",
+    "speaker": "aiko",
+    "line": "That was a good choice. I liked sharing this with you.",
+    "category": "movie",
+    "conditions": {
+      "min_stage": "friend",
+      "rooms": [
+        "living_room"
+      ]
+    }
+  },
+  {
+    "id": "movie_memory_callback",
+    "speaker": "aiko",
+    "line": "Remember our rainy movie night? I still think about it when it rains.",
+    "category": "memory_callback",
+    "conditions": {
+      "memories": [
+        "first_movie_night"
+      ],
+      "rooms": [
+        "living_room"
+      ]
+    }
   }
 ]

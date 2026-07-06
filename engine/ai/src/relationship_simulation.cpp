@@ -302,12 +302,20 @@ const RelationshipModel* RelationshipSimulation::relationship() const {
     return relationships_.find(sim_state_.player_id, sim_state_.character_id);
 }
 
+RelationshipModel* RelationshipSimulation::relationship() {
+    return relationships_.find(sim_state_.player_id, sim_state_.character_id);
+}
+
 RelationshipStage RelationshipSimulation::current_stage() const {
     const CharacterSimState* character = profiles_.find("aiko");
     if (character == nullptr) {
         return RelationshipStage::Stranger;
     }
-    return character->relationship_stage;
+    RelationshipProgressionScores scores;
+    scores.trust = character->trust;
+    scores.affection = character->affection;
+    scores.familiarity = character->familiarity;
+    return compute_stage(scores);
 }
 
 DialogueContext RelationshipSimulation::build_dialogue_context() const {

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "rain_ambience",
+    "label": "Rain ambience",
+    "track": "ambience_rain",
+    "volume": 0.5,
+    "fade_in": 2.0,
+    "loop": true
+  },
+  {
+    "id": "cozy_piano",
+    "label": "Cozy piano",
+    "track": "music_cozy_piano",
+    "volume": 0.6,
+    "fade_in": 1.5,
+    "loop": true
+  },
+  {
+    "id": "morning_birds",
+    "label": "Morning birds",
+    "track": "ambience_morning",
+    "volume": 0.4,
+    "fade_in": 1.0,
+    "loop": true
+  },
+  {
+    "id": "kitchen_jazz",
+    "label": "Kitchen jazz",
+    "track": "music_kitchen_jazz",
+    "volume": 0.5,
+    "fade_in": 1.0,
+    "loop": true
+  },
+  {
+    "id": "movie_soft",
+    "label": "Soft movie underscore",
+    "track": "music_movie_soft",
+    "volume": 0.45,
+    "fade_in": 2.0,
+    "loop": true
+  },
+  {
+    "id": "celebration",
+    "label": "Celebration",
+    "track": "music_celebration",
+    "volume": 0.7,
+    "fade_in": 0.5,
+    "loop": false
+  },
+  {
+    "id": "night_quiet",
+    "label": "Night quiet",
+    "track": "ambience_night",
+    "volume": 0.3,
+    "fade_in": 2.0,
+    "loop": true
+  },
+  {
+    "id": "wardrobe_pop",
+    "label": "Wardrobe pop",
+    "track": "music_wardrobe",
+    "volume": 0.55,
+    "fade_in": 0.8,
+    "loop": true
+  },
+  {
+    "id": "balcony_wind",
+    "label": "Balcony wind",
+    "track": "ambience_wind",
+    "volume": 0.35,
+    "fade_in": 1.5,
+    "loop": true
+  },
+  {
+    "id": "comfort_strings",
+    "label": "Comfort strings",
+    "track": "music_comfort",
+    "volume": 0.5,
+    "fade_in": 2.0,
+    "loop": true
+  }
+]
