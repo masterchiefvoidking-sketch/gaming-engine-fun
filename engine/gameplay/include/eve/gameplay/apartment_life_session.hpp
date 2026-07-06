@@ -12,6 +12,15 @@
 #include <eve/human/anime_expression_system.hpp>
 #include <eve/world/anime_room_lighting.hpp>
 
+#include <eve/polish/animation_polish.hpp>
+#include <eve/polish/apartment_atmosphere.hpp>
+#include <eve/polish/camera_polish.hpp>
+#include <eve/polish/dialogue_polish.hpp>
+#include <eve/polish/graphics_polish.hpp>
+#include <eve/polish/performance_profiler.hpp>
+#include <eve/polish/validation_gate.hpp>
+#include <eve/polish/wardrobe_polish.hpp>
+
 #include <string>
 #include <vector>
 
@@ -92,6 +101,11 @@ public:
     [[nodiscard]] ai::RelationshipSimulation& relationship() { return relationship_; }
     [[nodiscard]] scene::SceneDirector& director() { return director_; }
     [[nodiscard]] interaction::WebCharacterViewer& viewer() { return viewer_; }
+    [[nodiscard]] polish::PerformanceProfiler& profiler() { return profiler_; }
+    [[nodiscard]] polish::GraphicsPolish& graphics() { return graphics_; }
+    [[nodiscard]] polish::CameraPolish& camera_polish() { return camera_polish_; }
+    [[nodiscard]] polish::WardrobePolish& wardrobe_polish() { return wardrobe_polish_; }
+    [[nodiscard]] polish::ApartmentAtmosphere& atmosphere() { return atmosphere_; }
     [[nodiscard]] const ApartmentLifeConfig& config() const { return config_; }
     [[nodiscard]] bool initialized() const { return initialized_; }
 
@@ -111,6 +125,13 @@ private:
     world::AnimeRoomLightingSystem lighting_;
     animation::AnimeMotionController motion_;
     human::AnimeExpressionSystem expressions_;
+    polish::PerformanceProfiler profiler_;
+    polish::GraphicsPolish graphics_;
+    polish::CameraPolish camera_polish_;
+    polish::AnimationPolish animation_polish_;
+    polish::WardrobePolish wardrobe_polish_;
+    polish::ApartmentAtmosphere atmosphere_;
+    polish::DialoguePolish dialogue_polish_;
     std::vector<std::string> room_ids_;
     std::vector<RoomInteraction> room_interactions_;
     std::string current_room_;

@@ -22,6 +22,7 @@ target_link_libraries(eve_gameplay
         eve::human
         eve::animation
         eve::world
+        eve::polish
         nlohmann_json::nlohmann_json
 )
 

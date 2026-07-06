@@ -35,8 +35,13 @@ public:
     bool capture_screenshot(std::string_view path);
 
     [[nodiscard]] CharacterFramework& character() { return character_; }
+    [[nodiscard]] AnimeExpressionSystem& expressions() { return expressions_; }
     [[nodiscard]] const AnimeExpressionSystem& expressions() const { return expressions_; }
+    [[nodiscard]] animation::AnimeMotionController& motion() { return motion_; }
+    [[nodiscard]] render::AnimeHumanMaterial& material() { return material_; }
     [[nodiscard]] const render::AnimeHumanMaterial& material() const { return material_; }
+    [[nodiscard]] render::AnimeEyeSystem& eyes() { return eyes_; }
+    [[nodiscard]] render::AnimeOutlinePass& outline() { return outline_; }
     [[nodiscard]] const world::AnimeRoomLightingPreset& lighting() const { return lighting_.active(); }
 
 private:

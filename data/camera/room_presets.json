@@ -1,0 +1,10 @@
+[
+  {"id": "mirror", "label": "Mirror", "room": "wardrobe", "px": 0.0, "py": 1.5, "pz": 2.2, "fx": 0.0, "fy": 1.4, "fz": 0.0, "fov": 32, "min_distance": 1.5, "max_distance": 4.0},
+  {"id": "sofa_conversation", "label": "Sofa", "room": "living_room", "px": -1.5, "py": 1.4, "pz": 2.5, "fx": 0.0, "fy": 1.2, "fz": 0.0, "fov": 38, "min_distance": 1.8, "max_distance": 5.0},
+  {"id": "dining_table", "label": "Dining", "room": "dining_room", "px": 2.0, "py": 1.6, "pz": 2.0, "fx": 0.0, "fy": 1.1, "fz": 0.0, "fov": 40, "min_distance": 1.5, "max_distance": 5.5},
+  {"id": "bedroom_goodnight", "label": "Goodnight", "room": "bedroom", "px": 0.5, "py": 1.5, "pz": 2.8, "fx": 0.0, "fy": 1.0, "fz": 0.0, "fov": 34, "min_distance": 2.0, "max_distance": 4.5},
+  {"id": "bathroom_privacy", "label": "Bathroom", "room": "bathroom", "px": 0.0, "py": 1.6, "pz": 2.5, "fx": 0.0, "fy": 1.5, "fz": 0.0, "fov": 30, "min_distance": 2.5, "max_distance": 3.5},
+  {"id": "photo_mode", "label": "Photo", "room": "living_room", "px": 0.0, "py": 1.55, "pz": 3.5, "fx": 0.0, "fy": 1.5, "fz": 0.0, "fov": 28, "min_distance": 2.0, "max_distance": 6.0},
+  {"id": "full_body", "label": "Full Body", "room": "wardrobe", "px": 0.0, "py": 1.5, "pz": 3.2, "fx": 0.0, "fy": 1.2, "fz": 0.0, "fov": 35, "min_distance": 2.0, "max_distance": 5.0},
+  {"id": "face", "label": "Face", "room": "living_room", "px": 0.0, "py": 1.65, "pz": 1.2, "fx": 0.0, "fy": 1.62, "fz": 0.0, "fov": 25, "min_distance": 0.8, "max_distance": 2.5}
+]
