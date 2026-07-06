@@ -77,6 +77,17 @@ void AnimeVisualPipeline::pan_camera(f32 x, f32 y) {
 }
 
 bool AnimeVisualPipeline::change_outfit(std::string_view item_id) {
+    const ClothingItemDefinition* item = wardrobe_.find_item(item_id);
+    if (item == nullptr) {
+        return false;
+    }
+    if (static_cast<u8>(item->layer) <= static_cast<u8>(ClothingLayer::MainClothing)) {
+        std::erase_if(current_outfit_.equipped_item_ids, [this](const std::string& equipped_id) {
+            const ClothingItemDefinition* equipped = wardrobe_.find_item(equipped_id);
+            return equipped != nullptr &&
+                   static_cast<u8>(equipped->layer) <= static_cast<u8>(ClothingLayer::MainClothing);
+        });
+    }
     if (!wardrobe_.can_equip(item_id, current_outfit_)) {
         return false;
     }

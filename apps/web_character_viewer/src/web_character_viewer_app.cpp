@@ -42,10 +42,10 @@ bool WebCharacterViewerApp::run_vertical_slice_flow() {
     if (!viewer_.open_interaction_ring()) {
         return false;
     }
-    if (!viewer_.change_outfit("cozy_sweater")) {
+    if (!viewer_.change_outfit("mira_outfit_01")) {
         return false;
     }
-    if (!viewer_.change_hair("long_straight")) {
+    if (!viewer_.change_hair("mira_hair_bun")) {
         return false;
     }
     if (!viewer_.change_expression("soft_smile")) {

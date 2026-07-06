@@ -10,89 +10,25 @@
     "wardrobe"
   ],
   "furniture": [
-    {
-      "id": "sofa_cream",
-      "room": "living_room",
-      "x": 0.0,
-      "y": 0,
-      "z": 0
-    },
-    {
-      "id": "coffee_table",
-      "room": "dining_room",
-      "x": 0.5,
-      "y": 0,
-      "z": 0
-    },
-    {
-      "id": "floor_lamp",
-      "room": "bedroom",
-      "x": 1.0,
-      "y": 0,
-      "z": 0
-    },
-    {
-      "id": "bookshelf",
-      "room": "kitchen",
-      "x": 1.5,
-      "y": 0,
-      "z": 0
-    },
-    {
-      "id": "tv_stand",
-      "room": "bathroom",
-      "x": 2.0,
-      "y": 0,
-      "z": 0
-    },
-    {
-      "id": "dining_table",
-      "room": "living_room",
-      "x": 2.5,
-      "y": 0,
-      "z": 0
-    },
-    {
-      "id": "dining_chair",
-      "room": "dining_room",
-      "x": 3.0,
-      "y": 0,
-      "z": 0
-    },
-    {
-      "id": "kitchen_counter",
-      "room": "bedroom",
-      "x": 3.5,
-      "y": 0,
-      "z": 0
-    },
-    {
-      "id": "refrigerator",
-      "room": "kitchen",
-      "x": 4.0,
-      "y": 0,
-      "z": 0
-    },
-    {
-      "id": "plant_monstera",
-      "room": "bathroom",
-      "x": 4.5,
-      "y": 0,
-      "z": 0
-    },
-    {
-      "id": "bed_frame",
-      "room": "living_room",
-      "x": 5.0,
-      "y": 0,
-      "z": 0
-    },
-    {
-      "id": "nightstand",
-      "room": "dining_room",
-      "x": 5.5,
-      "y": 0,
-      "z": 0
-    }
+    {"id": "sofa_cream", "room": "living_room", "x": 0.0, "y": 0, "z": 0},
+    {"id": "tv_stand", "room": "living_room", "x": 0.5, "y": 0, "z": -2.0},
+    {"id": "floor_lamp", "room": "living_room", "x": -1.5, "y": 0, "z": 0.5},
+    {"id": "rug_woven", "room": "living_room", "x": 0.0, "y": 0, "z": 0.5},
+    {"id": "plant_monstera", "room": "living_room", "x": 2.0, "y": 0, "z": 1.0},
+    {"id": "record_player", "room": "living_room", "x": -0.5, "y": 0, "z": -1.5},
+    {"id": "bookshelf", "room": "living_room", "x": 2.5, "y": 0, "z": -1.0},
+    {"id": "kitchen_counter", "room": "kitchen", "x": 0.0, "y": 0, "z": 0},
+    {"id": "refrigerator", "room": "kitchen", "x": 1.5, "y": 0, "z": 0},
+    {"id": "bed_frame", "room": "bedroom", "x": 0.0, "y": 0, "z": 0},
+    {"id": "nightstand", "room": "bedroom", "x": 1.2, "y": 0, "z": 0.5},
+    {"id": "desk", "room": "bedroom", "x": -1.5, "y": 0, "z": 0},
+    {"id": "office_chair", "room": "bedroom", "x": -1.5, "y": 0, "z": 0.8},
+    {"id": "bathroom_mirror", "room": "bathroom", "x": 0.0, "y": 1.2, "z": 0},
+    {"id": "dining_table", "room": "dining_room", "x": 0.0, "y": 0, "z": 0},
+    {"id": "dining_chair", "room": "dining_room", "x": 0.8, "y": 0, "z": 0.5},
+    {"id": "coffee_table", "room": "dining_room", "x": -0.5, "y": 0, "z": -0.5},
+    {"id": "wardrobe_cabinet", "room": "wardrobe", "x": 0.0, "y": 0, "z": 0},
+    {"id": "curtains_sheer", "room": "wardrobe", "x": 1.5, "y": 1.5, "z": 0},
+    {"id": "wall_shelf", "room": "wardrobe", "x": -1.0, "y": 1.0, "z": 0}
   ]
 }

@@ -192,7 +192,13 @@ bool WardrobeSystem::can_equip(std::string_view item_id, const LayeredOutfit& cu
             return true;
         }
         const ClothingItemDefinition* equipped = find_item(equipped_id);
-        if (equipped != nullptr && items_conflict(*item, *equipped)) {
+        if (equipped == nullptr) {
+            continue;
+        }
+        if (equipped->category == item->category) {
+            continue;
+        }
+        if (items_conflict(*item, *equipped)) {
             return false;
         }
     }

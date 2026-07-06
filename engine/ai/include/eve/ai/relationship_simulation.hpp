@@ -37,7 +37,8 @@ struct InteractionResult {
 
 class RelationshipSimulation {
 public:
-    bool initialize(std::string_view data_root);
+    bool initialize(std::string_view data_root, std::string_view character_id = "aiko",
+                    std::string_view romance_subdir = "romance_sim");
 
     InteractionResult talk(std::string_view dialogue_node_id);
     InteractionResult offer_compliment();
@@ -79,6 +80,8 @@ private:
     SceneInterruptionHandler scene_handler_;
     RelationshipSimState sim_state_;
     std::string data_root_;
+    std::string character_id_ = "aiko";
+    std::string romance_subdir_ = "romance_sim";
     bool initialized_ = false;
 };
 

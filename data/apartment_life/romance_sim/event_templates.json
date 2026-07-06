@@ -1,0 +1,87 @@
+[
+  {
+    "id": "morning_greeting",
+    "label": "Morning greeting",
+    "dialogue_id": "greet_morning",
+    "memory_template": "morning_greeting",
+    "room": "living_room",
+    "trust_reward": 0.03,
+    "affection_reward": 0.04,
+    "cooldown_hours": 12
+  },
+  {
+    "id": "wardrobe_outfit_reveal",
+    "label": "Wardrobe outfit reveal",
+    "dialogue_id": "outfit_casual_1",
+    "memory_template": "outfit_reveal",
+    "room": "wardrobe",
+    "cooldown_hours": 24
+  },
+  {
+    "id": "coffee_together",
+    "label": "Coffee together",
+    "dialogue_id": "room_kitchen_1",
+    "memory_template": "morning_coffee",
+    "room": "kitchen",
+    "trust_reward": 0.04,
+    "cooldown_hours": 8
+  },
+  {
+    "id": "shared_dinner",
+    "label": "Shared dinner",
+    "dialogue_id": "invite_dinner_yes",
+    "memory_template": "first_shared_meal",
+    "room": "dining_room",
+    "affection_reward": 0.06,
+    "cooldown_hours": 24
+  },
+  {
+    "id": "rainy_movie_night",
+    "label": "Rainy movie night",
+    "dialogue_id": "invite_movie",
+    "memory_template": "first_movie_night",
+    "room": "living_room",
+    "cooldown_hours": 48
+  },
+  {
+    "id": "living_room_music",
+    "label": "Living room music",
+    "dialogue_id": "room_living_room_talk",
+    "memory_template": "music_evening",
+    "room": "living_room",
+    "cooldown_hours": 12
+  },
+  {
+    "id": "window_conversation",
+    "label": "Window conversation",
+    "dialogue_id": "rainy_window_talk",
+    "memory_template": "window_talk",
+    "room": "living_room",
+    "cooldown_hours": 24
+  },
+  {
+    "id": "bedroom_goodnight",
+    "label": "Bedroom goodnight",
+    "dialogue_id": "goodnight_scene",
+    "memory_template": "goodnight_memory",
+    "room": "bedroom",
+    "cooldown_hours": 24
+  },
+  {
+    "id": "bathroom_grooming",
+    "label": "Bathroom grooming routine",
+    "dialogue_id": "room_bathroom_1",
+    "memory_template": "grooming_routine",
+    "room": "bathroom",
+    "cooldown_hours": 12
+  },
+  {
+    "id": "apology_comfort",
+    "label": "Apology comfort scene",
+    "dialogue_id": "apology_soft",
+    "memory_template": "comfort_moment",
+    "room": "living_room",
+    "trust_reward": 0.05,
+    "cooldown_hours": 48
+  }
+]

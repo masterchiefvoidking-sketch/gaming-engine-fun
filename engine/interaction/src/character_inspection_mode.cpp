@@ -15,8 +15,8 @@ bool CharacterInspectionMode::initialize(std::string_view data_root) {
     human::load_body_volumes_from_file(std::string(data_root) + "/characters/default/body_definition.json",
                                        body_volumes_);
     camera_.set_mode(render::CameraMode::Orbit);
-    preview_.outfit_id = "cozy_sweater";
-    preview_.hair_id = "long_straight";
+    preview_.outfit_id = "mira_outfit_01";
+    preview_.hair_id = "mira_hair_bun";
     preview_.expression_id = "soft_smile";
     pipeline_.change_outfit(preview_.outfit_id);
     pipeline_.change_hair(preview_.hair_id);

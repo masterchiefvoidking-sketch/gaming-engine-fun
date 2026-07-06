@@ -19,6 +19,14 @@ struct WebCharacterViewerConfig {
     std::string data_root;
     std::string game_root;
     std::string project_id = "apartment_life";
+    std::string character_id = "mira";
+    std::string character_name = "Mira";
+    std::string romance_subdir = "apartment_life/romance_sim";
+    std::string default_outfit = "mira_outfit_01";
+    std::string default_hair = "mira_hair_bun";
+    std::string default_expression = "soft_smile";
+    std::string default_greet_dialogue = "greet_evening";
+    std::string initial_room = "living_room";
     std::string save_slot = "viewer_slot";
     StorageBackend storage_backend = StorageBackend::LocalFile;
     f32 viewport_width = 1920.0f;

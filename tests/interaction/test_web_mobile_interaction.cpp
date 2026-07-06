@@ -187,8 +187,8 @@ TEST(WebCharacterViewerTest, VerticalSliceFlow) {
     viewer.update(0.016f);
     EXPECT_TRUE(viewer.handle_select());
     EXPECT_TRUE(viewer.open_interaction_ring());
-    EXPECT_TRUE(viewer.change_outfit("cozy_sweater"));
-    EXPECT_TRUE(viewer.change_hair("long_straight"));
+    EXPECT_TRUE(viewer.change_outfit("mira_outfit_01"));
+    EXPECT_TRUE(viewer.change_hair("mira_hair_bun"));
     EXPECT_TRUE(viewer.change_expression("soft_smile"));
     EXPECT_TRUE(viewer.execute_ring_action(eve::interaction::RingActionType::Talk));
     EXPECT_TRUE(viewer.execute_ring_action(eve::interaction::RingActionType::Compliment));

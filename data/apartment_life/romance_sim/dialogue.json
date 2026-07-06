@@ -1,0 +1,972 @@
+[
+  {
+    "id": "greet_morning",
+    "speaker": "mira",
+    "line": "Good morning. The apartment is peaceful today.",
+    "category": "greeting",
+    "conditions": {
+      "time_of_day": [
+        "morning"
+      ]
+    }
+  },
+  {
+    "id": "greet_evening",
+    "speaker": "mira",
+    "line": "Welcome back. I was hoping you'd visit tonight.",
+    "category": "greeting",
+    "conditions": {
+      "rooms": [
+        "living_room"
+      ],
+      "time_of_day": [
+        "evening"
+      ]
+    }
+  },
+  {
+    "id": "compliment_soft",
+    "speaker": "mira",
+    "line": "That's sweet of you... you always know what to say.",
+    "category": "compliment",
+    "conditions": {
+      "min_stage": "acquaintance"
+    }
+  },
+  {
+    "id": "compliment_blush",
+    "speaker": "mira",
+    "line": "M-my cheeks feel warm... don't tease me too much.",
+    "category": "compliment",
+    "conditions": {
+      "min_stage": "friend"
+    }
+  },
+  {
+    "id": "invite_dinner_yes",
+    "speaker": "mira",
+    "line": "I'd love to share dinner with you.",
+    "category": "meal",
+    "conditions": {
+      "min_stage": "friend"
+    }
+  },
+  {
+    "id": "invite_movie",
+    "speaker": "mira",
+    "line": "A movie night sounds perfect. Pick something cozy.",
+    "category": "event",
+    "conditions": {
+      "min_stage": "friend"
+    }
+  },
+  {
+    "id": "apology_soft",
+    "speaker": "mira",
+    "line": "It's okay. I'm glad we can talk things through.",
+    "category": "comfort"
+  },
+  {
+    "id": "gift_happy",
+    "speaker": "mira",
+    "line": "You remembered... this means more than you know.",
+    "category": "gift",
+    "conditions": {
+      "min_stage": "acquaintance"
+    }
+  },
+  {
+    "id": "goodnight_scene",
+    "speaker": "mira",
+    "line": "Goodnight. Sweet dreams.",
+    "category": "goodnight",
+    "conditions": {
+      "rooms": [
+        "bedroom"
+      ]
+    }
+  },
+  {
+    "id": "rainy_window_talk",
+    "speaker": "mira",
+    "line": "The rain against the window is soothing, isn't it?",
+    "category": "ambient",
+    "conditions": {
+      "rooms": [
+        "living_room"
+      ]
+    }
+  },
+  {
+    "id": "outfit_casual_1",
+    "speaker": "mira",
+    "line": "Do you like this casual look on me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "casual"
+      ]
+    }
+  },
+  {
+    "id": "room_living_room_talk",
+    "speaker": "mira",
+    "line": "This living room feels like our own little world.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "living_room"
+      ]
+    }
+  },
+  {
+    "id": "room_kitchen_1",
+    "speaker": "mira",
+    "line": "Coffee smells wonderful in the morning light.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "kitchen"
+      ]
+    }
+  },
+  {
+    "id": "room_bedroom_1",
+    "speaker": "mira",
+    "line": "This bedroom feels cozy when you're here.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "bedroom"
+      ]
+    }
+  },
+  {
+    "id": "room_bedroom_2",
+    "speaker": "mira",
+    "line": "This bedroom feels cozy when you're here.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "bedroom"
+      ]
+    }
+  },
+  {
+    "id": "room_bedroom_3",
+    "speaker": "mira",
+    "line": "This bedroom feels cozy when you're here.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "bedroom"
+      ]
+    }
+  },
+  {
+    "id": "room_bathroom_1",
+    "speaker": "mira",
+    "line": "This bathroom feels cozy when you're here.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "bathroom"
+      ]
+    }
+  },
+  {
+    "id": "room_bathroom_2",
+    "speaker": "mira",
+    "line": "This bathroom feels cozy when you're here.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "bathroom"
+      ]
+    }
+  },
+  {
+    "id": "room_bathroom_3",
+    "speaker": "mira",
+    "line": "This bathroom feels cozy when you're here.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "bathroom"
+      ]
+    }
+  },
+  {
+    "id": "room_living_room_1",
+    "speaker": "mira",
+    "line": "This living room feels cozy when you're here.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "living_room"
+      ]
+    }
+  },
+  {
+    "id": "room_living_room_2",
+    "speaker": "mira",
+    "line": "This living room feels cozy when you're here.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "living_room"
+      ]
+    }
+  },
+  {
+    "id": "room_living_room_3",
+    "speaker": "mira",
+    "line": "This living room feels cozy when you're here.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "living_room"
+      ]
+    }
+  },
+  {
+    "id": "room_dining_room_1",
+    "speaker": "mira",
+    "line": "This dining room feels cozy when you're here.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "dining_room"
+      ]
+    }
+  },
+  {
+    "id": "room_dining_room_2",
+    "speaker": "mira",
+    "line": "This dining room feels cozy when you're here.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "dining_room"
+      ]
+    }
+  },
+  {
+    "id": "room_dining_room_3",
+    "speaker": "mira",
+    "line": "This dining room feels cozy when you're here.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "dining_room"
+      ]
+    }
+  },
+  {
+    "id": "room_kitchen_1",
+    "speaker": "mira",
+    "line": "This kitchen feels cozy when you're here.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "kitchen"
+      ]
+    }
+  },
+  {
+    "id": "room_kitchen_2",
+    "speaker": "mira",
+    "line": "This kitchen feels cozy when you're here.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "kitchen"
+      ]
+    }
+  },
+  {
+    "id": "room_kitchen_3",
+    "speaker": "mira",
+    "line": "This kitchen feels cozy when you're here.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "kitchen"
+      ]
+    }
+  },
+  {
+    "id": "room_wardrobe_1",
+    "speaker": "mira",
+    "line": "This wardrobe feels cozy when you're here.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "wardrobe"
+      ]
+    }
+  },
+  {
+    "id": "room_wardrobe_2",
+    "speaker": "mira",
+    "line": "This wardrobe feels cozy when you're here.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "wardrobe"
+      ]
+    }
+  },
+  {
+    "id": "room_wardrobe_3",
+    "speaker": "mira",
+    "line": "This wardrobe feels cozy when you're here.",
+    "category": "room",
+    "conditions": {
+      "rooms": [
+        "wardrobe"
+      ]
+    }
+  },
+  {
+    "id": "outfit_casual_1",
+    "speaker": "mira",
+    "line": "Do you think this casual look suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "casual"
+      ]
+    }
+  },
+  {
+    "id": "outfit_casual_2",
+    "speaker": "mira",
+    "line": "Do you think this casual look suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "casual"
+      ]
+    }
+  },
+  {
+    "id": "outfit_casual_3",
+    "speaker": "mira",
+    "line": "Do you think this casual look suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "casual"
+      ]
+    }
+  },
+  {
+    "id": "outfit_casual_4",
+    "speaker": "mira",
+    "line": "Do you think this casual look suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "casual"
+      ]
+    }
+  },
+  {
+    "id": "outfit_sleepwear_1",
+    "speaker": "mira",
+    "line": "Do you think this sleepwear look suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "sleepwear"
+      ]
+    }
+  },
+  {
+    "id": "outfit_sleepwear_2",
+    "speaker": "mira",
+    "line": "Do you think this sleepwear look suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "sleepwear"
+      ]
+    }
+  },
+  {
+    "id": "outfit_sleepwear_3",
+    "speaker": "mira",
+    "line": "Do you think this sleepwear look suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "sleepwear"
+      ]
+    }
+  },
+  {
+    "id": "outfit_sleepwear_4",
+    "speaker": "mira",
+    "line": "Do you think this sleepwear look suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "sleepwear"
+      ]
+    }
+  },
+  {
+    "id": "outfit_formal_1",
+    "speaker": "mira",
+    "line": "Do you think this formal look suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "formal"
+      ]
+    }
+  },
+  {
+    "id": "outfit_formal_2",
+    "speaker": "mira",
+    "line": "Do you think this formal look suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "formal"
+      ]
+    }
+  },
+  {
+    "id": "outfit_formal_3",
+    "speaker": "mira",
+    "line": "Do you think this formal look suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "formal"
+      ]
+    }
+  },
+  {
+    "id": "outfit_formal_4",
+    "speaker": "mira",
+    "line": "Do you think this formal look suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "formal"
+      ]
+    }
+  },
+  {
+    "id": "outfit_athletic_1",
+    "speaker": "mira",
+    "line": "Do you think this athletic look suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "athletic"
+      ]
+    }
+  },
+  {
+    "id": "outfit_athletic_2",
+    "speaker": "mira",
+    "line": "Do you think this athletic look suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "athletic"
+      ]
+    }
+  },
+  {
+    "id": "outfit_athletic_3",
+    "speaker": "mira",
+    "line": "Do you think this athletic look suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "athletic"
+      ]
+    }
+  },
+  {
+    "id": "outfit_athletic_4",
+    "speaker": "mira",
+    "line": "Do you think this athletic look suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "athletic"
+      ]
+    }
+  },
+  {
+    "id": "outfit_dress_1",
+    "speaker": "mira",
+    "line": "Do you think this dress look suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "dress"
+      ]
+    }
+  },
+  {
+    "id": "outfit_dress_2",
+    "speaker": "mira",
+    "line": "Do you think this dress look suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "dress"
+      ]
+    }
+  },
+  {
+    "id": "outfit_dress_3",
+    "speaker": "mira",
+    "line": "Do you think this dress look suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "dress"
+      ]
+    }
+  },
+  {
+    "id": "outfit_dress_4",
+    "speaker": "mira",
+    "line": "Do you think this dress look suits me?",
+    "category": "outfit",
+    "conditions": {
+      "outfit_tags": [
+        "dress"
+      ]
+    }
+  },
+  {
+    "id": "mood_neutral_1",
+    "speaker": "mira",
+    "line": "I'm feeling a bit neutral right now... thanks for noticing.",
+    "category": "mood"
+  },
+  {
+    "id": "mood_neutral_2",
+    "speaker": "mira",
+    "line": "I'm feeling a bit neutral right now... thanks for noticing.",
+    "category": "mood"
+  },
+  {
+    "id": "mood_neutral_3",
+    "speaker": "mira",
+    "line": "I'm feeling a bit neutral right now... thanks for noticing.",
+    "category": "mood"
+  },
+  {
+    "id": "mood_neutral_4",
+    "speaker": "mira",
+    "line": "I'm feeling a bit neutral right now... thanks for noticing.",
+    "category": "mood"
+  },
+  {
+    "id": "mood_happy_1",
+    "speaker": "mira",
+    "line": "I'm feeling a bit happy right now... thanks for noticing.",
+    "category": "mood"
+  },
+  {
+    "id": "mood_happy_2",
+    "speaker": "mira",
+    "line": "I'm feeling a bit happy right now... thanks for noticing.",
+    "category": "mood"
+  },
+  {
+    "id": "mood_happy_3",
+    "speaker": "mira",
+    "line": "I'm feeling a bit happy right now... thanks for noticing.",
+    "category": "mood"
+  },
+  {
+    "id": "mood_happy_4",
+    "speaker": "mira",
+    "line": "I'm feeling a bit happy right now... thanks for noticing.",
+    "category": "mood"
+  },
+  {
+    "id": "mood_shy_1",
+    "speaker": "mira",
+    "line": "I'm feeling a bit shy right now... thanks for noticing.",
+    "category": "mood"
+  },
+  {
+    "id": "mood_shy_2",
+    "speaker": "mira",
+    "line": "I'm feeling a bit shy right now... thanks for noticing.",
+    "category": "mood"
+  },
+  {
+    "id": "mood_shy_3",
+    "speaker": "mira",
+    "line": "I'm feeling a bit shy right now... thanks for noticing.",
+    "category": "mood"
+  },
+  {
+    "id": "mood_shy_4",
+    "speaker": "mira",
+    "line": "I'm feeling a bit shy right now... thanks for noticing.",
+    "category": "mood"
+  },
+  {
+    "id": "mood_romantic_1",
+    "speaker": "mira",
+    "line": "I'm feeling a bit romantic right now... thanks for noticing.",
+    "category": "mood"
+  },
+  {
+    "id": "mood_romantic_2",
+    "speaker": "mira",
+    "line": "I'm feeling a bit romantic right now... thanks for noticing.",
+    "category": "mood"
+  },
+  {
+    "id": "mood_romantic_3",
+    "speaker": "mira",
+    "line": "I'm feeling a bit romantic right now... thanks for noticing.",
+    "category": "mood"
+  },
+  {
+    "id": "mood_romantic_4",
+    "speaker": "mira",
+    "line": "I'm feeling a bit romantic right now... thanks for noticing.",
+    "category": "mood"
+  },
+  {
+    "id": "mood_tired_1",
+    "speaker": "mira",
+    "line": "I'm feeling a bit tired right now... thanks for noticing.",
+    "category": "mood"
+  },
+  {
+    "id": "mood_tired_2",
+    "speaker": "mira",
+    "line": "I'm feeling a bit tired right now... thanks for noticing.",
+    "category": "mood"
+  },
+  {
+    "id": "mood_tired_3",
+    "speaker": "mira",
+    "line": "I'm feeling a bit tired right now... thanks for noticing.",
+    "category": "mood"
+  },
+  {
+    "id": "mood_tired_4",
+    "speaker": "mira",
+    "line": "I'm feeling a bit tired right now... thanks for noticing.",
+    "category": "mood"
+  },
+  {
+    "id": "memory_callback_1",
+    "speaker": "mira",
+    "line": "I still remember that moment we shared... it means a lot to me.",
+    "category": "memory",
+    "conditions": {
+      "memories": [
+        "memory_1"
+      ]
+    }
+  },
+  {
+    "id": "memory_callback_2",
+    "speaker": "mira",
+    "line": "I still remember that moment we shared... it means a lot to me.",
+    "category": "memory",
+    "conditions": {
+      "memories": [
+        "memory_2"
+      ]
+    }
+  },
+  {
+    "id": "memory_callback_3",
+    "speaker": "mira",
+    "line": "I still remember that moment we shared... it means a lot to me.",
+    "category": "memory",
+    "conditions": {
+      "memories": [
+        "memory_3"
+      ]
+    }
+  },
+  {
+    "id": "memory_callback_4",
+    "speaker": "mira",
+    "line": "I still remember that moment we shared... it means a lot to me.",
+    "category": "memory",
+    "conditions": {
+      "memories": [
+        "memory_4"
+      ]
+    }
+  },
+  {
+    "id": "memory_callback_5",
+    "speaker": "mira",
+    "line": "I still remember that moment we shared... it means a lot to me.",
+    "category": "memory",
+    "conditions": {
+      "memories": [
+        "memory_5"
+      ]
+    }
+  },
+  {
+    "id": "memory_callback_6",
+    "speaker": "mira",
+    "line": "I still remember that moment we shared... it means a lot to me.",
+    "category": "memory",
+    "conditions": {
+      "memories": [
+        "memory_6"
+      ]
+    }
+  },
+  {
+    "id": "memory_callback_7",
+    "speaker": "mira",
+    "line": "I still remember that moment we shared... it means a lot to me.",
+    "category": "memory",
+    "conditions": {
+      "memories": [
+        "memory_7"
+      ]
+    }
+  },
+  {
+    "id": "memory_callback_8",
+    "speaker": "mira",
+    "line": "I still remember that moment we shared... it means a lot to me.",
+    "category": "memory",
+    "conditions": {
+      "memories": [
+        "memory_8"
+      ]
+    }
+  },
+  {
+    "id": "memory_callback_9",
+    "speaker": "mira",
+    "line": "I still remember that moment we shared... it means a lot to me.",
+    "category": "memory",
+    "conditions": {
+      "memories": [
+        "memory_9"
+      ]
+    }
+  },
+  {
+    "id": "memory_callback_10",
+    "speaker": "mira",
+    "line": "I still remember that moment we shared... it means a lot to me.",
+    "category": "memory",
+    "conditions": {
+      "memories": [
+        "memory_10"
+      ]
+    }
+  },
+  {
+    "id": "memory_callback_11",
+    "speaker": "mira",
+    "line": "I still remember that moment we shared... it means a lot to me.",
+    "category": "memory",
+    "conditions": {
+      "memories": [
+        "memory_11"
+      ]
+    }
+  },
+  {
+    "id": "memory_callback_12",
+    "speaker": "mira",
+    "line": "I still remember that moment we shared... it means a lot to me.",
+    "category": "memory",
+    "conditions": {
+      "memories": [
+        "memory_12"
+      ]
+    }
+  },
+  {
+    "id": "memory_callback_13",
+    "speaker": "mira",
+    "line": "I still remember that moment we shared... it means a lot to me.",
+    "category": "memory",
+    "conditions": {
+      "memories": [
+        "memory_13"
+      ]
+    }
+  },
+  {
+    "id": "memory_callback_14",
+    "speaker": "mira",
+    "line": "I still remember that moment we shared... it means a lot to me.",
+    "category": "memory",
+    "conditions": {
+      "memories": [
+        "memory_14"
+      ]
+    }
+  },
+  {
+    "id": "memory_callback_15",
+    "speaker": "mira",
+    "line": "I still remember that moment we shared... it means a lot to me.",
+    "category": "memory",
+    "conditions": {
+      "memories": [
+        "memory_15"
+      ]
+    }
+  },
+  {
+    "id": "memory_callback_16",
+    "speaker": "mira",
+    "line": "I still remember that moment we shared... it means a lot to me.",
+    "category": "memory",
+    "conditions": {
+      "memories": [
+        "memory_16"
+      ]
+    }
+  },
+  {
+    "id": "memory_callback_17",
+    "speaker": "mira",
+    "line": "I still remember that moment we shared... it means a lot to me.",
+    "category": "memory",
+    "conditions": {
+      "memories": [
+        "memory_17"
+      ]
+    }
+  },
+  {
+    "id": "memory_callback_18",
+    "speaker": "mira",
+    "line": "I still remember that moment we shared... it means a lot to me.",
+    "category": "memory",
+    "conditions": {
+      "memories": [
+        "memory_18"
+      ]
+    }
+  },
+  {
+    "id": "memory_callback_19",
+    "speaker": "mira",
+    "line": "I still remember that moment we shared... it means a lot to me.",
+    "category": "memory",
+    "conditions": {
+      "memories": [
+        "memory_19"
+      ]
+    }
+  },
+  {
+    "id": "memory_callback_20",
+    "speaker": "mira",
+    "line": "I still remember that moment we shared... it means a lot to me.",
+    "category": "memory",
+    "conditions": {
+      "memories": [
+        "memory_20"
+      ]
+    }
+  },
+  {
+    "id": "stage_stranger_1",
+    "speaker": "mira",
+    "line": "Our relationship has grown. I'm glad we're at this stage together.",
+    "category": "relationship",
+    "conditions": {
+      "min_stage": "stranger"
+    }
+  },
+  {
+    "id": "stage_stranger_2",
+    "speaker": "mira",
+    "line": "Our relationship has grown. I'm glad we're at this stage together.",
+    "category": "relationship",
+    "conditions": {
+      "min_stage": "stranger"
+    }
+  },
+  {
+    "id": "stage_stranger_3",
+    "speaker": "mira",
+    "line": "Our relationship has grown. I'm glad we're at this stage together.",
+    "category": "relationship",
+    "conditions": {
+      "min_stage": "stranger"
+    }
+  },
+  {
+    "id": "stage_stranger_4",
+    "speaker": "mira",
+    "line": "Our relationship has grown. I'm glad we're at this stage together.",
+    "category": "relationship",
+    "conditions": {
+      "min_stage": "stranger"
+    }
+  },
+  {
+    "id": "stage_acquaintance_1",
+    "speaker": "mira",
+    "line": "Our relationship has grown. I'm glad we're at this stage together.",
+    "category": "relationship",
+    "conditions": {
+      "min_stage": "acquaintance"
+    }
+  },
+  {
+    "id": "stage_acquaintance_2",
+    "speaker": "mira",
+    "line": "Our relationship has grown. I'm glad we're at this stage together.",
+    "category": "relationship",
+    "conditions": {
+      "min_stage": "acquaintance"
+    }
+  },
+  {
+    "id": "stage_acquaintance_3",
+    "speaker": "mira",
+    "line": "Our relationship has grown. I'm glad we're at this stage together.",
+    "category": "relationship",
+    "conditions": {
+      "min_stage": "acquaintance"
+    }
+  },
+  {
+    "id": "stage_acquaintance_4",
+    "speaker": "mira",
+    "line": "Our relationship has grown. I'm glad we're at this stage together.",
+    "category": "relationship",
+    "conditions": {
+      "min_stage": "acquaintance"
+    }
+  },
+  {
+    "id": "stage_friend_1",
+    "speaker": "mira",
+    "line": "Our relationship has grown. I'm glad we're at this stage together.",
+    "category": "relationship",
+    "conditions": {
+      "min_stage": "friend"
+    }
+  }
+]

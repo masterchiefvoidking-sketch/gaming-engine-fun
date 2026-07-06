@@ -6,7 +6,23 @@
       "id": "mira_greetings_start",
       "speaker": "mira",
       "line": "Good morning. The light is beautiful today.",
+      "expression": "soft_smile",
+      "choices": [
+        {"id": "warm_reply", "text": "Good morning, Mira.", "next": "mira_greetings_warm"},
+        {"id": "compliment", "text": "You look lovely this morning.", "next": "mira_greetings_blush"}
+      ]
+    },
+    {
+      "id": "mira_greetings_warm",
+      "speaker": "mira",
+      "line": "I'm glad you're here. Want some tea?",
       "expression": "soft_smile"
+    },
+    {
+      "id": "mira_greetings_blush",
+      "speaker": "mira",
+      "line": "Oh... thank you. You're making me blush.",
+      "expression": "blushing"
     }
   ]
 }
