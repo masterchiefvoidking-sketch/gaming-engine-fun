@@ -1,0 +1,7 @@
+{
+  "id": "apartment_sim",
+  "name": "Apartment Sim",
+  "description": "Cozy apartment life simulation starter.",
+  "source": "Game/ApartmentLifeDemo",
+  "includes": ["project.json", "Assets"]
+}

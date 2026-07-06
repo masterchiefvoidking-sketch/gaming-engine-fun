@@ -54,6 +54,10 @@ if(EVE_BUILD_WEB_CHARACTER_VIEWER OR EVE_BUILD_TESTS)
     add_subdirectory(apps/web_character_viewer)
 endif()
 
+if(EVE_BUILD_PERSONAL_EXPORT OR EVE_BUILD_TESTS)
+    add_subdirectory(apps/personal_export)
+endif()
+
 if(EVE_ENABLE_BENCHMARKS)
     add_subdirectory(benchmarks)
 endif()

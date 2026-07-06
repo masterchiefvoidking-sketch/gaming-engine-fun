@@ -1,5 +1,9 @@
 # Build artifacts
 build/
+!engine/build/
+!engine/build/**
+!tests/build/
+!tests/build/**
 out/
 cmake-build-*/
 *.user

@@ -1,0 +1,7 @@
+{
+  "id": "visual_novel",
+  "name": "Visual Novel",
+  "description": "Dialogue-focused personal visual novel template.",
+  "source": "Game/ApartmentLifeDemo",
+  "includes": ["project.json", "Assets/Dialogue", "Assets/Characters"]
+}

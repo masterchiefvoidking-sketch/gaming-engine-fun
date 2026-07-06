@@ -6,6 +6,20 @@
 
 namespace eve::platform {
 
+namespace {
+
+bool should_skip_backup_path(const std::filesystem::path& rel) {
+    for (const std::filesystem::path& part : rel) {
+        const std::string name = part.string();
+        if (name == "Backups" || name == "Build" || name == ".git") {
+            return true;
+        }
+    }
+    return false;
+}
+
+} // namespace
+
 bool BackupManager::create_backup(std::string_view source_dir, std::string_view backup_root,
                                   std::string_view label) const {
     if (!FileSystem::is_directory(source_dir)) {
@@ -21,6 +35,9 @@ bool BackupManager::create_backup(std::string_view source_dir, std::string_view 
             continue;
         }
         const std::filesystem::path rel = std::filesystem::relative(entry.path(), source_dir);
+        if (should_skip_backup_path(rel)) {
+            continue;
+        }
         const std::filesystem::path out = std::filesystem::path(dest) / rel;
         std::filesystem::create_directories(out.parent_path());
         std::filesystem::copy_file(entry.path(), out, std::filesystem::copy_options::overwrite_existing);
