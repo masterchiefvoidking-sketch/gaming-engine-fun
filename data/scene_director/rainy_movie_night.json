@@ -1,0 +1,56 @@
+[
+  {
+    "id": "rainy_movie_night",
+    "label": "Rainy Movie Night",
+    "type": "movie_night",
+    "room": "living_room",
+    "condition": "rainy_movie_night",
+    "interaction": "invite_movie",
+    "outcome": "movie_night_memory",
+    "memory": "first_movie_night",
+    "cooldown_hours": 24,
+    "one_time": false,
+    "beats": [
+      {
+        "time": 0,
+        "lighting": "cozy_lamp_rain",
+        "music": "rain_ambience",
+        "animation": "walk",
+        "shot": "rainy_window"
+      },
+      {
+        "time": 1,
+        "dialogue": "movie_invite_low_trust",
+        "animation": "sit",
+        "shot": "wide_living_room"
+      },
+      {
+        "time": 3,
+        "dialogue": "movie_invite_high_trust",
+        "animation": "eye_contact",
+        "shot": "sofa_medium",
+        "wait_choice": true
+      },
+      {
+        "time": 5,
+        "dialogue": "movie_start",
+        "animation": "smile",
+        "expression": "soft_smile",
+        "shot": "face_closeup"
+      },
+      {
+        "time": 7,
+        "dialogue": "movie_reaction",
+        "animation": "laugh",
+        "shot": "over_shoulder",
+        "outcome": "movie_night_beat"
+      },
+      {
+        "time": 9,
+        "dialogue": "movie_memory_callback",
+        "shot": "wide_living_room",
+        "music": "cozy_piano"
+      }
+    ]
+  }
+]

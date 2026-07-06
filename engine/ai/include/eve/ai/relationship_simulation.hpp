@@ -52,6 +52,7 @@ public:
     [[nodiscard]] CharacterSimState* character();
     [[nodiscard]] const CharacterSimState* character() const;
     [[nodiscard]] const RelationshipModel* relationship() const;
+    [[nodiscard]] RelationshipModel* relationship();
     [[nodiscard]] RelationshipStage current_stage() const;
     [[nodiscard]] DialogueContext build_dialogue_context() const;
 

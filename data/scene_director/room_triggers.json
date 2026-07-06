@@ -1,0 +1,72 @@
+[
+  {
+    "id": "living_movie",
+    "room": "living_room",
+    "scene": "rainy_movie_night",
+    "condition": "rainy_movie_night",
+    "interaction": "invite_movie"
+  },
+  {
+    "id": "living_relax",
+    "room": "living_room",
+    "scene": "living_room_relax",
+    "condition": "evening_relaxed",
+    "interaction": "relax"
+  },
+  {
+    "id": "kitchen_coffee",
+    "room": "kitchen",
+    "scene": "coffee_together",
+    "condition": "morning_acquaintance",
+    "interaction": "coffee"
+  },
+  {
+    "id": "dining_dinner",
+    "room": "dining_room",
+    "scene": "shared_dinner",
+    "condition": "dinner_friend",
+    "interaction": "dinner"
+  },
+  {
+    "id": "wardrobe_preview",
+    "room": "wardrobe",
+    "scene": "wardrobe_preview",
+    "condition": "friend_wardrobe",
+    "interaction": "outfit_preview"
+  },
+  {
+    "id": "bedroom_goodnight",
+    "room": "bedroom",
+    "scene": "bedroom_goodnight",
+    "condition": "night_close_friend",
+    "interaction": "goodnight"
+  },
+  {
+    "id": "balcony_talk",
+    "room": "balcony",
+    "scene": "balcony_talk",
+    "condition": "evening_friend",
+    "interaction": "balcony"
+  },
+  {
+    "id": "living_gift",
+    "room": "living_room",
+    "scene": "gift_reaction",
+    "condition": "gift_friend",
+    "interaction": "gift"
+  },
+  {
+    "id": "kitchen_cook",
+    "room": "kitchen",
+    "scene": "cooking_together",
+    "condition": "friend_kitchen",
+    "interaction": "cook"
+  },
+  {
+    "id": "living_morning",
+    "room": "living_room",
+    "scene": "morning_greeting",
+    "condition": "morning_friend",
+    "interaction": "greet"
+  }
+]
