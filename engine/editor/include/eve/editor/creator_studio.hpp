@@ -2,7 +2,9 @@
 
 #include <eve/content/game_content_project.hpp>
 #include <eve/content/asset_import.hpp>
+#include <eve/build/export_profiles.hpp>
 #include <eve/editor/apartment_builder.hpp>
+#include <eve/editor/export_panel.hpp>
 
 #include <string>
 #include <utility>
@@ -117,9 +119,11 @@ public:
     bool create_project(std::string_view path, std::string_view title);
     bool save_project();
     bool export_game(content::ExportTarget target);
+    bool export_with_profile(build::ExportProfile profile);
     void update(f32 delta_seconds);
 
     [[nodiscard]] content::GameContentProject& project() { return project_; }
+    [[nodiscard]] ExportPanel& export_panel() { return export_panel_; }
     [[nodiscard]] ApartmentBuilder& apartment_builder() { return apartment_builder_; }
     CharacterEditorPanel& character_editor() { return character_editor_; }
     WardrobeEditorPanel& wardrobe_editor() { return wardrobe_editor_; }
@@ -146,6 +150,7 @@ private:
     TimelineEditor timeline_;
     PhotoStudioPanel photo_studio_;
     AssetBrowserPanel asset_browser_;
+    ExportPanel export_panel_;
     f32 autosave_timer_ = 0.0f;
     bool initialized_ = false;
 };

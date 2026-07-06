@@ -16,6 +16,8 @@ EVE Adult Engine is organized as a set of layered modules with explicit dependen
 ├─────────────────────────────────────────────┤
 │  interaction    Input, camera, ring, UI     │
 ├─────────────────────────────────────────────┤
+│  build          Personal export pipeline    │
+├─────────────────────────────────────────────┤
 │  content, scene, world, ai, human, animation│
 ├─────────────────────────────────────────────┤
 │  render         Vulkan, materials, shaders  │
@@ -42,6 +44,7 @@ EVE Adult Engine is organized as a set of layered modules with explicit dependen
 | `render` | GPU presentation | `VulkanContext` |
 | `platform` | Mission scope, unified save, web deploy | `UnifiedSaveSystem`, `WebPublisher`, `GameSession` |
 | `interaction` | Player input, camera, ring, UI | `InputController`, `InteractionRing`, `WebCharacterViewer` |
+| `build` | Personal export pipeline | `BuildPipeline`, `AssetCooker`, `ContentValidator` |
 | `content` | Game content authoring | `ContentDatabase`, `ProjectLayout`, `GameContentProject` |
 | `editor` | Authoring shell | `EditorApplication`, `CreatorStudio` |
 
@@ -67,6 +70,9 @@ Engine mission reset: lean scope, unified save, web deployment tooling, mobile-r
 
 ### Phase 10
 Web and mobile interaction layer: unified input, character inspection, interaction ring, responsive UI, quality settings, browser save storage, Web Apartment Character Viewer. See `docs/PHASE10_WEB_MOBILE_INTERACTION.md`.
+
+### Phase 11
+Personal build + export pipeline: export profiles, asset cooking, validation, archives, local content packs, backup tools, editor export panel. See `docs/PHASE11_PERSONAL_BUILD.md`.
 
 ## Threading Model
 

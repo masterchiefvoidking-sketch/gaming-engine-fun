@@ -1,0 +1,7 @@
+{
+  "id": "life_sim",
+  "name": "Life Sim",
+  "description": "Relationship and daily life simulation template.",
+  "source": "Game/ApartmentLifeDemo",
+  "includes": ["project.json", "Assets/Characters", "Assets/Apartments", "Assets/Events"]
+}

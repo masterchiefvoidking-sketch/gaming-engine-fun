@@ -1,0 +1,7 @@
+{
+  "id": "blank",
+  "name": "Blank Project",
+  "description": "Empty personal project template.",
+  "source": "data/templates/blank_project",
+  "includes": ["project.json"]
+}

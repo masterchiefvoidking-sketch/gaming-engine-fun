@@ -125,6 +125,7 @@ bool CreatorStudio::open_project(std::string_view path) {
         return false;
     }
     setup_panels();
+    export_panel_.set_project(path, project_.layout().title());
     EVE_LOG(Info, "CreatorStudio", "Opened project: ", path);
     return true;
 }
@@ -147,6 +148,12 @@ bool CreatorStudio::export_game(content::ExportTarget target) {
     config.output_dir = project_.layout().paths().root + "/Build";
     config.targets = {target};
     return project_.export_build(config);
+}
+
+bool CreatorStudio::export_with_profile(build::ExportProfile profile) {
+    export_panel_.set_project(project_.layout().paths().root, project_.layout().title());
+    export_panel_.set_profile(profile);
+    return export_panel_.cook_and_build();
 }
 
 void CreatorStudio::update(f32 delta_seconds) {
