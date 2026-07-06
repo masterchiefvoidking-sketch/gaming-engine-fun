@@ -65,13 +65,22 @@ ctest --test-dir build --output-on-failure
 | `EVE_BUILD_EDITOR` | ON | Build the editor application |
 | `EVE_BUILD_TESTS` | ON | Build automated tests |
 | `EVE_ENABLE_VULKAN_VALIDATION` | OFF | Enable Vulkan validation layers |
-| `EVE_ENABLE_BENCHMARKS` | OFF | Build subsystem benchmarks |
+| `EVE_BUILD_RC1_RELEASE` | ON | RC1 release pipeline |
+| `EVE_BUILD_PERSONAL_PRODUCT_CUT` | ON | Personal product cut (Phase 14) |
 
 ## Run the Editor
 
 ```bash
 ./build/apps/editor/eve-editor
 ```
+
+## Personal Product Cut (Phase 14)
+
+```bash
+./build/apps/personal_product_cut/eve-personal-product-cut
+```
+
+See [docs/PHASE14_PERSONAL_PRODUCT_CUT.md](docs/PHASE14_PERSONAL_PRODUCT_CUT.md) for the full personal-use workflow.
 
 ## Testing
 

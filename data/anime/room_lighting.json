@@ -6,5 +6,7 @@
   {"id": "living_room_cozy", "room_id": "living_room", "mood": "cozy_lamp", "key_intensity": 0.9},
   {"id": "living_room_sunset", "room_id": "living_room", "mood": "warm_sunset", "key_intensity": 1.3, "window_beam": 0.5},
   {"id": "balcony_neon", "room_id": "balcony", "mood": "neon_city", "key_intensity": 0.8},
-  {"id": "dining_rainy", "room_id": "dining_room", "mood": "rainy_day", "key_intensity": 0.7, "window_beam": 0.3}
+  {"id": "dining_rainy", "room_id": "dining_room", "mood": "rainy_day", "key_intensity": 0.7, "window_beam": 0.3},
+  {"id": "bathroom_soft", "room_id": "bathroom", "mood": "soft_white", "key_intensity": 0.9, "mirror_reflections": true},
+  {"id": "kitchen_morning", "room_id": "kitchen", "mood": "morning", "key_intensity": 1.1, "window_beam": 0.5}
 ]

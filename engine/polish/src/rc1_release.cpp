@@ -76,7 +76,7 @@ RC1ReleaseReport RC1ReleasePipeline::build_all(const RC1ReleaseConfig& config) {
     report.next_phase_path = config.output_root + "/NEXT_PHASE_RECOMMENDATIONS.md";
 
     generate_performance_report(report.performance_report_path, profiler);
-    generate_test_report(report.test_report_path, 192, 192);
+    generate_test_report(report.test_report_path, 213, 213);
     gate.save_report(report.asset_validation_path, report.validation);
     generate_export_instructions(report.export_instructions_path);
     generate_next_phase_recommendations(report.next_phase_path);

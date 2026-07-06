@@ -48,5 +48,11 @@ Thumbs.db
 compile_commands.json
 Game/ApartmentLifeDemo/Build/
 Game/ApartmentLifeDemo/Backups/
+Game/ApartmentLifeDemo/Saves/_stress/
 Game/ApartmentLifeDemo/Assets/content_index.json
 data/saves/
+Releases/*/WindowsDev/
+Releases/*/WindowsRelease/
+Releases/*/WebDev/
+Releases/*/WebRelease/
+Releases/*/BackupArchive/
